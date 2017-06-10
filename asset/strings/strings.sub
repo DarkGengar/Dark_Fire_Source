@@ -1,0 +1,39 @@
+#=====CMD Commands========================
+MKDIR		:=	@mkdir -p
+REMOVE		:=	@rm --force --recursive
+
+#=====Charmap==========================
+PK_CHARMAP			:=	charmaps/pk_gen_III_ger_charmap.chmp
+
+#=====Functions========================
+rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
+
+#=====Directories======================
+STRINGDIR	:=	asset/strings
+OUTPUTDIR	:= 	src/8_asset/output
+PYGBATOOLCHAINDIR	:=	tools/py_gba_tools/src
+
+#=====Tools===============================
+MAKE				:=	@make
+PYTHON				:=	@python
+AMMAPFIXFORAGB		:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/amMapFixForAgb.py
+AMTILESETFIXFORAGB	:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/amTilesetFixForAgb.py
+BINARY2ASSEMBLY		:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/binary2assembly.py
+STRING2ASSEMBLY		:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/string2assembly.py
+
+#=====Source===========================
+STRINGFILES	:=	$(call rwildcard,$(STRINGDIR),*.str)
+SFILES		:=	$(STRINGFILES:%.str=$(OUTPUTDIR)/%.s)
+
+#=====Make Rules=======================
+$(OUTPUTDIR)/%.s: %.str
+	$(MKDIR) $(dir $@)
+	$(STRING2ASSEMBLY) $< $(PK_CHARMAP) $@
+	
+#=====Make Targets=====================
+.PHONY: clean
+clean:
+	$(REMOVE) $(OUTPUTDIR)
+
+.PHONY: all
+all: $(SFILES)

@@ -1,0 +1,7 @@
+all: docs
+
+docs:
+	doxygen pkdf.doxyfile
+	
+clean:
+	@rm --force --recursive html

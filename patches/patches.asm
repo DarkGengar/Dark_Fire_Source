@@ -1,0 +1,6 @@
+.include "patches/map_data/map_data.asm"
+.include "patches/spielbeginn/spielbeginn.asm"
+.include "patches/asset/gfx_mus.asm"
+.include "patches/ts_cry/ts_cry.asm"
+.include "patches/overworld/ow_pal_table.asm"
+.include "patches/overworld/ow_table.asm"

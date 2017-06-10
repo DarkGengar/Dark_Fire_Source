@@ -1,0 +1,39 @@
+#=====Bash Scripting===================
+SHELL		:=	/bin/bash
+MKDIR		:=	@mkdir -p
+REMOVE		:=	@rm --force --recursive
+
+#=====Tools============================
+MID2AGB		:=	@mid2agb
+
+#=====Flags============================
+MID_FLAGS       :=      -V92
+
+#=====Directories======================
+MUSIC_DIR	:=	asset/music
+OUTPUT_DIR	:=	src/8_asset/output
+
+#=====Functions========================
+rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
+
+#=====Source===========================
+MID_FILES	:= 	$(call rwildcard,$(MUSIC_DIR),*.mid)
+S_FILES		:= 	$(MID_FILES:%.mid=$(OUTPUT_DIR)/%.s)
+
+#=====Make Rules=======================
+$(OUTPUT_DIR)/%.s: %.mid
+	$(MKDIR) $(dir $@)
+	$(foreach i, $?, $(if $(findstring vcg000, $<), \
+            $(MID2AGB) $< $@ $(MID_FLAGS), $(MID2AGB) $< $@ -G 1 $(MID_FLAGS)))
+	
+#=====Make Targets=====================
+.PHONY: clean
+clean:
+	$(REMOVE) $(OUTPUT_DIR)
+
+.PHONY: all
+all: $(S_FILES)
+	
+
+	
+		

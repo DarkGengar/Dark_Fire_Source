@@ -1,0 +1,49 @@
+
+enemys_party = 0x0202402C;
+players_party = 0x02024284;
+pal_buffer = 0x020371F8;
+pal_prebuffer = 0x02037ACC;
+big_callbacks = 0x03004fE0;
+saveblock_2_adress = 0x03004F5C;
+attack_data_table = 0x08250B28;
+cpuset_copysize = 0x04000100;
+
+var_0x8000 = 0x020370B8;
+var_0x8001 = 0x020370BA;
+lastresult = 0x020370D0;
+
+/* functions */
+titlescreen_function_0 = 0x08078C00|1;
+random_change_seed = 0x08044DCC|1;
+__umod = 0x081E856C|1;
+checkflag = 0x0806E634|1;
+create_pokemon = 0x0803D954|1;
+return_to_ow = 0x080A1128|1;
+vardecrypt = 0x0806E3B8|1;
+setflag = 0x0806E5E4|1;
+get_pokemons_attribute = 0x0803FAE8|1;
+set_pokemons_attribute = 0x0804027c|1;
+recalculate_stats = 0x0803E37c|1;
+init_script = 0x08069AD4|1;
+catchable = 0x0802d428|1;
+uncatchable = 0x0802d3f8|1;
+cant_runaway = 0x08016810|1;
+can_runaway = 0x801680c|1;
+color_blend = 0x08045178|1;
+return_addr = 0x080719dc|1;
+get_field_x2_from_trainerdata = 0x0804357C|1;
+play_song = 0x080719D8|1;
+
+LZ77UnCompWram = 0x081E7A58|1;
+LZ77UnCompVram = 0x081E7A54|1;
+
+ArcTan = 0x081E7A40|1;
+Div = 0x081E7A50|1;
+
+CpuSet = 0x081E7A4C|1;
+CpuFastSet = 0x081E7A48|1;
+
+ObjAffineSet = 0x081E7A64|1;
+BgAffineSet = 0x081E7A44|1;
+
+RegisterRamReset = 0x081E7A68|1;

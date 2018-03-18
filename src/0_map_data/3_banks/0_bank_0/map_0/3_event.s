@@ -4,7 +4,7 @@
 map_event_0_0:
 	
 	event_cnt:
-		.byte 1
+		.byte 2
 		.byte 3
 		.byte 0
 		.byte 4
@@ -30,6 +30,25 @@ map_event_0_0:
 			.byte 0
 			.hword 0
 			.word test_player
+			.hword 0
+			.byte 0
+			.byte 0
+
+        person_001:
+			.byte 1
+			.byte 57
+			.byte 0
+			.byte 0
+			.hword 0x16
+			.hword 0x12
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.hword 0
+			.word test_player2
 			.hword 0
 			.byte 0
 			.byte 0

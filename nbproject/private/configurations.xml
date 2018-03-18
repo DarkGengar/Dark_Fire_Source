@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="asset">
+        <df name="binaries">
+        </df>
+        <df name="gfx">
+          <df name="badges">
+          </df>
+          <df name="bootscreen">
+          </df>
+          <df name="intro">
+          </df>
+          <df name="ows">
+            <df name="hero">
+            </df>
+          </df>
+          <df name="tb_backsprites">
+          </df>
+          <df name="tb_s">
+          </df>
+          <df name="tilesets">
+            <df name="0">
+            </df>
+            <df name="1">
+            </df>
+            <df name="2">
+            </df>
+            <df name="anim">
+              <df name="door">
+              </df>
+              <df name="flower">
+              </df>
+              <df name="grass">
+              </df>
+              <df name="sea">
+              </df>
+            </df>
+          </df>
+          <df name="ts">
+          </df>
+        </df>
+        <df name="map_data">
+          <df name="maps">
+          </df>
+          <df name="tilesets">
+            <df name="behavior_data">
+            </df>
+            <df name="block_data">
+            </df>
+          </df>
+        </df>
+        <df name="music">
+          <df name="vcg000">
+          </df>
+          <df name="vcg001">
+          </df>
+        </df>
+        <df name="strings">
+          <df name="intro">
+          </df>
+          <df name="story">
+            <df name="zintea">
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="base">
+      </df>
+      <df name="charmaps">
+      </df>
+      <df name="doc">
+        <df name="html">
+          <df name="search">
+          </df>
+        </df>
+      </df>
+      <df name="game_build">
+      </df>
+      <df name="include">
+        <df name="libpkn">
+          <df name="asm">
+            <in>MPlayDef.s</in>
+            <in>VoiceDef.s</in>
+            <in>level_editor_script_language.s</in>
+            <in>ow_script_language.s</in>
+          </df>
+          <df name="assets">
+            <in>gfx_tb_s_135.h</in>
+          </df>
+          <df name="core">
+            <in>bios.h</in>
+          </df>
+          <in>agb_debug.h</in>
+          <in>callback.h</in>
+          <in>color.h</in>
+          <in>memory.h</in>
+          <in>mugshot.h</in>
+          <in>oam_anims.h</in>
+          <in>oams.h</in>
+          <in>pokemon.h</in>
+          <in>rom_functions.h</in>
+          <in>trainer.h</in>
+          <in>types.h</in>
+        </df>
+      </df>
+      <df name="inis">
+      </df>
+      <df name="output">
+        <df name="src">
+          <df name="0_map_data">
+            <df name="0_mapbank_header">
+            </df>
+            <df name="1_mapfooter_table">
+            </df>
+            <df name="2_wild_poke_header">
+            </df>
+            <df name="3_banks">
+              <df name="0_bank_0">
+                <df name="map_0">
+                </df>
+                <df name="map_1">
+                </df>
+                <df name="map_2">
+                </df>
+                <df name="map_3">
+                </df>
+              </df>
+              <df name="1_bank_1">
+                <df name="map_0">
+                </df>
+              </df>
+              <df name="2_bank_2">
+                <df name="map_0">
+                </df>
+              </df>
+              <df name="3_bank_3">
+                <df name="map_0">
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="2_tilesets">
+            <df name="tileset_0">
+            </df>
+            <df name="tileset_1">
+            </df>
+            <df name="tileset_2">
+            </df>
+          </df>
+          <df name="3_scripts">
+            <df name="ow_scripts">
+              <df name="story_scripts">
+                <df name="zintea">
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="6_overworld">
+            <df name="hero">
+            </df>
+          </df>
+          <df name="7_features">
+            <df name="sots_codes">
+              <df name="agb_debug">
+              </df>
+            </df>
+          </df>
+          <df name="8_asset">
+            <df name="music">
+              <df name="dpp">
+                <df name="bank">
+                </df>
+                <df name="seq">
+                </df>
+                <df name="wave">
+                </df>
+              </df>
+            </df>
+            <df name="output">
+              <df name="asset">
+                <df name="gfx">
+                  <df name="badges">
+                  </df>
+                  <df name="bootscreen">
+                  </df>
+                  <df name="intro">
+                  </df>
+                  <df name="ows">
+                    <df name="hero">
+                    </df>
+                  </df>
+                  <df name="tb_backsprites">
+                  </df>
+                  <df name="tb_s">
+                  </df>
+                  <df name="tilesets">
+                    <df name="0">
+                    </df>
+                    <df name="1">
+                    </df>
+                    <df name="2">
+                    </df>
+                  </df>
+                  <df name="ts">
+                  </df>
+                </df>
+                <df name="music">
+                  <df name="vcg001">
+                  </df>
+                </df>
+                <df name="strings">
+                  <df name="intro">
+                  </df>
+                  <df name="story">
+                    <df name="zintea">
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="in_progress">
+            <df name="main">
+            </df>
+          </df>
+        </df>
+      </df>
+      <df name="patches">
+        <df name="asset">
+          <df name="gfx">
+            <df name="badges">
+              <in>badges.asm</in>
+            </df>
+            <df name="bootscreen">
+              <in>bootscreen.asm</in>
+            </df>
+            <df name="intro">
+              <in>intro.asm</in>
+            </df>
+            <df name="trainerbattle_backsprites">
+              <in>trainerbattle_backsprites.asm</in>
+            </df>
+            <df name="ts">
+              <in>ts.asm</in>
+            </df>
+            <in>gfx.asm</in>
+          </df>
+          <df name="mus">
+            <df name="enable_channels">
+              <in>enable_channels.asm</in>
+            </df>
+            <df name="mid">
+              <in>mid.asm</in>
+            </df>
+            <in>mus.asm</in>
+          </df>
+          <in>gfx_mus.asm</in>
+        </df>
+        <df name="map_data">
+          <in>map_data.asm</in>
+        </df>
+        <df name="overworld">
+          <in>ow_pal_table.asm</in>
+          <in>ow_table.asm</in>
+        </df>
+        <df name="spielbeginn">
+          <in>spielbeginn.asm</in>
+        </df>
+        <df name="ts_cry">
+          <in>ts_cry.asm</in>
+        </df>
+        <in>patches.asm</in>
+      </df>
+      <df name="resource_collection">
+        <df name="dark_fire">
+          <df name="gfx">
+            <df name="bbgs">
+            </df>
+            <df name="menu_graphics">
+              <df name="battle">
+              </df>
+              <df name="prof_intro_name_player">
+              </df>
+            </df>
+            <df name="mugshots">
+            </df>
+            <df name="new_types">
+            </df>
+            <df name="ow_sprites">
+              <df name="item_icons">
+              </df>
+            </df>
+            <df name="pokemon_sprites">
+              <df name="1_to_6_gen_original_sprites">
+                <df name="1.Generation">
+                  <df name="Back">
+                  </df>
+                  <df name="Front">
+                  </df>
+                </df>
+                <df name="2.Generation">
+                  <df name="Back">
+                  </df>
+                  <df name="Front">
+                  </df>
+                </df>
+                <df name="3.Generation">
+                  <df name="Back">
+                  </df>
+                  <df name="Front">
+                  </df>
+                </df>
+                <df name="4.Generation">
+                  <df name="Back">
+                  </df>
+                  <df name="Front">
+                  </df>
+                </df>
+                <df name="5.Generation">
+                  <df name="Back">
+                  </df>
+                  <df name="Front">
+                  </df>
+                </df>
+                <df name="6.Generation">
+                  <df name="Back">
+                  </df>
+                  <df name="Front">
+                  </df>
+                </df>
+                <df name="7.Generation">
+                </df>
+                <df name="Mega Pokemon">
+                </df>
+              </df>
+              <df name="back">
+              </df>
+              <df name="front">
+              </df>
+              <df name="pk_s">
+                <df name="normal">
+                  <df name="gen_1">
+                  </df>
+                  <df name="gen_2">
+                  </df>
+                  <df name="gen_3">
+                  </df>
+                </df>
+                <df name="shiny">
+                  <df name="gen_1">
+                  </df>
+                  <df name="gen_2">
+                  </df>
+                  <df name="gen_3">
+                  </df>
+                </df>
+              </df>
+              <df name="The DS-style 64x64 Pokémon Sprite Resource">
+                <df name="GenI">
+                </df>
+                <df name="GenII">
+                </df>
+                <df name="GenIII">
+                </df>
+                <df name="GenIV">
+                </df>
+                <df name="GenV">
+                </df>
+              </df>
+            </df>
+            <df name="tb_s">
+            </df>
+            <df name="tilesets">
+              <df name="complete_sets">
+                <df name="pals">
+                  <df name="asm">
+                    <df name="tileset_0">
+                      <in>tileset_0_pal_0.s</in>
+                      <in>tileset_0_pal_1.s</in>
+                      <in>tileset_0_pal_3.s</in>
+                      <in>tileset_0_pal_6.s</in>
+                    </df>
+                  </df>
+                  <df name="gfx">
+                    <df name="tileset_0">
+                    </df>
+                  </df>
+                  <df name="header">
+                    <df name="tileset_0">
+                      <in>tileset_0_pal_0.h</in>
+                      <in>tileset_0_pal_1.h</in>
+                      <in>tileset_0_pal_3.h</in>
+                      <in>tileset_0_pal_6.h</in>
+                    </df>
+                  </df>
+                </df>
+              </df>
+              <df name="tiles">
+              </df>
+            </df>
+            <df name="trainer_battle_sprites">
+              <df name="front">
+              </df>
+            </df>
+            <df name="ts_df">
+              <df name="flammenanimation_überschreiben">
+              </df>
+              <df name="indiziert">
+              </df>
+              <df name="tilemap_tileset">
+                <df name="tsbg0">
+                </df>
+                <df name="tsbg1">
+                </df>
+                <df name="tsbg2">
+                </df>
+                <df name="tsbg3">
+                </df>
+              </df>
+              <df name="unverändert">
+              </df>
+            </df>
+            <df name="world_map">
+            </df>
+          </df>
+          <df name="maps">
+            <df name="tiled_maps">
+              <df name="tilesets">
+              </df>
+            </df>
+          </df>
+          <df name="mus">
+            <df name="samples">
+              <df name="all_samples">
+              </df>
+              <df name="final_fantasy_VI___10_inst___">
+                <df name="109">
+                </df>
+                <df name="119">
+                </df>
+                <df name="37">
+                </df>
+                <df name="43">
+                </df>
+                <df name="44">
+                </df>
+                <df name="52">
+                </df>
+                <df name="57">
+                </df>
+                <df name="81">
+                </df>
+                <df name="85">
+                </df>
+                <df name="90">
+                </df>
+              </df>
+              <df name="golden_sun___7_inst___">
+                <df name="4">
+                </df>
+                <df name="48">
+                </df>
+                <df name="61">
+                </df>
+                <df name="68">
+                </df>
+                <df name="72">
+                </df>
+                <df name="75">
+                </df>
+                <df name="8">
+                </df>
+              </df>
+              <df name="mother_3___12_inst___">
+                <df name="10">
+                </df>
+                <df name="109">
+                </df>
+                <df name="15">
+                </df>
+                <df name="19">
+                </df>
+                <df name="26">
+                </df>
+                <df name="27">
+                </df>
+                <df name="4">
+                </df>
+                <df name="54">
+                </df>
+                <df name="72">
+                </df>
+                <df name="78">
+                </df>
+                <df name="88">
+                </df>
+                <df name="9">
+                </df>
+              </df>
+              <df name="pmd___20_inst___">
+                <df name="0">
+                </df>
+                <df name="102">
+                </df>
+                <df name="10_2">
+                </df>
+                <df name="115">
+                </df>
+                <df name="14">
+                </df>
+                <df name="2">
+                </df>
+                <df name="21">
+                </df>
+                <df name="22">
+                </df>
+                <df name="24_2">
+                </df>
+                <df name="25">
+                </df>
+                <df name="4">
+                </df>
+                <df name="45">
+                </df>
+                <df name="46">
+                </df>
+                <df name="51">
+                </df>
+                <df name="56">
+                </df>
+                <df name="6">
+                </df>
+                <df name="7">
+                </df>
+                <df name="76">
+                </df>
+                <df name="9">
+                </df>
+                <df name="95">
+                </df>
+              </df>
+              <df name="smaragd___11_inst___">
+                <df name="0">
+                </df>
+                <df name="10">
+                </df>
+                <df name="14">
+                </df>
+                <df name="19">
+                </df>
+                <df name="20">
+                </df>
+                <df name="35">
+                </df>
+                <df name="38">
+                </df>
+                <df name="46">
+                </df>
+                <df name="47">
+                </df>
+                <df name="56">
+                </df>
+                <df name="82">
+                </df>
+              </df>
+              <df name="test">
+              </df>
+            </df>
+            <df name="universal_voicegroup_df">
+              <df name="fertige">
+              </df>
+              <df name="soundfont">
+              </df>
+            </df>
+            <df name="universal_voicegroup_dpp">
+              <df name="soundfont">
+              </df>
+              <df name="Universal Voicegroup">
+              </df>
+            </df>
+            <df name="universal_voicegroup_fr_bg">
+            </df>
+            <df name="universal_voicegroup_hgss">
+            </df>
+          </df>
+          <df name="projects">
+            <df name="asm">
+              <in>physisch_speziell.asm</in>
+            </df>
+            <df name="custom_music">
+              <df name="unchanged">
+              </df>
+            </df>
+            <df name="Desktop">
+              <df name="Scriptauswahl">
+              </df>
+            </df>
+            <df name="features_in_progress">
+              <df name="include">
+                <in>map.h</in>
+              </df>
+              <df name="mugshot_routine_new">
+                <in>spawn_mugshot.c</in>
+              </df>
+              <df name="scripts">
+                <in>schwierigkeitsgrad.asm</in>
+              </df>
+              <in>kapselautomat.c</in>
+            </df>
+            <df name="gfx">
+              <df name="boots">
+              </df>
+              <df name="intro_bgs">
+              </df>
+              <df name="mugs">
+              </df>
+              <df name="new_mugs">
+              </df>
+            </df>
+            <df name="music">
+            </df>
+            <df name="scripts">
+            </df>
+          </df>
+          <df name="rhr_media">
+            <df name="artworks_df">
+            </df>
+            <df name="banner_df">
+            </df>
+            <df name="logo_df">
+            </df>
+            <df name="pokedex_df">
+            </df>
+            <df name="screens_df">
+            </df>
+          </df>
+          <df name="rhw">
+          </df>
+          <df name="rom_map">
+          </df>
+          <df name="scripts">
+            <df name="feature_scripts">
+            </df>
+            <df name="story_scripts">
+              <df name="zintea">
+              </df>
+            </df>
+          </df>
+          <df name="storyboard">
+          </df>
+        </df>
+        <df name="origin_resource">
+          <df name="feature_ideen">
+            <df name="anim_engine_release">
+              <df name="build">
+              </df>
+              <df name="src">
+                <df name="header">
+                  <in>callbacks.h</in>
+                  <in>oams.h</in>
+                  <in>romfuncs.h</in>
+                  <in>types.h</in>
+                </df>
+                <in>anim_engine.c</in>
+                <in>cmdx1A_callasm.asm</in>
+              </df>
+            </df>
+            <df name="clock_time_routine">
+              <in>current_time_into_vars.asm</in>
+              <in>minutes_played_routine.asm</in>
+              <in>second_played_routine.asm</in>
+            </df>
+          </df>
+          <df name="gfx">
+            <df name="backgrounds">
+              <df name="dppt">
+              </df>
+              <df name="hgss">
+              </df>
+            </df>
+            <df name="fonts">
+            </df>
+            <df name="mugshots">
+            </df>
+            <df name="ows">
+              <df name="dppt">
+              </df>
+              <df name="dq3">
+              </df>
+            </df>
+            <df name="pokemon_icons">
+              <df name="__MACOSX">
+                <df name="Mega Icons">
+                </df>
+                <df name="Pokemon">
+                </df>
+              </df>
+              <df name="Mega Icons">
+              </df>
+              <df name="Pokemon">
+              </df>
+            </df>
+            <df name="tilesets">
+            </df>
+            <df name="trainer">
+            </df>
+            <df name="typen">
+              <df name="Pokemon Typen">
+              </df>
+            </df>
+            <df name="typen_table">
+            </df>
+          </df>
+          <df name="mus">
+            <df name="bw2_mid">
+            </df>
+            <df name="bw_mid">
+            </df>
+            <df name="cries">
+              <df name="1_651_cries">
+              </df>
+              <df name="gen_6_cries">
+              </df>
+            </df>
+            <df name="hgss_mid">
+            </df>
+            <df name="pokemon_unused_themes">
+            </df>
+            <df name="pt_mid">
+            </df>
+          </df>
+          <df name="musik_ideen">
+            <df name="midi_project">
+              <df name="zinnia">
+              </df>
+            </df>
+          </df>
+          <df name="pokemon_em_eng_idb">
+          </df>
+          <df name="pokemon_fr_eng_idb">
+          </df>
+          <df name="pokemon_fr_ger_idb">
+          </df>
+          <df name="research">
+            <in>pokemonnamen_table.asm</in>
+          </df>
+          <df name="script_vorlagen">
+          </df>
+        </df>
+      </df>
+      <df name="screenshots">
+      </df>
+      <df name="src">
+        <df name="0_map_data">
+          <df name="0_mapbank_header">
+            <in>mapbank_header.s</in>
+          </df>
+          <df name="1_mapfooter_table">
+            <in>mapfooter_table.s</in>
+          </df>
+          <df name="2_wild_poke_header">
+            <in>wild_poke_header.s</in>
+          </df>
+          <df name="3_banks">
+            <df name="0_bank_0">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <df name="map_1">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <df name="map_2">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <df name="map_3">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_0.s</in>
+            </df>
+            <df name="1_bank_1">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_1.s</in>
+            </df>
+            <df name="2_bank_2">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_2.s</in>
+            </df>
+            <df name="3_bank_3">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_3.s</in>
+            </df>
+          </df>
+        </df>
+        <df name="2_tilesets">
+          <df name="tileset_0">
+            <in>0_block_daten.s</in>
+            <in>1_aufgaben_daten.s</in>
+          </df>
+          <df name="tileset_1">
+            <in>0_block_daten.s</in>
+            <in>1_aufgaben_daten.s</in>
+          </df>
+          <df name="tileset_2">
+            <in>0_block_daten.s</in>
+            <in>1_aufgaben_daten.s</in>
+          </df>
+          <in>tileset_header.s</in>
+        </df>
+        <df name="3_scripts">
+          <df name="ow_scripts">
+            <df name="feature_scripts">
+            </df>
+            <df name="story_scripts">
+              <df name="zintea">
+                <in>schild_eremit.s</in>
+                <in>schild_player.s</in>
+                <in>schild_zeitwald.s</in>
+                <in>schild_zintea.s</in>
+              </df>
+            </df>
+            <in>test_player.s</in>
+            <in>test_player2.s</in>
+          </df>
+        </df>
+        <df name="6_overworld">
+          <df name="hero">
+            <in>ow_hero.s</in>
+          </df>
+        </df>
+        <df name="7_features">
+          <df name="sots_codes">
+            <df name="agb_debug">
+              <in>agb_debug.c</in>
+            </df>
+          </df>
+          <in>test_song.c</in>
+        </df>
+        <df name="8_asset">
+          <df name="music">
+            <df name="dpp">
+              <df name="bank">
+                <in>bank_001.s</in>
+                <in>bank_002.s</in>
+                <in>bank_003.s</in>
+                <in>bank_004.s</in>
+                <in>bank_005.s</in>
+                <in>bank_006.s</in>
+                <in>bank_007.s</in>
+                <in>bank_008.s</in>
+                <in>bank_009.s</in>
+                <in>bank_010.s</in>
+                <in>bank_011.s</in>
+                <in>bank_012.s</in>
+                <in>bank_013.s</in>
+                <in>bank_014.s</in>
+                <in>bank_015.s</in>
+                <in>bank_016.s</in>
+                <in>bank_017.s</in>
+                <in>bank_018.s</in>
+                <in>bank_019.s</in>
+                <in>bank_020.s</in>
+                <in>bank_021.s</in>
+                <in>bank_022.s</in>
+                <in>bank_023.s</in>
+                <in>bank_024.s</in>
+                <in>bank_025.s</in>
+                <in>bank_026.s</in>
+                <in>bank_027.s</in>
+                <in>bank_028.s</in>
+                <in>bank_029.s</in>
+                <in>bank_030.s</in>
+                <in>bank_031.s</in>
+                <in>bank_032.s</in>
+                <in>drums_000.s</in>
+                <in>drums_001.s</in>
+                <in>drums_002.s</in>
+                <in>map_000.s</in>
+                <in>map_001.s</in>
+                <in>map_002.s</in>
+                <in>map_003.s</in>
+                <in>map_004.s</in>
+                <in>map_005.s</in>
+                <in>map_006.s</in>
+                <in>map_007.s</in>
+                <in>map_008.s</in>
+                <in>map_009.s</in>
+                <in>map_010.s</in>
+                <in>map_011.s</in>
+                <in>map_012.s</in>
+                <in>map_013.s</in>
+                <in>map_014.s</in>
+                <in>map_015.s</in>
+                <in>map_016.s</in>
+                <in>map_017.s</in>
+                <in>map_018.s</in>
+                <in>map_019.s</in>
+                <in>map_020.s</in>
+                <in>map_021.s</in>
+                <in>map_022.s</in>
+                <in>map_023.s</in>
+                <in>map_024.s</in>
+                <in>map_025.s</in>
+                <in>map_026.s</in>
+                <in>map_027.s</in>
+                <in>map_028.s</in>
+                <in>map_029.s</in>
+                <in>map_030.s</in>
+                <in>voice_001.s</in>
+              </df>
+              <df name="seq">
+                <in>seq_000.s</in>
+              </df>
+              <df name="wave">
+                <in>gbwave_000.s</in>
+                <in>wave_000.s</in>
+                <in>wave_001.s</in>
+                <in>wave_002.s</in>
+                <in>wave_003.s</in>
+                <in>wave_004.s</in>
+                <in>wave_005.s</in>
+                <in>wave_006.s</in>
+                <in>wave_007.s</in>
+                <in>wave_008.s</in>
+                <in>wave_009.s</in>
+                <in>wave_010.s</in>
+                <in>wave_011.s</in>
+                <in>wave_012.s</in>
+                <in>wave_013.s</in>
+                <in>wave_014.s</in>
+                <in>wave_015.s</in>
+                <in>wave_016.s</in>
+                <in>wave_017.s</in>
+                <in>wave_018.s</in>
+                <in>wave_019.s</in>
+                <in>wave_020.s</in>
+                <in>wave_021.s</in>
+                <in>wave_022.s</in>
+                <in>wave_023.s</in>
+                <in>wave_024.s</in>
+                <in>wave_025.s</in>
+                <in>wave_026.s</in>
+                <in>wave_027.s</in>
+                <in>wave_028.s</in>
+                <in>wave_029.s</in>
+                <in>wave_030.s</in>
+                <in>wave_031.s</in>
+                <in>wave_032.s</in>
+                <in>wave_033.s</in>
+                <in>wave_034.s</in>
+                <in>wave_035.s</in>
+                <in>wave_036.s</in>
+                <in>wave_037.s</in>
+                <in>wave_038.s</in>
+                <in>wave_039.s</in>
+                <in>wave_040.s</in>
+                <in>wave_041.s</in>
+                <in>wave_042.s</in>
+                <in>wave_043.s</in>
+                <in>wave_044.s</in>
+                <in>wave_045.s</in>
+                <in>wave_046.s</in>
+                <in>wave_047.s</in>
+                <in>wave_048.s</in>
+                <in>wave_049.s</in>
+                <in>wave_050.s</in>
+                <in>wave_051.s</in>
+                <in>wave_052.s</in>
+                <in>wave_053.s</in>
+                <in>wave_054.s</in>
+                <in>wave_055.s</in>
+                <in>wave_056.s</in>
+                <in>wave_057.s</in>
+                <in>wave_058.s</in>
+                <in>wave_059.s</in>
+                <in>wave_060.s</in>
+                <in>wave_061.s</in>
+                <in>wave_062.s</in>
+                <in>wave_063.s</in>
+                <in>wave_064.s</in>
+                <in>wave_065.s</in>
+                <in>wave_066.s</in>
+                <in>wave_067.s</in>
+                <in>wave_068.s</in>
+                <in>wave_069.s</in>
+                <in>wave_070.s</in>
+                <in>wave_071.s</in>
+                <in>wave_072.s</in>
+                <in>wave_073.s</in>
+                <in>wave_074.s</in>
+                <in>wave_075.s</in>
+                <in>wave_076.s</in>
+                <in>wave_077.s</in>
+                <in>wave_078.s</in>
+                <in>wave_079.s</in>
+                <in>wave_080.s</in>
+                <in>wave_081.s</in>
+                <in>wave_082.s</in>
+                <in>wave_083.s</in>
+                <in>wave_084.s</in>
+                <in>wave_085.s</in>
+                <in>wave_086.s</in>
+                <in>wave_087.s</in>
+                <in>wave_088.s</in>
+                <in>wave_089.s</in>
+                <in>wave_090.s</in>
+                <in>wave_091.s</in>
+                <in>wave_092.s</in>
+                <in>wave_093.s</in>
+                <in>wave_094.s</in>
+                <in>wave_095.s</in>
+                <in>wave_096.s</in>
+                <in>wave_097.s</in>
+                <in>wave_098.s</in>
+                <in>wave_099.s</in>
+                <in>wave_100.s</in>
+                <in>wave_101.s</in>
+                <in>wave_102.s</in>
+                <in>wave_103.s</in>
+                <in>wave_104.s</in>
+                <in>wave_105.s</in>
+                <in>wave_106.s</in>
+                <in>wave_107.s</in>
+                <in>wave_108.s</in>
+                <in>wave_109.s</in>
+                <in>wave_110.s</in>
+                <in>wave_111.s</in>
+                <in>wave_112.s</in>
+                <in>wave_113.s</in>
+                <in>wave_114.s</in>
+                <in>wave_115.s</in>
+                <in>wave_116.s</in>
+                <in>wave_117.s</in>
+                <in>wave_118.s</in>
+                <in>wave_119.s</in>
+                <in>wave_120.s</in>
+                <in>wave_121.s</in>
+                <in>wave_122.s</in>
+                <in>wave_123.s</in>
+                <in>wave_124.s</in>
+                <in>wave_125.s</in>
+                <in>wave_126.s</in>
+                <in>wave_127.s</in>
+                <in>wave_128.s</in>
+                <in>wave_129.s</in>
+                <in>wave_130.s</in>
+                <in>wave_131.s</in>
+                <in>wave_132.s</in>
+                <in>wave_133.s</in>
+                <in>wave_134.s</in>
+                <in>wave_135.s</in>
+                <in>wave_136.s</in>
+                <in>wave_137.s</in>
+                <in>wave_138.s</in>
+                <in>wave_139.s</in>
+                <in>wave_140.s</in>
+                <in>wave_141.s</in>
+                <in>wave_142.s</in>
+                <in>wave_143.s</in>
+                <in>wave_144.s</in>
+                <in>wave_145.s</in>
+                <in>wave_146.s</in>
+                <in>wave_147.s</in>
+                <in>wave_148.s</in>
+                <in>wave_149.s</in>
+                <in>wave_150.s</in>
+                <in>wave_151.s</in>
+                <in>wave_152.s</in>
+                <in>wave_153.s</in>
+                <in>wave_154.s</in>
+                <in>wave_155.s</in>
+                <in>wave_156.s</in>
+                <in>wave_157.s</in>
+                <in>wave_158.s</in>
+                <in>wave_159.s</in>
+                <in>wave_160.s</in>
+                <in>wave_161.s</in>
+                <in>wave_162.s</in>
+                <in>wave_163.s</in>
+                <in>wave_164.s</in>
+                <in>wave_165.s</in>
+                <in>wave_166.s</in>
+                <in>wave_167.s</in>
+                <in>wave_168.s</in>
+                <in>wave_169.s</in>
+                <in>wave_170.s</in>
+                <in>wave_171.s</in>
+                <in>wave_172.s</in>
+                <in>wave_173.s</in>
+                <in>wave_174.s</in>
+                <in>wave_175.s</in>
+                <in>wave_176.s</in>
+                <in>wave_177.s</in>
+                <in>wave_178.s</in>
+                <in>wave_179.s</in>
+                <in>wave_180.s</in>
+                <in>wave_181.s</in>
+                <in>wave_182.s</in>
+                <in>wave_183.s</in>
+                <in>wave_184.s</in>
+                <in>wave_185.s</in>
+                <in>wave_186.s</in>
+                <in>wave_187.s</in>
+              </df>
+              <in>_songtable.s</in>
+            </df>
+          </df>
+          <df name="output">
+            <df name="asset">
+              <df name="gfx">
+                <df name="badges">
+                  <in>badges.c</in>
+                  <in>badges.h</in>
+                </df>
+                <df name="bootscreen">
+                  <in>bootscreen.c</in>
+                  <in>bootscreen.h</in>
+                </df>
+                <df name="intro">
+                  <in>gfx_intro_hero.c</in>
+                  <in>gfx_intro_hero.h</in>
+                  <in>gfx_intro_prof.c</in>
+                  <in>gfx_intro_prof.h</in>
+                </df>
+                <df name="ows">
+                  <df name="hero">
+                    <in>gfx_ow_hero_walk.c</in>
+                    <in>gfx_ow_hero_walk.h</in>
+                  </df>
+                </df>
+                <df name="tb_backsprites">
+                  <in>gfx_backsprite_hero.c</in>
+                  <in>gfx_backsprite_hero.h</in>
+                </df>
+                <df name="tb_s">
+                  <in>gfx_tb_s_135.c</in>
+                  <in>gfx_tb_s_135.h</in>
+                </df>
+                <df name="tilesets">
+                  <df name="0">
+                    <in>tileset_0.c</in>
+                    <in>tileset_0.h</in>
+                  </df>
+                  <df name="1">
+                    <in>tileset_1.c</in>
+                    <in>tileset_1.h</in>
+                  </df>
+                  <df name="2">
+                    <in>tileset_2.c</in>
+                    <in>tileset_2.h</in>
+                  </df>
+                </df>
+                <df name="ts">
+                  <in>tsb0.c</in>
+                  <in>tsb0.h</in>
+                  <in>tsb1.c</in>
+                  <in>tsb1.h</in>
+                  <in>tsb2.c</in>
+                  <in>tsb2.h</in>
+                  <in>tsb3.c</in>
+                  <in>tsb3.h</in>
+                  <in>tsb_fl_anim.c</in>
+                  <in>tsb_fl_anim.h</in>
+                </df>
+              </df>
+              <df name="music">
+                <df name="vcg001">
+                  <in>SEQ_BA_POKE.s</in>
+                  <in>SEQ_BA_TRAIN.s</in>
+                  <in>SEQ_CITY_01.s</in>
+                  <in>SEQ_D_01.s</in>
+                  <in>SEQ_FANFA2.s</in>
+                  <in>SEQ_FANFA3.s</in>
+                  <in>SEQ_FANFA6.s</in>
+                  <in>SEQ_KOUKAN.s</in>
+                  <in>SEQ_OPENING.s</in>
+                  <in>SEQ_PL_BA_REGI.s</in>
+                  <in>SEQ_TITLE01.s</in>
+                  <in>SEQ_TSURETEKE.s</in>
+                  <in>SEQ_WINPOKE.s</in>
+                  <in>SEQ_WINTRAIN.s</in>
+                  <in>congratulations.s</in>
+                  <in>obtained_item.s</in>
+                </df>
+              </df>
+              <df name="strings">
+                <df name="intro">
+                  <in>string_intro.s</in>
+                </df>
+                <df name="story">
+                  <df name="zintea">
+                    <in>string_schild_eremit.s</in>
+                    <in>string_schild_player.s</in>
+                    <in>string_schild_zeitwald.s</in>
+                    <in>string_schild_zintea.s</in>
+                    <in>string_test_player.s</in>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="in_progress">
+          <df name="main">
+            <in>main.c</in>
+          </df>
+        </df>
+      </df>
+      <df name="tools">
+        <df name="py_gba_tools">
+          <df name="src">
+          </df>
+        </df>
+        <df name="rhr_patcher">
+          <df name="console">
+            <df name="en">
+            </df>
+          </df>
+          <df name="gui">
+            <df name="en-US">
+            </df>
+          </df>
+        </df>
+      </df>
+      <in>main.asm</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

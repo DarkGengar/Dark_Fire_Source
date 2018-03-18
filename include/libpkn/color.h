@@ -1,4 +1,4 @@
-#include "gba.h"
+#include "types.h"
 
 #ifndef COLOR_H
 #define COLOR_H

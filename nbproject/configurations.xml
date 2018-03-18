@@ -1,0 +1,2289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="include">
+        <df name="libpkn">
+          <df name="asm">
+            <in>MPlayDef.s</in>
+            <in>VoiceDef.s</in>
+            <in>level_editor_script_language.s</in>
+            <in>ow_script_language.s</in>
+          </df>
+        </df>
+      </df>
+      <df name="patches">
+        <df name="asset">
+          <df name="gfx">
+            <df name="badges">
+              <in>badges.asm</in>
+            </df>
+            <df name="bootscreen">
+              <in>bootscreen.asm</in>
+            </df>
+            <df name="intro">
+              <in>intro.asm</in>
+            </df>
+            <df name="trainerbattle_backsprites">
+              <in>trainerbattle_backsprites.asm</in>
+            </df>
+            <df name="ts">
+              <in>ts.asm</in>
+            </df>
+            <in>gfx.asm</in>
+          </df>
+          <df name="mus">
+            <df name="enable_channels">
+              <in>enable_channels.asm</in>
+            </df>
+            <df name="mid">
+              <in>mid.asm</in>
+            </df>
+            <in>mus.asm</in>
+          </df>
+          <in>gfx_mus.asm</in>
+        </df>
+        <df name="map_data">
+          <in>map_data.asm</in>
+        </df>
+        <df name="overworld">
+          <in>ow_pal_table.asm</in>
+          <in>ow_table.asm</in>
+        </df>
+        <df name="spielbeginn">
+          <in>spielbeginn.asm</in>
+        </df>
+        <df name="ts_cry">
+          <in>ts_cry.asm</in>
+        </df>
+        <in>patches.asm</in>
+      </df>
+      <df name="resource_collection">
+        <df name="dark_fire">
+          <df name="gfx">
+            <df name="tilesets">
+              <df name="complete_sets">
+                <df name="pals">
+                  <df name="asm">
+                    <df name="tileset_0">
+                      <in>tileset_0_pal_0.s</in>
+                      <in>tileset_0_pal_1.s</in>
+                      <in>tileset_0_pal_3.s</in>
+                      <in>tileset_0_pal_6.s</in>
+                    </df>
+                  </df>
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="projects">
+            <df name="asm">
+              <in>physisch_speziell.asm</in>
+            </df>
+            <df name="features_in_progress">
+              <df name="mugshot_routine_new">
+                <in>spawn_mugshot.c</in>
+              </df>
+              <df name="scripts">
+                <in>schwierigkeitsgrad.asm</in>
+              </df>
+              <in>kapselautomat.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="origin_resource">
+          <df name="feature_ideen">
+            <df name="anim_engine_release">
+              <df name="src">
+                <in>anim_engine.c</in>
+                <in>cmdx1A_callasm.asm</in>
+              </df>
+            </df>
+            <df name="clock_time_routine">
+              <in>current_time_into_vars.asm</in>
+              <in>minutes_played_routine.asm</in>
+              <in>second_played_routine.asm</in>
+            </df>
+          </df>
+          <df name="research">
+            <in>pokemonnamen_table.asm</in>
+          </df>
+        </df>
+      </df>
+      <df name="src">
+        <df name="0_map_data">
+          <df name="0_mapbank_header">
+            <in>mapbank_header.s</in>
+          </df>
+          <df name="1_mapfooter_table">
+            <in>mapfooter_table.s</in>
+          </df>
+          <df name="2_wild_poke_header">
+            <in>wild_poke_header.s</in>
+          </df>
+          <df name="3_banks">
+            <df name="0_bank_0">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <df name="map_1">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <df name="map_2">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <df name="map_3">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_0.s</in>
+            </df>
+            <df name="1_bank_1">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_1.s</in>
+            </df>
+            <df name="2_bank_2">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_2.s</in>
+            </df>
+            <df name="3_bank_3">
+              <df name="map_0">
+                <in>0_map_header.s</in>
+                <in>1_map.s</in>
+                <in>2_map_footer.s</in>
+                <in>3_event.s</in>
+                <in>4_wild_poke_habitat.s</in>
+                <in>5_map_connection.s</in>
+              </df>
+              <in>mapbank_3.s</in>
+            </df>
+          </df>
+        </df>
+        <df name="2_tilesets">
+          <df name="tileset_0">
+            <in>0_block_daten.s</in>
+            <in>1_aufgaben_daten.s</in>
+          </df>
+          <df name="tileset_1">
+            <in>0_block_daten.s</in>
+            <in>1_aufgaben_daten.s</in>
+          </df>
+          <df name="tileset_2">
+            <in>0_block_daten.s</in>
+            <in>1_aufgaben_daten.s</in>
+          </df>
+          <in>tileset_header.s</in>
+        </df>
+        <df name="3_scripts">
+          <df name="ow_scripts">
+            <df name="story_scripts">
+              <df name="zintea">
+                <in>schild_eremit.s</in>
+                <in>schild_player.s</in>
+                <in>schild_zeitwald.s</in>
+                <in>schild_zintea.s</in>
+              </df>
+            </df>
+            <in>test_player.s</in>
+            <in>test_player2.s</in>
+          </df>
+        </df>
+        <df name="6_overworld">
+          <df name="hero">
+            <in>ow_hero.s</in>
+          </df>
+        </df>
+        <df name="7_features">
+          <df name="sots_codes">
+            <df name="agb_debug">
+              <in>agb_debug.c</in>
+            </df>
+          </df>
+          <in>test_song.c</in>
+        </df>
+        <df name="8_asset">
+          <df name="music">
+            <df name="dpp">
+              <df name="bank">
+                <in>bank_001.s</in>
+                <in>bank_002.s</in>
+                <in>bank_003.s</in>
+                <in>bank_004.s</in>
+                <in>bank_005.s</in>
+                <in>bank_006.s</in>
+                <in>bank_007.s</in>
+                <in>bank_008.s</in>
+                <in>bank_009.s</in>
+                <in>bank_010.s</in>
+                <in>bank_011.s</in>
+                <in>bank_012.s</in>
+                <in>bank_013.s</in>
+                <in>bank_014.s</in>
+                <in>bank_015.s</in>
+                <in>bank_016.s</in>
+                <in>bank_017.s</in>
+                <in>bank_018.s</in>
+                <in>bank_019.s</in>
+                <in>bank_020.s</in>
+                <in>bank_021.s</in>
+                <in>bank_022.s</in>
+                <in>bank_023.s</in>
+                <in>bank_024.s</in>
+                <in>bank_025.s</in>
+                <in>bank_026.s</in>
+                <in>bank_027.s</in>
+                <in>bank_028.s</in>
+                <in>bank_029.s</in>
+                <in>bank_030.s</in>
+                <in>bank_031.s</in>
+                <in>bank_032.s</in>
+                <in>drums_000.s</in>
+                <in>drums_001.s</in>
+                <in>drums_002.s</in>
+                <in>map_000.s</in>
+                <in>map_001.s</in>
+                <in>map_002.s</in>
+                <in>map_003.s</in>
+                <in>map_004.s</in>
+                <in>map_005.s</in>
+                <in>map_006.s</in>
+                <in>map_007.s</in>
+                <in>map_008.s</in>
+                <in>map_009.s</in>
+                <in>map_010.s</in>
+                <in>map_011.s</in>
+                <in>map_012.s</in>
+                <in>map_013.s</in>
+                <in>map_014.s</in>
+                <in>map_015.s</in>
+                <in>map_016.s</in>
+                <in>map_017.s</in>
+                <in>map_018.s</in>
+                <in>map_019.s</in>
+                <in>map_020.s</in>
+                <in>map_021.s</in>
+                <in>map_022.s</in>
+                <in>map_023.s</in>
+                <in>map_024.s</in>
+                <in>map_025.s</in>
+                <in>map_026.s</in>
+                <in>map_027.s</in>
+                <in>map_028.s</in>
+                <in>map_029.s</in>
+                <in>map_030.s</in>
+                <in>voice_001.s</in>
+              </df>
+              <df name="seq">
+                <in>seq_000.s</in>
+              </df>
+              <df name="wave">
+                <in>gbwave_000.s</in>
+                <in>wave_000.s</in>
+                <in>wave_001.s</in>
+                <in>wave_002.s</in>
+                <in>wave_003.s</in>
+                <in>wave_004.s</in>
+                <in>wave_005.s</in>
+                <in>wave_006.s</in>
+                <in>wave_007.s</in>
+                <in>wave_008.s</in>
+                <in>wave_009.s</in>
+                <in>wave_010.s</in>
+                <in>wave_011.s</in>
+                <in>wave_012.s</in>
+                <in>wave_013.s</in>
+                <in>wave_014.s</in>
+                <in>wave_015.s</in>
+                <in>wave_016.s</in>
+                <in>wave_017.s</in>
+                <in>wave_018.s</in>
+                <in>wave_019.s</in>
+                <in>wave_020.s</in>
+                <in>wave_021.s</in>
+                <in>wave_022.s</in>
+                <in>wave_023.s</in>
+                <in>wave_024.s</in>
+                <in>wave_025.s</in>
+                <in>wave_026.s</in>
+                <in>wave_027.s</in>
+                <in>wave_028.s</in>
+                <in>wave_029.s</in>
+                <in>wave_030.s</in>
+                <in>wave_031.s</in>
+                <in>wave_032.s</in>
+                <in>wave_033.s</in>
+                <in>wave_034.s</in>
+                <in>wave_035.s</in>
+                <in>wave_036.s</in>
+                <in>wave_037.s</in>
+                <in>wave_038.s</in>
+                <in>wave_039.s</in>
+                <in>wave_040.s</in>
+                <in>wave_041.s</in>
+                <in>wave_042.s</in>
+                <in>wave_043.s</in>
+                <in>wave_044.s</in>
+                <in>wave_045.s</in>
+                <in>wave_046.s</in>
+                <in>wave_047.s</in>
+                <in>wave_048.s</in>
+                <in>wave_049.s</in>
+                <in>wave_050.s</in>
+                <in>wave_051.s</in>
+                <in>wave_052.s</in>
+                <in>wave_053.s</in>
+                <in>wave_054.s</in>
+                <in>wave_055.s</in>
+                <in>wave_056.s</in>
+                <in>wave_057.s</in>
+                <in>wave_058.s</in>
+                <in>wave_059.s</in>
+                <in>wave_060.s</in>
+                <in>wave_061.s</in>
+                <in>wave_062.s</in>
+                <in>wave_063.s</in>
+                <in>wave_064.s</in>
+                <in>wave_065.s</in>
+                <in>wave_066.s</in>
+                <in>wave_067.s</in>
+                <in>wave_068.s</in>
+                <in>wave_069.s</in>
+                <in>wave_070.s</in>
+                <in>wave_071.s</in>
+                <in>wave_072.s</in>
+                <in>wave_073.s</in>
+                <in>wave_074.s</in>
+                <in>wave_075.s</in>
+                <in>wave_076.s</in>
+                <in>wave_077.s</in>
+                <in>wave_078.s</in>
+                <in>wave_079.s</in>
+                <in>wave_080.s</in>
+                <in>wave_081.s</in>
+                <in>wave_082.s</in>
+                <in>wave_083.s</in>
+                <in>wave_084.s</in>
+                <in>wave_085.s</in>
+                <in>wave_086.s</in>
+                <in>wave_087.s</in>
+                <in>wave_088.s</in>
+                <in>wave_089.s</in>
+                <in>wave_090.s</in>
+                <in>wave_091.s</in>
+                <in>wave_092.s</in>
+                <in>wave_093.s</in>
+                <in>wave_094.s</in>
+                <in>wave_095.s</in>
+                <in>wave_096.s</in>
+                <in>wave_097.s</in>
+                <in>wave_098.s</in>
+                <in>wave_099.s</in>
+                <in>wave_100.s</in>
+                <in>wave_101.s</in>
+                <in>wave_102.s</in>
+                <in>wave_103.s</in>
+                <in>wave_104.s</in>
+                <in>wave_105.s</in>
+                <in>wave_106.s</in>
+                <in>wave_107.s</in>
+                <in>wave_108.s</in>
+                <in>wave_109.s</in>
+                <in>wave_110.s</in>
+                <in>wave_111.s</in>
+                <in>wave_112.s</in>
+                <in>wave_113.s</in>
+                <in>wave_114.s</in>
+                <in>wave_115.s</in>
+                <in>wave_116.s</in>
+                <in>wave_117.s</in>
+                <in>wave_118.s</in>
+                <in>wave_119.s</in>
+                <in>wave_120.s</in>
+                <in>wave_121.s</in>
+                <in>wave_122.s</in>
+                <in>wave_123.s</in>
+                <in>wave_124.s</in>
+                <in>wave_125.s</in>
+                <in>wave_126.s</in>
+                <in>wave_127.s</in>
+                <in>wave_128.s</in>
+                <in>wave_129.s</in>
+                <in>wave_130.s</in>
+                <in>wave_131.s</in>
+                <in>wave_132.s</in>
+                <in>wave_133.s</in>
+                <in>wave_134.s</in>
+                <in>wave_135.s</in>
+                <in>wave_136.s</in>
+                <in>wave_137.s</in>
+                <in>wave_138.s</in>
+                <in>wave_139.s</in>
+                <in>wave_140.s</in>
+                <in>wave_141.s</in>
+                <in>wave_142.s</in>
+                <in>wave_143.s</in>
+                <in>wave_144.s</in>
+                <in>wave_145.s</in>
+                <in>wave_146.s</in>
+                <in>wave_147.s</in>
+                <in>wave_148.s</in>
+                <in>wave_149.s</in>
+                <in>wave_150.s</in>
+                <in>wave_151.s</in>
+                <in>wave_152.s</in>
+                <in>wave_153.s</in>
+                <in>wave_154.s</in>
+                <in>wave_155.s</in>
+                <in>wave_156.s</in>
+                <in>wave_157.s</in>
+                <in>wave_158.s</in>
+                <in>wave_159.s</in>
+                <in>wave_160.s</in>
+                <in>wave_161.s</in>
+                <in>wave_162.s</in>
+                <in>wave_163.s</in>
+                <in>wave_164.s</in>
+                <in>wave_165.s</in>
+                <in>wave_166.s</in>
+                <in>wave_167.s</in>
+                <in>wave_168.s</in>
+                <in>wave_169.s</in>
+                <in>wave_170.s</in>
+                <in>wave_171.s</in>
+                <in>wave_172.s</in>
+                <in>wave_173.s</in>
+                <in>wave_174.s</in>
+                <in>wave_175.s</in>
+                <in>wave_176.s</in>
+                <in>wave_177.s</in>
+                <in>wave_178.s</in>
+                <in>wave_179.s</in>
+                <in>wave_180.s</in>
+                <in>wave_181.s</in>
+                <in>wave_182.s</in>
+                <in>wave_183.s</in>
+                <in>wave_184.s</in>
+                <in>wave_185.s</in>
+                <in>wave_186.s</in>
+                <in>wave_187.s</in>
+              </df>
+              <in>_songtable.s</in>
+            </df>
+          </df>
+        </df>
+        <df name="in_progress">
+          <df name="main">
+            <in>main.c</in>
+          </df>
+        </df>
+      </df>
+      <in>main.asm</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="include/libpkn/asm/MPlayDef.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="include/libpkn/asm/VoiceDef.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="include/libpkn/asm/level_editor_script_language.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="include/libpkn/asm/ow_script_language.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="main.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/asset/gfx/badges/badges.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="patches/asset/gfx/bootscreen/bootscreen.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="patches/asset/gfx/gfx.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/asset/gfx/intro/intro.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/asset/gfx/trainerbattle_backsprites/trainerbattle_backsprites.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="patches/asset/gfx/ts/ts.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/asset/gfx_mus.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/asset/mus/enable_channels/enable_channels.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="patches/asset/mus/mid/mid.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/asset/mus/mus.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/map_data/map_data.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/overworld/ow_pal_table.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/overworld/ow_table.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/patches.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/spielbeginn/spielbeginn.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="patches/ts_cry/ts_cry.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/gfx/tilesets/complete_sets/pals/asm/tileset_0/tileset_0_pal_0.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/gfx/tilesets/complete_sets/pals/asm/tileset_0/tileset_0_pal_1.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/gfx/tilesets/complete_sets/pals/asm/tileset_0/tileset_0_pal_3.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/gfx/tilesets/complete_sets/pals/asm/tileset_0/tileset_0_pal_6.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/projects/asm/physisch_speziell.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/projects/features_in_progress/kapselautomat.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/projects/features_in_progress/mugshot_routine_new/spawn_mugshot.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/projects/features_in_progress/scripts/schwierigkeitsgrad.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/origin_resource/feature_ideen/anim_engine_release/src/anim_engine.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/origin_resource/feature_ideen/anim_engine_release/src/cmdx1A_callasm.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/origin_resource/feature_ideen/clock_time_routine/current_time_into_vars.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/origin_resource/feature_ideen/clock_time_routine/minutes_played_routine.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/origin_resource/feature_ideen/clock_time_routine/second_played_routine.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="resource_collection/origin_resource/research/pokemonnamen_table.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/0_mapbank_header/mapbank_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/1_mapfooter_table/mapfooter_table.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/2_wild_poke_header/wild_poke_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_0/0_map_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_0/1_map.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_0/2_map_footer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_0/3_event.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_0/4_wild_poke_habitat.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_0/5_map_connection.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_1/0_map_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_1/1_map.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_1/2_map_footer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_1/3_event.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_1/4_wild_poke_habitat.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_1/5_map_connection.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_2/0_map_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_2/1_map.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_2/2_map_footer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_2/3_event.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_2/4_wild_poke_habitat.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_2/5_map_connection.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_3/0_map_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_3/1_map.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_3/2_map_footer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_3/3_event.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_3/4_wild_poke_habitat.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/map_3/5_map_connection.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/0_bank_0/mapbank_0.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/1_bank_1/map_0/0_map_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/1_bank_1/map_0/1_map.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/1_bank_1/map_0/2_map_footer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/1_bank_1/map_0/3_event.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/1_bank_1/map_0/4_wild_poke_habitat.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/1_bank_1/map_0/5_map_connection.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/1_bank_1/mapbank_1.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/2_bank_2/map_0/0_map_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/2_bank_2/map_0/1_map.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/2_bank_2/map_0/2_map_footer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/2_bank_2/map_0/3_event.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/2_bank_2/map_0/4_wild_poke_habitat.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/2_bank_2/map_0/5_map_connection.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/2_bank_2/mapbank_2.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/3_bank_3/map_0/0_map_header.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/3_bank_3/map_0/1_map.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/3_bank_3/map_0/2_map_footer.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/3_bank_3/map_0/3_event.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/3_bank_3/map_0/4_wild_poke_habitat.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/3_bank_3/map_0/5_map_connection.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/0_map_data/3_banks/3_bank_3/mapbank_3.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/2_tilesets/tileset_0/0_block_daten.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/2_tilesets/tileset_0/1_aufgaben_daten.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/2_tilesets/tileset_1/0_block_daten.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/2_tilesets/tileset_1/1_aufgaben_daten.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/2_tilesets/tileset_2/0_block_daten.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/2_tilesets/tileset_2/1_aufgaben_daten.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/2_tilesets/tileset_header.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/story_scripts/zintea/schild_eremit.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/story_scripts/zintea/schild_player.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/story_scripts/zintea/schild_zeitwald.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/story_scripts/zintea/schild_zintea.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/test_player.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/test_player2.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/6_overworld/hero/ow_hero.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="src/7_features/sots_codes/agb_debug/agb_debug.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/7_features/test_song.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/_songtable.s" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_001.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_002.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_003.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_004.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_005.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_006.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_007.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_008.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_009.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_010.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_011.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_012.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_013.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_014.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_015.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_016.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_017.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_018.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_019.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_020.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_021.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_022.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_023.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_024.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_025.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_026.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_027.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_028.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_029.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_030.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_031.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/bank_032.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/drums_000.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/drums_001.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/drums_002.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_000.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_001.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_002.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_003.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_004.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_005.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_006.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_007.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_008.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_009.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_010.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_011.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_012.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_013.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_014.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_015.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_016.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_017.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_018.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_019.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_020.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_021.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_022.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_023.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_024.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_025.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_026.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_027.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_028.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_029.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/map_030.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/bank/voice_001.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/seq/seq_000.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/gbwave_000.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_000.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_001.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_002.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_003.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_004.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_005.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_006.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_007.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_008.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_009.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_010.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_011.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_012.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_013.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_014.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_015.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_016.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_017.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_018.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_019.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_020.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_021.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_022.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_023.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_024.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_025.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_026.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_027.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_028.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_029.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_030.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_031.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_032.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_033.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_034.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_035.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_036.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_037.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_038.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_039.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_040.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_041.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_042.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_043.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_044.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_045.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_046.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_047.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_048.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_049.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_050.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_051.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_052.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_053.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_054.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_055.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_056.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_057.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_058.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_059.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_060.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_061.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_062.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_063.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_064.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_065.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_066.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_067.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_068.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_069.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_070.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_071.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_072.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_073.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_074.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_075.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_076.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_077.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_078.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_079.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_080.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_081.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_082.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_083.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_084.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_085.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_086.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_087.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_088.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_089.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_090.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_091.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_092.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_093.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_094.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_095.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_096.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_097.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_098.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_099.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_100.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_101.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_102.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_103.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_104.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_105.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_106.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_107.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_108.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_109.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_110.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_111.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_112.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_113.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_114.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_115.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_116.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_117.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_118.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_119.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_120.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_121.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_122.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_123.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_124.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_125.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_126.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_127.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_128.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_129.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_130.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_131.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_132.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_133.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_134.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_135.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_136.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_137.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_138.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_139.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_140.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_141.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_142.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_143.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_144.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_145.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_146.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_147.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_148.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_149.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_150.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_151.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_152.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_153.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_154.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_155.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_156.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_157.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_158.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_159.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_160.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_161.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_162.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_163.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_164.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_165.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_166.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_167.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_168.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_169.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_170.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_171.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_172.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_173.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_174.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_175.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_176.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_177.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_178.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_179.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_180.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_181.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_182.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_183.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_184.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_185.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_186.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/8_asset/music/dpp/wave/wave_187.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/in_progress/main/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

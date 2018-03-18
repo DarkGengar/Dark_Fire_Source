@@ -144,9 +144,9 @@ loadpointer 0x0 \text
 callstd \callstdid
 .endm
 
-.macro giveitem var_8000 item var_8001 quantity callstdid
-copyvarifnotzero \var_8000 \item
-copyvarifnotzero \var_8001 \quantity
+.macro giveitem item quantity callstdid
+copyvarifnotzero 0x8000 \item
+copyvarifnotzero 0x8001 \quantity
 callstd \callstdid
 .endm 
 

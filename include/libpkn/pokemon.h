@@ -1,4 +1,4 @@
-#include "gba.h"
+#include "types.h"
 
 #ifndef POKEMON_H
 #define POKEMON_H

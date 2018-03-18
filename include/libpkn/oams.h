@@ -1,4 +1,4 @@
-#include "gba.h"
+#include "types.h"
 
 #ifndef OAMS_H
 #define OAMS_H

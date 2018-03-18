@@ -24,6 +24,10 @@ RHRPS				:=	rhrps
 UPS					:=	ups
 IPS					:=	ips
 
+
+#=====Emulators===========================
+MGBA        :=  @mgba
+
 #=====Game================================
 BASEROM		:=	$(BASEROMDIR)/BPRD_0.gba
 DFROM		:=	$(DFROMDIR)/df_rom.gba
@@ -38,9 +42,14 @@ SRC_BUILD_SUB		:=	$(SRC_BUILD_SUB_DIR)/src_build.sub
 DOXY_SUB			:=	doxy.sub
 
 #=====Make Targets========================
+
 .PHONY: all
 all: prebuild build
 
+.PHONY: run
+run: 
+	$(MGBA) $(DFROM)
+    
 .PHONY: prebuild
 prebuild:
 	$(MAKE) -f $(GFX_SUB) all

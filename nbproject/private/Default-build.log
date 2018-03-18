@@ -1,0 +1,904 @@
+make[1]: Entering directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'
+make[1]: Leaving directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'
+make[1]: Entering directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_TITLE01.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_TITLE01.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.4
+Track4 = Midi-Ch.6
+Track5 = Midi-Ch.8
+Track6 = Midi-Ch.9
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_WINPOKE.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_WINPOKE.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.10
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_D_01.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_D_01.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.8
+Track7 = Midi-Ch.9
+Track8 = Midi-Ch.10
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_TSURETEKE.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_TSURETEKE.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.8
+Track7 = Midi-Ch.9
+Track8 = Midi-Ch.10
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_BA_POKE.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_BA_POKE.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+Track8 = Midi-Ch.10
+Track9 = Midi-Ch.11
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_CITY_01.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_CITY_01.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+Track8 = Midi-Ch.8
+Track9 = Midi-Ch.9
+Track10 = Midi-Ch.10
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_OPENING.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_OPENING.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+Track8 = Midi-Ch.8
+Track9 = Midi-Ch.10
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_WINTRAIN.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_WINTRAIN.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+Track8 = Midi-Ch.8
+Track9 = Midi-Ch.9
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_FANFA2.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_FANFA2.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_FANFA3.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_FANFA3.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_BA_TRAIN.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_BA_TRAIN.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+Track8 = Midi-Ch.10
+Track9 = Midi-Ch.11
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_KOUKAN.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_KOUKAN.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.10
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/obtained_item.mid
+Output = src/8_asset/output/asset/music/vcg001/obtained_item.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/congratulations.mid
+Output = src/8_asset/output/asset/music/vcg001/congratulations.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+Track8 = Midi-Ch.8
+Track9 = Midi-Ch.9
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_FANFA6.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_FANFA6.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.3
+Track4 = Midi-Ch.4
+Track5 = Midi-Ch.5
+Track6 = Midi-Ch.6
+Track7 = Midi-Ch.7
+Track8 = Midi-Ch.8
+
+MID2AGB - Completed, No problem.
+
+/------------------------------------------------------/
+| MID2AGB 1.05                    Standard MIDI -> AGB |
+|      Copyright (c) 1999-2001, NINTENDO Co.,Ltd.      |
+/------------------------------------------------------/
+
+Input  = asset/music/vcg001/SEQ_PL_BA_REGI.mid
+Output = src/8_asset/output/asset/music/vcg001/SEQ_PL_BA_REGI.s
+
+Track1 = Midi-Ch.1
+Track2 = Midi-Ch.2
+Track3 = Midi-Ch.4
+Track4 = Midi-Ch.5
+Track5 = Midi-Ch.6
+Track6 = Midi-Ch.7
+Track7 = Midi-Ch.8
+Track8 = Midi-Ch.9
+Track9 = Midi-Ch.10
+
+MID2AGB - Completed, No problem.
+make[1]: Leaving directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'
+make[1]: Entering directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'
+
+------ 0.0633890628815 seconds ------
+
+------ 0.00588202476501 seconds ------
+
+------ 0.00859117507935 seconds ------
+
+------ 0.00670480728149 seconds ------
+
+------ 0.00668287277222 seconds ------
+
+------ 0.00619387626648 seconds ------
+make[1]: Leaving directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'
+make[1]: Entering directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/doc'
+doxygen pkdf.doxyfile
+Searching for include files...
+Searching for example files...
+Searching for images...
+Searching for dot files...
+Searching for msc files...
+Searching for dia files...
+Searching for files to exclude
+Searching INPUT for files to process...
+Searching for files in directory C:/Users/HunterxPokemon/Documents/Github/Original_Dark_Fire_Source/src/7_features
+Reading and parsing tag files
+Parsing files
+Preprocessing C:/Users/HunterxPokemon/Documents/Github/Original_Dark_Fire_Source/src/7_features/test_song.c...
+Parsing file C:/Users/HunterxPokemon/Documents/Github/Original_Dark_Fire_Source/src/7_features/test_song.c...
+Building group list...
+Building directory list...
+Building namespace list...
+Building file list...
+Building class list...
+Associating documentation with classes...
+Computing nesting relations for classes...
+Building example list...
+Searching for enumerations...
+Searching for documented typedefs...
+Searching for members imported via using declarations...
+Searching for included using directives...
+Searching for documented variables...
+Building interface member list...
+Building member list...
+Searching for friends...
+Searching for documented defines...
+Computing class inheritance relations...
+Computing class usage relations...
+Flushing cached template relations that have become invalid...
+Computing class relations...
+Add enum values to enums...
+Searching for member function documentation...
+Creating members for template instances...
+Building page list...
+Search for main page...
+Computing page relations...
+Determining the scope of groups...
+Sorting lists...
+Freeing entry tree
+Determining which enums are documented
+Computing member relations...
+Building full member lists recursively...
+Adding members to member groups.
+Computing member references...
+Inheriting documentation...
+Generating disk names...
+Adding source references...
+Adding xrefitems...
+Sorting member lists...
+Computing dependencies between directories...
+Generating citations page...
+Counting data structures...
+Resolving user defined references...
+Finding anchors and sections in the documentation...
+Transferring function references...
+Combining using relations...
+Adding members to index pages...
+Generating style sheet...
+Generating search indices...
+Generating example documentation...
+Generating file sources...
+Generating code for file C:/Users/HunterxPokemon/Documents/Github/Original_Dark_Fire_Source/src/7_features/test_song.c...
+Generating file documentation...
+Generating docs for file C:/Users/HunterxPokemon/Documents/Github/Original_Dark_Fire_Source/src/7_features/test_song.c...
+Generating caller graph for function oac_nullsub
+Generating call graph for function test_song
+Generating page documentation...
+Generating group documentation...
+Generating class documentation...
+Generating docs for compound Coords16...
+Generating docs for compound Coords8...
+Generating docs for compound Frame...
+Generating docs for compound OamData...
+Generating docs for compound Object...
+Generating docs for compound pokemon...
+Generating docs for compound RotscaleFrame...
+Generating docs for compound SpritePalette...
+Generating docs for compound SpriteTiles...
+Generating docs for compound Template...
+Generating namespace index...
+Generating graph info page...
+Generating directory documentation...
+Generating index page...
+Generating page index...
+Generating module index...
+Generating namespace index...
+Generating namespace member index...
+Generating annotated compound index...
+Generating alphabetical compound index...
+Generating hierarchical class index...
+Generating member index...
+Generating file index...
+Generating file member index...
+Generating example index...
+finalizing index lists...
+writing tag file...
+Running dot...
+Generating dot graphs using 3 parallel threads...
+Running dot for graph 1/3
+Running dot for graph 2/3
+Running dot for graph 3/3
+Patching output file 1/1
+lookup cache used 199/65536 hits=541 misses=206
+finished...
+warning: tag INPUT: input source `C:\Users\HunterxPokemon\Documents\Hacking_Source\New_Dark_Fire_Source\include\libgba' does not exist
+warning: tag INPUT: input source `C:\Users\HunterxPokemon\Documents\Hacking_Source\New_Dark_Fire_Source\include\libpkn' does not exist
+warning: source C:\Users\HunterxPokemon\Documents\Hacking_Source\New_Dark_Fire_Source\include\libgba is not a readable file or directory... skipping.
+warning: source C:\Users\HunterxPokemon\Documents\Hacking_Source\New_Dark_Fire_Source\include\libpkn is not a readable file or directory... skipping.
+C:/Users/HunterxPokemon/Documents/Github/Original_Dark_Fire_Source/src/7_features/test_song.c:28: warning: the name `template.c' supplied as the second argument in the \file statement is not an input file
+make[1]: Leaving directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/doc'
+make[1]: Entering directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'
+In file included from src/7_features/test_song.c:37:0:
+include/libpkn/rom_functions.h:52:60: warning: 'struct Template' declared inside parameter list will not be visible outside of this definition or declaration
+ extern u8 template_instanciate_forward_search(const struct Template*, u16 x, u16 y, u8 priority);
+                                                            ^~~~~~~~
+include/libpkn/rom_functions.h:53:65: warning: 'struct SpriteTiles' declared inside parameter list will not be visible outside of this definition or declaration
+ extern void gpu_tile_obj_decompress_alloc_tag_and_upload(struct SpriteTiles* tile);
+                                                                 ^~~~~~~~~~~
+include/libpkn/rom_functions.h:54:60: warning: 'struct SpritePalette' declared inside parameter list will not be visible outside of this definition or declaration
+ extern void gpu_pal_decompress_alloc_tag_and_upload(struct SpritePalette* pal);
+                                                            ^~~~~~~~~~~~~
+src/7_features/test_song.c: In function 'test_song':
+src/7_features/test_song.c:297:50: warning: passing argument 1 of 'gpu_tile_obj_decompress_alloc_tag_and_upload' from incompatible pointer type [-Wincompatible-pointer-types]
+     gpu_tile_obj_decompress_alloc_tag_and_upload(&testTiles);
+                                                  ^
+In file included from src/7_features/test_song.c:37:0:
+include/libpkn/rom_functions.h:53:13: note: expected 'struct SpriteTiles *' but argument is of type 'struct SpriteTiles *'
+ extern void gpu_tile_obj_decompress_alloc_tag_and_upload(struct SpriteTiles* tile);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/7_features/test_song.c:298:45: warning: passing argument 1 of 'gpu_pal_decompress_alloc_tag_and_upload' from incompatible pointer type [-Wincompatible-pointer-types]
+     gpu_pal_decompress_alloc_tag_and_upload(&testPal);
+                                             ^
+In file included from src/7_features/test_song.c:37:0:
+include/libpkn/rom_functions.h:54:13: note: expected 'struct SpritePalette *' but argument is of type 'struct SpritePalette *'
+ extern void gpu_pal_decompress_alloc_tag_and_upload(struct SpritePalette* pal);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/7_features/test_song.c:299:49: warning: passing argument 1 of 'template_instanciate_forward_search' from incompatible pointer type [-Wincompatible-pointer-types]
+     u8 id = template_instanciate_forward_search(&test_template, 10, 10, 0);
+                                                 ^
+In file included from src/7_features/test_song.c:37:0:
+include/libpkn/rom_functions.h:52:11: note: expected 'const struct Template *' but argument is of type 'const struct Template *'
+ extern u8 template_instanciate_forward_search(const struct Template*, u16 x, u16 y, u8 priority);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/7_features/sots_codes/agb_debug/agb_debug.c: In function 'mini_itoa':
+src/7_features/sots_codes/agb_debug/agb_debug.c:74:29: warning: conversion to 'char' from 'u32 {aka unsigned int}' may alter its value [-Wconversion]
+             * (pbuffer++) = (digit < 10 ? '0' + digit : (uppercase ? 'A' : 'a') + digit - 10);
+                             ^
+src/7_features/sots_codes/agb_debug/agb_debug.c:74:29: warning: conversion to 'char' from 'u32 {aka unsigned int}' may alter its value [-Wconversion]
+src/7_features/sots_codes/agb_debug/agb_debug.c:79:31: warning: conversion to 'u32 {aka unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+             u32 digit = value % radix;
+                               ^
+src/7_features/sots_codes/agb_debug/agb_debug.c:80:29: warning: conversion to 'char' from 'u32 {aka unsigned int}' may alter its value [-Wconversion]
+             * (pbuffer++) = (digit < 10 ? '0' + digit : (uppercase ? 'A' : 'a') + digit - 10);
+                             ^
+src/7_features/sots_codes/agb_debug/agb_debug.c:80:29: warning: conversion to 'char' from 'u32 {aka unsigned int}' may alter its value [-Wconversion]
+src/7_features/sots_codes/agb_debug/agb_debug.c:81:19: warning: conversion to 'u32 {aka unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+             value /= radix;
+                   ^~
+src/7_features/sots_codes/agb_debug/agb_debug.c:81:22: warning: conversion to 'int' from 'u32 {aka unsigned int}' may change the sign of the result [-Wsign-conversion]
+             value /= radix;
+                      ^~~~~
+src/7_features/sots_codes/agb_debug/agb_debug.c:84:14: warning: conversion to 'u32 {aka unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+     for (i = (pbuffer - buffer); i < zero_pad; i++)
+              ^
+src/7_features/sots_codes/agb_debug/agb_debug.c:92:11: warning: conversion to 'u32 {aka unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+     len = (pbuffer - buffer);
+           ^
+src/7_features/sots_codes/agb_debug/agb_debug.c: In function '_puts':
+src/7_features/sots_codes/agb_debug/agb_debug.c:118:24: warning: conversion to 'u32 {aka unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+         if (buffer_len - (pbuffer - buffer) - 1 < len)
+                        ^
+src/7_features/sots_codes/agb_debug/agb_debug.c:119:30: warning: conversion to 'u32 {aka unsigned int}' from 'int' may change the sign of the result [-Wsign-conversion]
+             len = buffer_len - (pbuffer - buffer) - 1;
+                              ^
+src/7_features/sots_codes/agb_debug/agb_debug.c:124:16: warning: conversion to 'int' from 'u32 {aka unsigned int}' may change the sign of the result [-Wsign-conversion]
+         return len;
+                ^~~
+src/7_features/sots_codes/agb_debug/agb_debug.c: In function 'mini_vsnprintf':
+src/7_features/sots_codes/agb_debug/agb_debug.c:142:32: warning: conversion to 'char' from 'int' may alter its value [-Wconversion]
+                     zero_pad = ch - '0';
+                                ^~
+src/7_features/sots_codes/agb_debug/agb_debug.c:150:33: warning: conversion to 'int' from 'u32 {aka unsigned int}' may change the sign of the result [-Wsign-conversion]
+                 len = mini_itoa(va_arg(va, u32), 10, 0, (ch == 'u'), bf, zero_pad);
+                                 ^~~~~~
+src/7_features/sots_codes/agb_debug/agb_debug.c:155:33: warning: conversion to 'int' from 'u32 {aka unsigned int}' may change the sign of the result [-Wsign-conversion]
+                 len = mini_itoa(va_arg(va, u32), 16, (ch == 'X'), 1, bf, zero_pad);
+                                 ^~~~~~
+src/3_scripts/ow_scripts/story_scripts/zintea/schild_zintea.s: Assembler messages:
+src/3_scripts/ow_scripts/story_scripts/zintea/schild_zintea.s: Warning: end of file not at end of a line; newline inserted
+src/3_scripts/ow_scripts/story_scripts/zintea/schild_eremit.s: Assembler messages:
+src/3_scripts/ow_scripts/story_scripts/zintea/schild_eremit.s: Warning: end of file not at end of a line; newline inserted
+cat output/symbol_list.sym
+0x08718c40 __text_start
+0x08718c40 test_song
+0x08718de4 dprint
+0x08718e04 mini_strlen
+0x08718e1c mini_itoa
+0x08718f18 mini_vsnprintf
+0x0871901c dprintf
+0x08719044 string_intro_begruessung
+0x087190d0 string_schild_zintea
+0x087190ec string_test_player
+0x087190f8 string_schild_player
+0x08719104 string_schild_zeitwald
+0x08719138 string_schild_eremit
+0x08719150 test_player
+0x0871916f test_player2
+0x08719175 schild_player
+0x0871917e schild_zeitwald
+0x08719187 schild_zintea
+0x08719190 schild_eremit
+0x0871919c mapfooter_table
+0x087191b0 mapbank_1
+0x087191b4 map_header_1_0
+0x087191d0 map_randblock_1_0
+0x087191d8 map_1_0
+0x0871aef4 map_event_1_0
+0x0871af18 grass_entry_1_0
+0x0871af50 trees_entry_1_0
+0x0871af6c map_footer_1_0
+0x0871af88 mapbank_0
+0x0871af98 map_header_0_1
+0x0871afb4 map_randblock_0_1
+0x0871afbc map_0_1
+0x0871b0c0 map_event_0_1
+0x0871b0e4 map_footer_0_1
+0x0871b100 map_header_0_0
+0x0871b11c map_randblock_0_0
+0x0871b124 map_0_0
+0x0871b894 map_event_0_0
+0x0871b920 water_entry_0_0
+0x0871b93c trees_entry_0_0
+0x0871b958 rod_entry_0_0
+0x0871b988 map_footer_0_0
+0x0871b9a4 map_header_0_3
+0x0871b9c0 map_randblock_0_3
+0x0871b9c8 map_0_3
+0x0871ba90 map_event_0_3
+0x0871baac map_footer_0_3
+0x0871bac8 map_header_0_2
+0x0871bae4 map_randblock_0_2
+0x0871baec map_0_2
+0x0871bbf0 map_event_0_2
+0x0871bc04 map_footer_0_2
+0x0871bc20 mapbank_3
+0x0871bc24 map_3_0_event
+0x0871bc24 map_header_3_0
+0x0871bc34 mapbank_2
+0x0871bc38 map_2_0_event
+0x0871bc38 map_header_2_0
+0x0871bc48 mapbank_header
+0x0871bc50 wild_poke_header
+0x0871bc7c tileset_header
+0x0871bcf4 tileset_2_block_daten
+0x0871c5b4 tileset_2_aufgaben_daten
+0x0871c7e4 tileset_1_block_daten
+0x0871cd74 tileset_1_aufgaben_daten
+0x0871ced8 tileset_0_block_daten
+0x0871f6d8 tileset_0_aufgaben_daten
+0x087200d8 ow_hero
+0x0872019c bootscreenPal
+0x0872039c bootscreenMap
+0x087204e4 bootscreenTiles
+0x087206b8 tsb1Pal
+0x087206d8 tsb1Map
+0x08720824 tsb1Tiles
+0x08720a68 tsb0Pal
+0x08720c08 tsb0Map
+0x08720e14 tsb0Tiles
+0x08722564 tsb_fl_animTiles
+0x08722604 tsb2Pal
+0x08722624 tsb2Map
+0x08722708 tsb2Tiles
+0x087228b8 tsb3Map
+0x08722c10 tsb3Tiles
+0x08723380 gfx_intro_profPal
+0x087233c0 gfx_intro_profTiles
+0x08723a58 gfx_intro_heroPal
+0x08723a98 gfx_intro_heroTiles
+0x08724130 gfx_ow_hero_walkPal
+0x08724150 gfx_ow_hero_walkTiles
+0x08725350 gfx_tb_s_135Pal
+0x087253b4 gfx_tb_s_135Tiles
+0x08725650 gfx_backsprite_heroPal
+0x087256b4 gfx_backsprite_heroTiles
+0x08727eb4 badgesPal
+0x087280b4 badgesTiles
+0x08728354 tileset_0Pal
+0x08728554 tileset_0Tiles
+0x0872a39c tileset_1Pal
+0x0872a59c tileset_1Tiles
+0x0872ad48 tileset_2Pal
+0x0872af48 tileset_2Tiles
+0x0872c9c0 SEQ_TSURETEKE
+0x0872daec SEQ_BA_POKE
+0x0872ee44 SEQ_CITY_01
+0x0872f9d8 SEQ_OPENING
+0x087302fc SEQ_WINTRAIN
+0x08730540 SEQ_FANFA2
+0x08730750 SEQ_FANFA3
+0x08731cbc SEQ_BA_TRAIN
+0x08732498 SEQ_KOUKAN
+0x087325cc obtained_item
+0x08732950 congratulations
+0x08732cf8 SEQ_FANFA6
+0x08733924 SEQ_PL_BA_REGI
+0x08733bf8 SEQ_TITLE01
+0x087342d0 SEQ_WINPOKE
+0x08735800 SEQ_D_01
+0x08735828 _songtable
+0x08736b5c seq_000
+0x08736b8c map_023
+0x08736c0c map_021
+0x08736c8c bank_005
+0x08736cb0 map_022
+0x08736d30 bank_015
+0x08736d54 map_004
+0x08736dd4 drums_001
+0x087373d4 map_024
+0x08737454 map_001
+0x087374d4 bank_022
+0x087374ec voicegroup001
+0x08737aec bank_001
+0x08737b4c bank_010
+0x08737b7c map_003
+0x08737bfc map_028
+0x08737c7c bank_004
+0x08737c94 map_029
+0x08737d14 bank_019
+0x08737d44 map_012
+0x08737dc4 bank_016
+0x08737e00 map_007
+0x08737e80 bank_012
+0x08737e98 bank_007
+0x08737ebc map_010
+0x08737f3c bank_018
+0x08737f60 map_030
+0x08737fe0 map_027
+0x08738060 bank_027
+0x08738078 bank_003
+0x08738090 map_026
+0x08738110 bank_030
+0x08738134 map_000
+0x087381b4 map_006
+0x08738234 bank_009
+0x08738264 map_011
+0x087382e4 bank_014
+0x08738314 bank_021
+0x08738344 bank_026
+0x08738368 map_014
+0x087383e8 bank_011
+0x08738418 bank_008
+0x08738454 map_005
+0x087384d4 map_017
+0x08738554 bank_032
+0x0873856c bank_023
+0x0873859c map_016
+0x0873861c drums_000
+0x08738c1c map_019
+0x08738c9c map_020
+0x08738d1c bank_029
+0x08738d4c map_013
+0x08738dcc bank_017
+0x08738df0 map_008
+0x08738e70 drums_002
+0x08739470 bank_006
+0x087394b8 bank_031
+0x087394dc map_002
+0x0873955c bank_013
+0x0873958c bank_028
+0x087395a4 map_025
+0x08739624 bank_025
+0x08739648 bank_002
+0x08739660 map_015
+0x087396e0 bank_020
+0x087396f8 map_009
+0x08739778 map_018
+0x087397f8 bank_024
+0x08739810 wave_042
+0x0873b3c0 wave_102
+0x0873cbb0 wave_065
+0x0873e3f0 wave_052
+0x0873f9c0 wave_160
+0x08740830 wave_123
+0x08742bd0 wave_044
+0x08745170 wave_062
+0x08746450 wave_020
+0x08748370 wave_072
+0x08749160 wave_170
+0x0874a580 wave_134
+0x0874a5b0 wave_178
+0x0874b238 wave_024
+0x0874ba40 wave_084
+0x0874c6a8 wave_047
+0x0874d7a8 wave_083
+0x0874eb68 wave_092
+0x08750338 wave_048
+0x08751b78 wave_031
+0x087530b8 wave_068
+0x087546c8 wave_013
+0x087561c0 wave_151
+0x08756f88 wave_122
+0x087596f0 wave_145
+0x0875b3a8 wave_002
+0x0875c300 wave_025
+0x0875e228 wave_006
+0x0875f0f0 wave_075
+0x0875fee8 wave_140
+0x08761030 wave_119
+0x08762630 gbwave_000
+0x08762640 wave_149
+0x08763100 wave_157
+0x087645a8 wave_049
+0x087659d8 wave_081
+0x08766978 wave_056
+0x08767c78 wave_161
+0x08768d18 wave_164
+0x08769e18 wave_146
+0x0876b830 wave_143
+0x0876d6c0 wave_103
+0x0876e750 wave_001
+0x0876f8c0 wave_104
+0x087708e0 wave_063
+0x087725d8 wave_148
+0x08777d40 wave_030
+0x08779a60 wave_037
+0x0877aec0 wave_033
+0x0877c8b0 wave_088
+0x0877f4e0 wave_130
+0x087807b0 wave_179
+0x08780dc8 wave_175
+0x08782fb0 wave_162
+0x08783da8 wave_155
+0x08784db8 wave_095
+0x08785de8 wave_085
+0x08786d50 wave_089
+0x087888b8 wave_111
+0x0878b7a0 wave_012
+0x0878cda8 wave_096
+0x0878dce8 wave_153
+0x0878dd18 wave_011
+0x0878e950 wave_128
+0x0878ffa8 wave_177
+0x08790e18 wave_005
+0x087924b0 wave_017
+0x08794158 wave_116
+0x087970a0 wave_109
+0x08799ea0 wave_003
+0x0879abf8 wave_050
+0x0879cad0 wave_060
+0x0879dd00 wave_070
+0x0879efe0 wave_080
+0x087a0ae0 wave_021
+0x087a20c0 wave_176
+0x087a3518 wave_142
+0x087a3ff0 wave_036
+0x087a4f40 wave_117
+0x087a6f60 wave_016
+0x087a8a40 wave_124
+0x087a9b90 wave_077
+0x087ab490 wave_038
+0x087ac650 wave_135
+0x087ad8a0 wave_150
+0x087aece8 wave_113
+0x087b04c0 wave_174
+0x087b2298 wave_032
+0x087b3840 wave_131
+0x087b54c0 wave_147
+0x087b7610 wave_163
+0x087b9030 wave_023
+0x087b9928 wave_054
+0x087bb428 wave_114
+0x087bcd10 wave_027
+0x087be410 wave_108
+0x087bfcb0 wave_007
+0x087c0b78 wave_159
+0x087c1bd0 wave_152
+0x087c3128 wave_120
+0x087c42f0 wave_059
+0x087c5cf0 wave_069
+0x087c7698 wave_079
+0x087c90a8 wave_000
+0x087c9fe8 wave_086
+0x087cb030 wave_015
+0x087cbf78 wave_028
+0x087cc868 wave_018
+0x087ce790 wave_141
+0x087cf268 wave_181
+0x087d0d18 wave_137
+0x087d17c8 wave_041
+0x087d17dc wave_185
+0x087d551c wave_051
+0x087d6f54 wave_187
+0x087d844c wave_061
+0x087da20c wave_098
+0x087dba18 wave_071
+0x087dc5a0 wave_127
+0x087dc978 wave_074
+0x087dd670 wave_057
+0x087de6d8 wave_091
+0x087dfff0 wave_097
+0x087e0ff0 wave_101
+0x087e1bd8 wave_026
+0x087e2650 wave_126
+0x087e4168 wave_040
+0x087e4178 wave_132
+0x087e5d78 wave_138
+0x087e6820 wave_136
+0x087e7338 wave_133
+0x087e86c0 wave_039
+0x087e9040 wave_182
+0x087eaf00 wave_064
+0x087ec8c0 wave_115
+0x087ed890 wave_100
+0x087eea98 wave_112
+0x087f1ed8 wave_121
+0x087f2a88 wave_022
+0x087f43b0 wave_180
+0x087f5870 wave_171
+0x087f58a0 wave_169
+0x087f6550 wave_094
+0x087f9720 wave_010
+0x087fa440 wave_105
+0x087faf80 wave_066
+0x087fc428 wave_106
+0x087fd9dc wave_110
+0x0880123c wave_107
+0x0880262c wave_173
+0x0880434c wave_129
+0x08806004 wave_165
+0x0880798c wave_139
+0x08808a74 wave_167
+0x0880984c wave_043
+0x0880c2e4 wave_087
+0x0880dce4 wave_076
+0x0880e9c4 wave_082
+0x0880fd7c wave_184
+0x08813b1c wave_183
+0x0881552c wave_067
+0x08816b24 wave_008
+0x08817d34 wave_053
+0x08818ed4 wave_168
+0x0881a39c wave_186
+0x0881c154 wave_158
+0x0881d454 wave_144
+0x0881e7cc wave_034
+0x0881f23c wave_035
+0x088200a4 wave_014
+0x0882165c wave_009
+0x08822564 wave_004
+0x088234a4 wave_045
+0x08825374 wave_125
+0x088267c4 wave_073
+0x08827054 wave_172
+0x088281a4 wave_166
+0x08829e9c wave_156
+0x0882ba9c wave_029
+0x0882c684 wave_118
+0x0882deb4 wave_055
+0x08830a6c wave_099
+0x088317ac wave_046
+0x088330cc wave_019
+0x08833b44 wave_093
+0x08834f64 wave_058
+0x0883701c wave_090
+0x08838144 wave_078
+0x0883953c wave_154
+0x0883b15c __text_end
+0x0883b160 __bss_start__
+0x0883b160 __key_prev
+0x0883b162 __key_curr
+0x0883b164 __bss_end__
+0x0883b164 __end__
+0x0883b164 __file_end__
+0x0883b164 _end
+=====|Game Complete|=====
+make[1]: Leaving directory '/cygdrive/c/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source'

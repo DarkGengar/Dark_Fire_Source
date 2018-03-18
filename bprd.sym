@@ -1,4 +1,3 @@
-
 enemys_party = 0x0202402C;
 players_party = 0x02024284;
 pal_buffer = 0x020371F8;
@@ -12,9 +11,9 @@ var_0x8000 = 0x020370B8;
 var_0x8001 = 0x020370BA;
 lastresult = 0x020370D0;
 
-/* functions */
+/* static rom functions */
 titlescreen_function_0 = 0x08078C00|1;
-random_change_seed = 0x08044DCC|1;
+get_random_change_seed = 0x08044DCC|1;
 __umod = 0x081E856C|1;
 checkflag = 0x0806E634|1;
 create_pokemon = 0x0803D954|1;
@@ -33,17 +32,34 @@ color_blend = 0x08045178|1;
 return_addr = 0x080719dc|1;
 get_field_x2_from_trainerdata = 0x0804357C|1;
 play_song = 0x080719D8|1;
+free = 0x08002B44|1;
+malloc = 0x08002B1C|1;
+memcpy = 0x081E9D60|1;
+memset = 0x081E9DC0|1;
+fadescreen = 0x080704EC|1;
+get_current_weather = 0x807B094|1;
+__aeabi_uidivmod = 0x081E7A50|1;
 
-LZ77UnCompWram = 0x081E7A58|1;
-LZ77UnCompVram = 0x081E7A54|1;
+show_coins = 0x080D08D4|1;
+get_number_of_coins = 0x080D06FC|1;
 
-ArcTan = 0x081E7A40|1;
-Div = 0x081E7A50|1;
+/* oam.h */
+template_instanciate_forward_search = 0x08006F0C|1;
+gpu_tile_obj_decompress_alloc_tag_and_upload = 0x0800EFB8|1;
+gpu_pal_decompress_alloc_tag_and_upload = 0x0800EFFC|1;
+oac_nullsub = 0x0800758C|1;
+objects = 0x0202063C;
+anim_image_empty = 0x08231BC0;
+rotscale_empty = 0x08231BCC;
 
-CpuSet = 0x081E7A4C|1;
-CpuFastSet = 0x081E7A48|1;
-
-ObjAffineSet = 0x081E7A64|1;
-BgAffineSet = 0x081E7A44|1;
-
-RegisterRamReset = 0x081E7A68|1;
+/* bios.h */
+lz77_uncomp_wram = 0x081E7A58|1;
+lz77_uncomp_vram = 0x081E7A54|1;
+cpuset = 0x081E7A4C|1;
+cpufastset = 0x081E7A48|1;
+obj_affine_set = 0x081E7A64|1;
+bg_affine_set = 0x081E7A44|1;
+register_ram_reset = 0x081E7A68|1;
+arctan = 0x081E7A40|1;
+div = 0x081E7A50|1;
+sqrt = 0x081E7A84|1;

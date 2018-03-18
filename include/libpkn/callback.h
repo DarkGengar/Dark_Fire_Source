@@ -1,6 +1,6 @@
 /*****************************************************************
  *                                                                *
- * Copyright (C) 2016-2017 by HxP Inc.                            *
+ * Copyright (C) 2016-2017 by DarkGengar                          *
  * This file is part of Pokémon Dark Fire                         *
  *                                                                *
  * Pokémon Dark Fire is free software.                            *

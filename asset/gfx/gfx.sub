@@ -64,7 +64,10 @@ ALL_TS_BGS				:=	$(TS_BG0_C) $(TS_BG1_C) $(TS_BG2_C) $(TS_BG3_C) $(TS_FLANIM_C)
 ALL_BTL_BACK_SPRITES	:=	$(BTL_BACK_HERO_C)
 ALL_INTRO_SPRITES		:=	$(INTRO_HERO_C) $(INTRO_PROF_C)
 
-ALL_GFX					:=	$(ALL_TILESETS) $(ALL_TS_BGS) $(ALL_BTL_BACK_SPRITES) $(BADGES_C) $(ALL_INTRO_SPRITES) $(BOOTSCREEN_C) $(ALL_OWS)
+TB_S_RIVAL_PNG          :=  $(GFX_DIR)/tb_s/gfx_tb_s_135.png
+TB_S_RIVAL_C            :=  $(OUTPUT_DIR)/$(GFX_DIR)/tb_s/gfx_tb_s_135.c
+
+ALL_GFX					:=	$(ALL_TILESETS) $(ALL_TS_BGS) $(ALL_BTL_BACK_SPRITES) $(BADGES_C) $(ALL_INTRO_SPRITES) $(BOOTSCREEN_C) $(ALL_OWS) $(TB_S_RIVAL_C)
 	
 #======Make Targets======================
 .PHONY: clean
@@ -129,4 +132,8 @@ $(BOOTSCREEN_C): $(BOOTSCREEN_PNG)
 $(OW_HERO_WALK_C): $(OW_HERO_WALK_PNG)
 	$(MKDIR) $(dir $@)
 	$(GRIT) $< -ff -gu32 -gz! -gB 4 -gt -gTFFFF00 -m! -p -pu16 pzl -ftc -o $@
+
+$(TB_S_RIVAL_C): $(TB_S_RIVAL_PNG)
+	$(MKDIR) $(dir $@)
+	$(GRIT) $< -ff -gu32 -gzl -gB 4 -gt -gTFFFF00 -m! -p -pu16 -pzl -ftc -o $@
 	

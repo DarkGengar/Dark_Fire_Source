@@ -1,0 +1,25 @@
+/*****************************************************************
+ *                                                                *
+ * Copyright (C) 2016-2017 by HxP Inc.                            *
+ * This file is part of Pokémon Dark Fire                         *
+ *                                                                *
+ * Pokémon Dark Fire is free software.                            *
+ * You can redistribute or modify it under                        *
+ * the terms of the GNU GENERAL PUBLIC LICENSE.                   *
+ * See GNU GENERAL PUBLIC LICENSE for more details.               *
+ *                                                                *
+ * This project is redistributed to help you with                 *
+ * your next projects, but without any WARRANTY.                  *
+ *                                                                *
+ * You should have a copy of the GNU GENERAL PUBLIC LICENSE       *
+ * along with Pokémon Dark Fire.                                  *
+ * If you don't have a copy of the                                *
+ * GNU GENERAL PUBLIC LICENSE see: http://www.gnu.org/licenses    *
+ *                                                                *
+ *****************************************************************/
+
+
+void NullCallback()
+{
+    return;
+}

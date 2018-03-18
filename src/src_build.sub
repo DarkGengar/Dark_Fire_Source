@@ -1,7 +1,7 @@
 #=====Bash Scripting=================================
 SHELL				:=	/bin/bash
 MOVE				:= 	@mv
-XCOPY				:= 	@xcopy
+XCOPY				:= 	@cp
 MKDIR				:=	@mkdir -p
 REMOVE				:=	@rm --force --recursive
 
@@ -17,7 +17,7 @@ ARMIPS				:=	@armips
 OBJCOPY 			:= 	@arm-none-eabi-objcopy
 
 #=====Tool Flags=====================================
-CFLAGS				:=	-std=gnu11 -mthumb -mthumb-interwork -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Wall -Wextra -Wconversion -O2 -Iinclude/libpkn -Iinclude/libgba	
+CFLAGS				:=	-std=gnu11 -mthumb -mthumb-interwork -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Wall -Wextra -Wconversion -O2 -Iinclude/libpkn
 ASFLAGS				:=	-mthumb -Iinclude/libpkn/asm/
 
 #=====Directories====================================
@@ -63,8 +63,6 @@ all: build
 .PHONY: build
 build: $(COBJ_FILES) $(SOBJ_FILES)
 	$(MKDIR) $(GAME_BUILD_DIR)
-	$(XCOPY) base\BPRD_0.gba game_build
-	$(MOVE) $(GAME_BUILD) $(DF_ROM)
 	$(LD) $(LDFLAGS) -T linker.ld -T bprd.sym --relocatable -o $(LINKED_FILE) $(COBJ_FILES) $(SOBJ_FILES)
 	$(ARMIPS) main.asm
 	$(NM) $(LINKED_FILE) -n -g --defined-only | \

@@ -1,6 +1,6 @@
 /*****************************************************************
  *                                                                *
- * Copyright (C) 2016-2017 by HxP Inc.                            *
+ * Copyright (C) 2016-2017 by DarkGengar                          *
  * This file is part of Pokémon Dark Fire                         *
  *                                                                *
  * Pokémon Dark Fire is free software.                            *
@@ -19,27 +19,39 @@
  *****************************************************************/
 /* 
  * File:   rom_functions.h
- * Author: HunterxPokemon
+ * Author: DarkGengar
  *
  * Created on 25. Februar 2017, 15:00
  */
 
 #include <stdbool.h>
-#include "gba.h"
+#include "types.h"
  
 #ifndef ROM_FUNCTIONS_H
 #define ROM_FUNCTIONS_H
 
 #ifdef __cplusplus
-extern "C" {
+extern "C" 
+{
 #endif
 
-u16 get_random_change_seed();
-u32 _umod(u32 dividen, u32 divisor);
-u8 givepokemon(u16 species, u8 level, u16 item, u8 padding, u8 shiny, u8 nature);
-void play_song(u16 song_id);
-u8 get_field_x2_from_trainerdata(u16 trainer_id);
-bool checkflag (u16 flag);
+extern u16 get_random_change_seed();
+extern u32 _umod(u32 dividen, u32 divisor);
+extern void play_song(u16 song_id);
+extern u8 get_field_x2_from_trainerdata(u16 trainer_id);
+extern bool checkflag (u16 flag);
+extern void fadescreen(u32 affects, u8 p1, u8 p2, u8 p3, u16 color);
+extern u8 get_current_weather();
+
+extern void show_coins(u16 coins, u8 x, u8 y);
+extern u16 get_number_of_coins();
+
+extern u32 __aeabi_uidivmod(u32 dividend, u32 divisor);
+
+/* oam.h*/
+extern u8 template_instanciate_forward_search(const struct Template*, u16 x, u16 y, u8 priority);
+extern void gpu_tile_obj_decompress_alloc_tag_and_upload(struct SpriteTiles* tile);
+extern void gpu_pal_decompress_alloc_tag_and_upload(struct SpritePalette* pal);
 
 
 #ifdef __cplusplus

@@ -1,4 +1,4 @@
-#include "gba.h"
+#include "types.h"
 
 #ifndef TRAINER_H
 #define TRAINER_H

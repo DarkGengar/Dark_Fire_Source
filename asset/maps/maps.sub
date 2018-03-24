@@ -1,0 +1,51 @@
+#=====Bash Scripting===================
+SHELL		:=	/bin/bash
+MKDIR		:=	@mkdir -p
+REMOVE		:=	@rm --force --recursive
+
+#=====Tools============================
+PYPROJ2S        :=  pyproj2s.py
+PYMAP2S         :=  pymap2s.py
+PYSET2S         :=  pyset2s.py
+
+#=====Functions========================
+rwildcard=$(wildcard $1$2) $(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2))
+
+#=====Map Project Name=================
+PROJ            :=  proj
+
+#=====Directories======================
+MAPS_DIR        :=  asset/maps
+PMH_DIR         :=  $(MAPS_DIR)/map
+PTS_DIR         :=  $(MAPS_DIR)/tileset
+OUTPUT_DIR	:=  src/8_asset/output
+
+#=====Source===========================
+PMP_FILE        :=  $(MAPS_DIR)/$(PROJ).pmp
+PMH_FILES	:=  $(call rwildcard,$(PMH_DIR),*.pmh)
+PTS_FILES	:=  $(call rwildcard,$(PTS_DIR),*.pts)
+
+PMP_S_FILE	:=  $(PMP_FILE:%.pmp=$(OUTPUT_DIR)/%.s)
+PMH_S_FILES	:=  $(PMH_FILES:%.pmh=$(OUTPUT_DIR)/%.s)
+PTS_S_FILES	:=  $(PTS_FILES:%.pts=$(OUTPUT_DIR)/%.s)
+
+#=====Make Rules=======================
+$(OUTPUT_DIR)/%.s: %.pmp
+	$(MKDIR) $(dir $@)
+	$(PYPROJ2S) -b mapbank_table -f mapfooter_table -o $@ $<
+
+$(OUTPUT_DIR)/%.s: %.pmh
+	$(MKDIR) $(dir $@)
+	$(PYMAP2S) -o $@ $< $(PMP_FILE)
+
+$(OUTPUT_DIR)/%.s: %.pts
+	$(MKDIR) $(dir $@)
+	$(PYSET2S) -o $@ $<
+
+#=====Make Targets=====================
+.PHONY: clean
+clean:
+	$(REMOVE) $(OUTPUT_DIR)
+
+.PHONY: all
+all: $(PMP_S_FILE) $(PMH_S_FILES) $(PTS_S_FILES)

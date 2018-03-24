@@ -51,6 +51,36 @@
             </df>
           </df>
         </df>
+        <df name="maps">
+          <df name="map">
+            <df name="0">
+              <df name="0">
+              </df>
+              <df name="1">
+              </df>
+              <df name="2">
+              </df>
+              <df name="3">
+              </df>
+            </df>
+            <df name="1">
+              <df name="0">
+              </df>
+            </df>
+          </df>
+          <df name="tileset">
+            <df name="0">
+            </df>
+            <df name="1">
+            </df>
+            <df name="2">
+            </df>
+            <df name="3">
+            </df>
+            <df name="4">
+            </df>
+          </df>
+        </df>
         <df name="music">
           <df name="vcg000">
           </df>
@@ -876,7 +906,8 @@
               <in>agb_debug.c</in>
             </df>
           </df>
-          <in>test_song.c</in>
+          <in>capsule_machine.c</in>
+          <in>mugshot.c</in>
         </df>
         <df name="8_asset">
           <df name="music">

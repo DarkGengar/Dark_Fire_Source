@@ -5,12 +5,13 @@ REMOVE		:=	@rm --force --recursive
 #=====Directories=========================
 PYGBATOOLCHAINDIR	:=	tools/py_gba_tools/src
 RHRPATCHERDIR		:=	tools/rhr_patcher/console
-BASEROMDIR			:=	base
-DFROMDIR			:=	game_build
+BASEROMDIR		:=	base
+DFROMDIR		:=	game_build
 DFROMPATCHDIR		:=	$(DFROMDIR)/rom_patch
-GFX_SUB_DIR			:=	asset/gfx
+GFX_SUB_DIR		:=	asset/gfx
 MUSIC_SUB_DIR		:=	asset/music
 STRING_SUB_DIR		:= 	asset/strings
+MAPS_SUB_DIR		:=	asset/maps
 SRC_BUILD_SUB_DIR	:=	src
 DOXY_SUB_DIR		:=	doc
 
@@ -38,6 +39,7 @@ LANGUAGE	:=	deu
 GFX_SUB				:=	$(GFX_SUB_DIR)/gfx.sub
 MUSIC_SUB			:= 	$(MUSIC_SUB_DIR)/music.sub
 STRING_SUB			:=	$(STRING_SUB_DIR)/strings.sub
+MAPS_SUB			:=	$(MAPS_SUB_DIR)/maps.sub
 SRC_BUILD_SUB		:=	$(SRC_BUILD_SUB_DIR)/src_build.sub
 DOXY_SUB			:=	doxy.sub
 
@@ -55,6 +57,7 @@ prebuild:
 	$(MAKE) -f $(GFX_SUB) all
 	$(MAKE) -f $(MUSIC_SUB) all
 	$(MAKE) -f $(STRING_SUB) all
+	#$(MAKE) -f $(MAPS_SUB) all
 	$(MAKE) -C $(DOXY_SUB_DIR) -f $(DOXY_SUB) all
 
 

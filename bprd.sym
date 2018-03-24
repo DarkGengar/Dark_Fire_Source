@@ -7,6 +7,7 @@ saveblock_2_adress = 0x03004F5C;
 attack_data_table = 0x08250B28;
 cpuset_copysize = 0x04000100;
 
+/* variables */
 var_0x8000 = 0x020370B8;
 var_0x8001 = 0x020370BA;
 lastresult = 0x020370D0;
@@ -18,7 +19,6 @@ __umod = 0x081E856C|1;
 checkflag = 0x0806E634|1;
 create_pokemon = 0x0803D954|1;
 return_to_ow = 0x080A1128|1;
-vardecrypt = 0x0806E3B8|1;
 setflag = 0x0806E5E4|1;
 get_pokemons_attribute = 0x0803FAE8|1;
 set_pokemons_attribute = 0x0804027c|1;
@@ -36,12 +36,18 @@ free = 0x08002B44|1;
 malloc = 0x08002B1C|1;
 memcpy = 0x081E9D60|1;
 memset = 0x081E9DC0|1;
-fadescreen = 0x080704EC|1;
+fade_screen = 0x080704EC|1;
 get_current_weather = 0x807B094|1;
 __aeabi_uidivmod = 0x081E7A50|1;
 
 show_coins = 0x080D08D4|1;
 get_number_of_coins = 0x080D06FC|1;
+/* variables.h */
+var_set = 0x0806E4E8|1;
+var_load = 0x0806E4CC|1;
+var_access = 0x0806E3B8|1;
+
+pokemon_full_clean_slot = 0x0803D894|1;
 
 /* oam.h */
 template_instanciate_forward_search = 0x08006F0C|1;
@@ -51,6 +57,7 @@ oac_nullsub = 0x0800758C|1;
 objects = 0x0202063C;
 anim_image_empty = 0x08231BC0;
 rotscale_empty = 0x08231BCC;
+obj_delete_and_free_tiles = 0x08007200|1;
 
 /* bios.h */
 lz77_uncomp_wram = 0x081E7A58|1;

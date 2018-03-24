@@ -40,11 +40,17 @@ extern u32 _umod(u32 dividen, u32 divisor);
 extern void play_song(u16 song_id);
 extern u8 get_field_x2_from_trainerdata(u16 trainer_id);
 extern bool checkflag (u16 flag);
-extern void fadescreen(u32 affects, u8 p1, u8 p2, u8 p3, u16 color);
+extern void fade_screen(u32 affects, u8 p1, u8 p2, u8 p3, u16 color);
 extern u8 get_current_weather();
 
 extern void show_coins(u16 coins, u8 x, u8 y);
 extern u16 get_number_of_coins();
+
+/* variables.h */
+// get offset of variable
+extern u16* var_access(u16 variable);
+extern u16* var_set(u16 variable, u16 value);
+extern u16 var_load(u16 variable);
 
 extern u32 __aeabi_uidivmod(u32 dividend, u32 divisor);
 

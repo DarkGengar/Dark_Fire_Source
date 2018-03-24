@@ -232,7 +232,7 @@
               <in>agb_debug.c</in>
             </df>
           </df>
-          <in>test_song.c</in>
+          <in>mugshot.c</in>
         </df>
         <df name="8_asset">
           <df name="music">
@@ -988,12 +988,12 @@
       </item>
       <item path="src/6_overworld/hero/ow_hero.s" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="src/7_features/mugshot.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="src/7_features/sots_codes/agb_debug/agb_debug.c"
             ex="false"
             tool="0"
             flavor2="0">
-      </item>
-      <item path="src/7_features/test_song.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/8_asset/music/dpp/_songtable.s" ex="false" tool="4" flavor2="0">
       </item>

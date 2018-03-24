@@ -12,49 +12,33 @@
 #define KOREAN 0x0206
 #define SPANISH 0x0207
 
-typedef struct
-{
-	u8 circle 	:	1;
-	u8 square	:	1;
-	u8 triangle :	1;
-	u8 heart 	: 	1;
-}marking;
+#define POKEMON_PARTY_SIZE 6
 
-typedef struct
-{
-	u8 sleep	:	3;
-	u8 poison	:	1;
-	u8 burn		:	1;
-	u8 freeze	:	1;
-	u8 para		:	1;	
-	u8 bad_pois	:	1;
-} status;
+typedef struct Pokemon {
+    u32 pid;
+    u32 tid;
+    u8 nickname [10];
+    u16 language;
+    u8 ot_name [7];
+    u8 markings;
+    u16 checksum;
+    u16 padding;
+    u16 encrypted_substructure [24];
+    u32 status_condition;
+    u8 level;
+    u8 pokerus_remaining_byte;
+    u16 current_hp;
+    u16 total_hp;
+    u16 attack;
+    u16 defense;
+    u16 speed;
+    u16 sattack;
+    u16 sdefense;
 
+};
 
-typedef struct
-{
-	u32 personality_value;
-	u32 ot_id;
-	char nickname[10];
-	u16 language;
-	char ot_name[7];
-	marking markings;
-	u16 checksum;
-	u16 padding;
-	u8 data_encrypted[48];
-	status status_condition;
-	u8 level;
-	u8 pokerus_remaining;
-	u16 current_hp;
-	u16 total_hp;
-	u16 attack;
-	u16 defense;
-	u16 speed;
-	u16 sp_attack;
-	u16 sp_defense;	
-} pokemon;
+extern void pokemon_full_clean_slot(struct Pokemon* dst);
 
-
-pokemon player_party[6];
+extern struct Pokemon players_party[POKEMON_PARTY_SIZE];
 
 #endif //POKEMON_H

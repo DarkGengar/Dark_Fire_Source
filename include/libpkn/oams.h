@@ -2,143 +2,187 @@
 
 #ifndef OAMS_H
 #define OAMS_H
-#define OAM_OBJECT(x) ((oam_object*)((x*0x44)+0x0202063C))
 
-#define ROTSCALE_TABLE_NULL (rotscale_frame**)0x08231BCC
-#define GFX_ANIM_TABLE_NULL (frame**)0x08231Bc0
-
-
-//rotscale anim commands
-static const u16 ROTSC_ANIM_CMD__EXIT_ROTSC_ANIM = 0x7FFF;
-
-//gfx anim commands
-static const u16 GFX_ANIM_CMD__EXIT_GFX_ANIM = 0xFFFF;
-
-
-struct oam_object;
-typedef struct oam_object oam_object;
-struct frame;
-typedef struct frame frame;
-
-
-
-
-typedef struct rotscAnimCmd
+#ifdef __cplusplus
+extern "C" 
 {
-    u16 cmd;
-    u16 param;
-    u16 unknown1; //0x0000
-    u16 unknown2; //0x0000
-	
-} rotscAnimCmd;
+#endif
 
-typedef struct gfxAnimCmd
-{
-    u16 cmd;
-    u16 param;
-	
-} gfxAnimCmd;
+struct Object;
 
-typedef struct gfxAnimTable
-{
-    gfxAnimCmd *gfxAnim;
-    
-} gfxAnimTable;
+/**
+ * Sprite object callback.
+ * @param o The object the callback belongs to
+ */
+typedef void (*ObjectCallback)(struct Object* o);
 
-typedef struct rotscAnimTable
-{
-    rotscAnimCmd *rotscAnim;
-    
-} rotscAnimTable;
 
-typedef struct palette {
-	void *pal;
-	u16 tag;
-	u16 field_6;
-} palette;
+/**
+ * 8 bit coordinates
+ */
+struct Coords8 {
+    u8 x;
+    u8 y;
+};
 
-typedef struct frame {
-  u16 data;
-  u16 duration;
-} frame;
+/**
+ * 16 bit coordinates;
+ */
+struct Coords16 {
+    s16 x;
+    s16 y;
+};
 
-typedef struct graphic {
-  void *sprite;
-  u16 size;
-  u16 tag;
-} graphic;
+/**
+ * Tile animation frame
+ */
+struct Frame {
+    u16 data;
+    u8 duration : 6;
+    u8 hflip : 1;
+    u8 vflip : 1;
+};
 
-typedef struct rotscale_frame {
-  u16 scale_delta_x;
-  u16 scale_delta_y;
-  u8 rot_delta;
-  u8 duration;
-  u16 field_6;
-}  rotscale_frame;
+/**
+ * Rotation/Scaling frame
+ */
+struct RotscaleFrame {
+    u16 scale_delta_x;
+    u16 scale_delta_y;
+    u8 rot_delta;
+    u8 duration;
+    u16 field_6;
+};
 
-typedef struct sprite {
-  u16 attr0;
-  u16 attr1;
-  u16 attr2;
-  u16 rotscale;
-} sprite;
 
-typedef struct oam_template {
-  u16 tiles_tag;
-  u16 pal_tag;
-  sprite *oam;
-  frame **animation;
-  graphic *graphics;
-  rotscale_frame **rotscale;
-  void (*callback)(oam_object *self);
-} oam_template;
+/**
+ * OAM Structure
+ */
 
-typedef struct oam_object {
-  sprite final_oam;
-  frame **animation_table;
-  u32 *gfx_table;
-  u32 *rotscale_table;
-  oam_template *oam_template;
-  u32 field18;
-  u32 *callback;
-  u16 x;
-  u16 y;
-  s16 x2;
-  s16 y2;
-  u8 x_centre;
-  u8 y_centre;
-  u8 anim_number;
-  u8 anim_frame;
-  u8 anim_delay;
-  u8 counter;
-  u16 private[8];
-  u8 bitfield2;
-  u8 bitfield;
-  u16 base_tile;
-  u8 field42;
-  u8 field43;
-} oam_object;
+struct OamData {
+    u32 y : 8;
 
-oam_object* oams = (oam_object*)0x0202063C;
+    /**
+     * 0=Normal, 1=Affine, 2=Disable, 3=Double Size
+     */
+    u32 affine_mode : 2;
 
-u8 generate_oam_forward_search(oam_template* template, s16 x, s16 y, u8 unkown);
+    /**
+     * 0=Normal, 1=Semi-Transparent, 2=OBJ Window, 3=Prohibited
+     */
+    u32 obj_mode : 2;
 
-u16 load_and_alloc_obj_vram_lz77 (graphic*g);
-void free_vram_for_obj_without_tag_remove (oam_object* oam);
-void free_obj_vram_by_object (oam_object* oam);
+    /**
+     * Enable mosaic
+     */
+    u32 mosaic : 1;
 
-u8 generate_oam_backward_search(oam_template* template, s16 x, s16 y, u8 unkown);
-u8 allocate_obj_pal(u16 paltag);
-u16 get_paltag_by_allocated_pal(u8 palid);
-void free_obj_pal (u16 paltag);
-void clear_oam_entry (oam_object* oam);
-void oam_despawn (oam_object* oam);
-u8 get_id_of_vramobj_alloc_list_element (u16 tag);
-void gfx_init_animation (oam_object* oam, u8 next_frame);
-void rotscal_new_animation (oam_object* oam, u8 animation_index);
-u8 get_obj_pal_by_tag(u16 tag);
-u16 get_obj_tile_by_tag(u16 tag);
+    /**
+     * 1=256 colours
+     */
+    u32 bpp : 1;
 
-void oam_null_callback(oam_object *self);
+    /**
+     * 0=Square,1=Horizontal,2=Vertical,3=Prohibited
+     */
+    u32 shape : 2;
 
-#endif //OAMS_H
+    u32 x : 9;
+    u32 matrix_num : 3; // bits 3/4 are h-flip/v-flip if not in affine mode
+    u32 h_flip : 1;
+    u32 v_flip : 1;
+    /**
+     * Size  Square   Horizontal  Vertical
+     * 0     8x8      16x8        8x16
+     * 1     16x16    32x8        8x32
+     * 2     32x32    32x16       16x32
+     * 3     64x64    64x32       32x64
+     */
+    u32 size : 2;
+
+    u16 tile_num : 10;
+
+    /**
+     * 0-3; 0=Highest
+     */
+    u16 priority : 2;
+    u16 palette_num : 4;
+    u16 affine_param;
+};
+
+/**
+ * Tileset Data
+ */
+struct SpriteTiles {
+    const void* data;
+    u16 size;
+    u16 tag;
+};
+
+struct SpritePalette {
+    const void* data;
+    u16 tag;
+};
+
+/**
+ * A template for a sprite object
+ */
+struct Template {
+    u16 tiles_tag;
+    u16 pal_tag;
+    const struct OamData* oam;
+
+    /**
+     * Animation table. Each entry is a pointer to an array of frames.
+     */
+    const struct Frame **animation;
+    const struct SpriteTiles* graphics;
+    const struct RotscaleFrame **rotscale;
+    ObjectCallback callback;
+};
+
+
+/**
+ * Sprite object
+ */
+struct Object {
+    struct OamData final_oam;
+    struct Frame **animation_table;
+    struct SpriteTiles* gfx_table;
+    struct RotscaleFrame **rotscale_table;
+    struct Template* object_template;
+    u32 field18;
+    ObjectCallback callback;
+    struct Coords16 pos1;
+    struct Coords16 pos2;
+    struct Coords8 shift;
+    u8 anim_number;
+    u8 anim_frame;
+    u8 anim_delay;
+    u8 counter;
+    u16 priv[8];
+    u8 bitfield2;
+    u8 bitfield;
+    u16 anim_data_offset;
+    u8 field42;
+
+    /**
+     * Changes order of sprites in OAM. Allows fine-grained control of
+     * hardware sprite priority. A lower value indicates higher
+     * priority.  Sprites must have equal priority in OAM for this to
+     * have any effect.
+     */
+    u8 y_height_related;
+};
+
+extern void oac_nullsub(struct Object* o);
+extern struct Object objects[64];
+extern const struct RotscaleFrame *rotscale_empty;
+extern const struct Frame *anim_image_empty;
+extern void obj_delete_and_free_tiles(struct Object* obj);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* OAMS_H */

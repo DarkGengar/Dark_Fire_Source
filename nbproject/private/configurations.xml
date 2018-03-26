@@ -41,16 +41,6 @@
           <df name="ts">
           </df>
         </df>
-        <df name="map_data">
-          <df name="maps">
-          </df>
-          <df name="tilesets">
-            <df name="behavior_data">
-            </df>
-            <df name="block_data">
-            </df>
-          </df>
-        </df>
         <df name="maps">
           <df name="map">
             <df name="0">
@@ -78,6 +68,8 @@
             <df name="3">
             </df>
             <df name="4">
+            </df>
+            <df name="5">
             </df>
           </df>
         </df>
@@ -111,6 +103,37 @@
       <df name="include">
         <df name="libpkn">
           <df name="asm">
+            <df name="pymap">
+              <in>abilities.s</in>
+              <in>attack_affects_whom_flags.s</in>
+              <in>attack_categories.s</in>
+              <in>attack_flags.s</in>
+              <in>attacks.s</in>
+              <in>callstds.s</in>
+              <in>egg_groups.s</in>
+              <in>evolution_methods.s</in>
+              <in>flags.s</in>
+              <in>item_pockets.s</in>
+              <in>items.s</in>
+              <in>map_adjacency_types.s</in>
+              <in>map_battle_styles.s</in>
+              <in>map_connections.s</in>
+              <in>map_flash_types.s</in>
+              <in>map_namespaces.s</in>
+              <in>map_show_name_types.s</in>
+              <in>map_types.s</in>
+              <in>map_weathers.s</in>
+              <in>move_tutor.s</in>
+              <in>movements.s</in>
+              <in>ordinals.s</in>
+              <in>person_behaviours.s</in>
+              <in>songs.s</in>
+              <in>species.s</in>
+              <in>trainer_ai_flags.s</in>
+              <in>trainerclasses.s</in>
+              <in>types.s</in>
+              <in>vars.s</in>
+            </df>
             <in>MPlayDef.s</in>
             <in>VoiceDef.s</in>
             <in>level_editor_script_language.s</in>
@@ -121,14 +144,19 @@
           </df>
           <df name="core">
             <in>bios.h</in>
+            <in>callback.h</in>
+            <in>io.h</in>
+            <in>string.h</in>
+            <in>task.h</in>
           </df>
           <in>agb_debug.h</in>
-          <in>callback.h</in>
+          <in>background.h</in>
           <in>color.h</in>
           <in>memory.h</in>
           <in>mugshot.h</in>
           <in>oam_anims.h</in>
           <in>oams.h</in>
+          <in>palette.h</in>
           <in>pokemon.h</in>
           <in>rom_functions.h</in>
           <in>trainer.h</in>
@@ -198,6 +226,24 @@
             </df>
           </df>
           <df name="8_asset">
+            <df name="maps">
+              <df name="wild_poke_habitat">
+                <df name="0">
+                  <df name="0">
+                  </df>
+                  <df name="1">
+                  </df>
+                  <df name="2">
+                  </df>
+                  <df name="3">
+                  </df>
+                </df>
+                <df name="1">
+                  <df name="0">
+                  </df>
+                </df>
+              </df>
+            </df>
             <df name="music">
               <df name="dpp">
                 <df name="bank">
@@ -277,6 +323,9 @@
             </df>
             <in>gfx.asm</in>
           </df>
+          <df name="maps">
+            <in>maps.asm</in>
+          </df>
           <df name="mus">
             <df name="enable_channels">
               <in>enable_channels.asm</in>
@@ -286,6 +335,7 @@
             </df>
             <in>mus.asm</in>
           </df>
+          <in>asset.asm</in>
           <in>gfx_mus.asm</in>
         </df>
         <df name="map_data">
@@ -786,6 +836,7 @@
         <df name="0_map_data">
           <df name="0_mapbank_header">
             <in>mapbank_header.s</in>
+            <in>mapbank_tabler.s</in>
           </df>
           <df name="1_mapfooter_table">
             <in>mapfooter_table.s</in>
@@ -910,6 +961,30 @@
           <in>mugshot.c</in>
         </df>
         <df name="8_asset">
+          <df name="maps">
+            <df name="wild_poke_habitat">
+              <df name="0">
+                <df name="0">
+                  <in>wild_poke_habitat_0_0.s</in>
+                </df>
+                <df name="1">
+                  <in>wild_poke_habitat_0_1.s</in>
+                </df>
+                <df name="2">
+                  <in>wild_poke_habitat_0_2.s</in>
+                </df>
+                <df name="3">
+                  <in>wild_poke_habitat_0_3.s</in>
+                </df>
+              </df>
+              <df name="1">
+                <df name="0">
+                  <in>wild_poke_habitat_1_0.s</in>
+                </df>
+              </df>
+              <in>wild_poke_header.s</in>
+            </df>
+          </df>
           <df name="music">
             <df name="dpp">
               <df name="bank">

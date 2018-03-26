@@ -35,7 +35,7 @@ extern "C" {
 
 /*Reset*/
 //swi 0x1
-extern void register_ram_reset(u32 flags);	
+//extern void register_ram_reset(u32 flags);	
 
 /*Decompression*/
 //swi 0x11
@@ -59,9 +59,9 @@ extern void cpufastset(const void *src, void *dst, u32 mode);
 
 /*Rot/scale*/
 //swi 0xE
-extern void bg_affine_set(const BgAffineSource *src, BgAffineDest *dst, s32 num);
+//extern void bg_affine_set(const BgAffineSource *src, BgAffineDest *dst, s32 num);
 //swi 0xF
-extern void obj_affine_set(const ObjAffineSource *src, void *dst, s32 num, s32 offset);		
+//extern void obj_affine_set(const ObjAffineSource *src, void *dst, s32 num, s32 offset);		
 
 
 #ifdef __cplusplus

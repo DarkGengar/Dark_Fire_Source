@@ -43,10 +43,38 @@ extern "C"
 {
 #endif
 
-extern void* malloc(size_t size);
+    
+#define ADDR_VRAM 0x06000000
+
+/**
+ * Allocates a block of size bytes of memory, returning a pointer to the beginning of the block.
+ *
+ */
+extern void* malloc(u32 size);
+
+/**
+ * Deallocate a block of memory previously allocated with malloc.
+ *
+ */
 extern void free(void* address);
-extern void* memcpy(void * destination, const void* source, size_t num);
-extern void* memset(void* dst, int value, size_t size);
+
+/**
+ * Copies size bytes from src to dst.
+ *
+ */
+extern void* memcpy(void* dst, const void* src, u32 size);
+
+/**
+ * Set size bytes at dst to value.
+ *
+ */
+extern void* memset(void* dst, u8 value, u32 size);
+
+/**
+ * Allocates a block of size bytes of memory and zero fills it.
+ *
+ */
+extern void* malloc_and_clear(u32 size);
 
 #ifdef __cplusplus	
 }

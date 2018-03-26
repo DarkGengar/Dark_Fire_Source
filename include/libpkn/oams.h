@@ -180,6 +180,14 @@ extern struct Object objects[64];
 extern const struct RotscaleFrame *rotscale_empty;
 extern const struct Frame *anim_image_empty;
 extern void obj_delete_and_free_tiles(struct Object* obj);
+extern void obj_and_aux_reset_all(void);
+extern void gpu_tile_obj_tags_reset(void);
+
+/**
+* List of pal tags for objects used, indexed by pal slot
+* @address{BPRD,03000DE8}
+*/
+extern u8 gpu_pal_tags[0x20];
 
 #ifdef __cplusplus
 }

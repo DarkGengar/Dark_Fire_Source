@@ -7,6 +7,11 @@ saveblock_2_adress = 0x03004F5C;
 attack_data_table = 0x08250B28;
 cpuset_copysize = 0x04000100;
 
+scr_cmd_table = 0x0815f914;
+
+/* oams.h */
+gpu_pal_tags = 0x03000DE8;
+
 /* variables */
 var_0x8000 = 0x020370B8;
 var_0x8001 = 0x020370BA;
@@ -32,22 +37,28 @@ color_blend = 0x08045178|1;
 return_addr = 0x080719dc|1;
 get_field_x2_from_trainerdata = 0x0804357C|1;
 play_song = 0x080719D8|1;
-free = 0x08002B44|1;
-malloc = 0x08002B1C|1;
-memcpy = 0x081E9D60|1;
-memset = 0x081E9DC0|1;
-fade_screen = 0x080704EC|1;
 get_current_weather = 0x807B094|1;
 __aeabi_uidivmod = 0x081E7A50|1;
-
+rain_sound_fadeout = 0x0807AF68|1;
+fadeout_song = 0x08071CC8|1;
+set_weather = 0x0807B064|1;
+update_weather = 0x0807B108|1;
 show_coins = 0x080D08D4|1;
 get_number_of_coins = 0x080D06FC|1;
+
 /* variables.h */
 var_set = 0x0806E4E8|1;
 var_load = 0x0806E4CC|1;
 var_access = 0x0806E3B8|1;
 
 pokemon_full_clean_slot = 0x0803D894|1;
+
+/* memory.h */
+free = 0x08002B44|1;
+malloc = 0x08002B1C|1;
+memcpy = 0x081E9D60|1;
+memset = 0x081E9DC0|1;
+malloc_and_clear = 0x08002B30|1;
 
 /* oam.h */
 template_instanciate_forward_search = 0x08006F0C|1;
@@ -58,6 +69,43 @@ objects = 0x0202063C;
 anim_image_empty = 0x08231BC0;
 rotscale_empty = 0x08231BCC;
 obj_delete_and_free_tiles = 0x08007200|1;
+obj_and_aux_reset_all = 0x08006A90|1;
+gpu_tile_obj_tags_reset = 0x08008744|1;
+
+/* background.h */
+gpu_tile_bg_drop_all_sets = 0x08001628|1;
+bg_vram_setup = 0x08001668|1;
+gpu_sprites_upload = 0x080072A0|1;
+copy_queue_process = 0x08007590|1;
+bgid_set_tilemap = 0x08001FB0|1;
+bgid_mod_x_offset = 0x08001BA0|1;
+bgid_mod_y_offset = 0x08001D18|1;
+bgid_get_tilemap = 0x08002018|1;
+bgid_mark_for_sync = 0x080F6A38|1;
+bg_sync_display_and_show = 0x080019CC|1;
+bg_display_sync = 0x080013E0|1;
+gpu_copy_to_vram_by_bgid = 0x080012A8|1;
+
+/* callback.h */
+vblank_handler_set = 0x08000704|1;
+
+/* palette.h */
+pal_fade_control_and_dead_struct_reset = 0x0807048C|1;
+fade_screen = 0x080704EC|1;
+gpu_pal_allocator_reset = 0x08008870|1;
+gpu_pal_upload = 0x080703D8|1;
+gpu_pal_apply = 0x08070350|1;
+gpu_pal_apply_compressed = 0x0807030C|1;
+palette_bg_faded_fill_black = 0x0807DA9C|1;
+
+/* io.h */
+lcd_io_set = 0x08000A48|1;
+
+/* string.h */
+rboxes_free = 0x08003E4C|1;
+
+/* task.h */
+tasks_init = 77320|1;
 
 /* bios.h */
 lz77_uncomp_wram = 0x081E7A58|1;

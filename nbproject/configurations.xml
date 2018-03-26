@@ -10,6 +10,14 @@
             <in>level_editor_script_language.s</in>
             <in>ow_script_language.s</in>
           </df>
+          <df name="core">
+            <in>callback.h</in>
+            <in>io.h</in>
+            <in>string.h</in>
+            <in>task.h</in>
+          </df>
+          <in>background.h</in>
+          <in>palette.h</in>
         </df>
       </df>
       <df name="patches">
@@ -528,7 +536,7 @@
   <confs>
     <conf name="Default" type="0">
       <toolsSet>
-        <compilerSet>default</compilerSet>
+        <compilerSet>DevkitARM|MinGW</compilerSet>
         <dependencyChecking>false</dependencyChecking>
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
@@ -559,6 +567,18 @@
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="include/libpkn/background.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/core/callback.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/core/io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/core/string.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/core/task.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/palette.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.asm" ex="false" tool="4" flavor2="0">
       </item>

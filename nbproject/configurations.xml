@@ -16,8 +16,16 @@
             <in>string.h</in>
             <in>task.h</in>
           </df>
-          <in>background.h</in>
-          <in>palette.h</in>
+          <df name="graphics">
+            <in>background.h</in>
+            <in>palette.h</in>
+          </df>
+          <df name="overworld">
+            <in>ow_ui.h</in>
+          </df>
+          <df name="save">
+            <in>block.h</in>
+          </df>
         </df>
       </df>
       <df name="patches">
@@ -227,6 +235,8 @@
             </df>
             <in>test_player.s</in>
             <in>test_player2.s</in>
+            <in>test_player3.s</in>
+            <in>test_player4.s</in>
           </df>
         </df>
         <df name="6_overworld">
@@ -568,8 +578,6 @@
             tool="4"
             flavor2="0">
       </item>
-      <item path="include/libpkn/background.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="include/libpkn/core/callback.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/libpkn/core/io.h" ex="false" tool="3" flavor2="0">
@@ -578,7 +586,16 @@
       </item>
       <item path="include/libpkn/core/task.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/libpkn/palette.h" ex="false" tool="3" flavor2="0">
+      <item path="include/libpkn/graphics/background.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/libpkn/graphics/palette.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/overworld/ow_ui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/save/block.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.asm" ex="false" tool="4" flavor2="0">
       </item>
@@ -1002,6 +1019,16 @@
             flavor2="0">
       </item>
       <item path="src/3_scripts/ow_scripts/test_player2.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/test_player3.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/3_scripts/ow_scripts/test_player4.s"
             ex="false"
             tool="4"
             flavor2="0">

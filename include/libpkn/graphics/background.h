@@ -1,5 +1,4 @@
-/******************************************************************
- *                                                                 *
+/*******************************************************************                                                                 *
  * Copyright (C) 2015-2017 by DarkGengar                           *
  * This file is part of Pokémon Dark Fire                          *
  *                                                                 *
@@ -24,8 +23,8 @@
  *                                                                 *
  ******************************************************************/
 /**
- * @file     task.h
- * @date     25.03.2018
+ * @file     background.h
+ * @date     24.03.2018
  * @author   DarkGengar <https://github.com/DarkGengar>
  * @brief    brief description
  *
@@ -35,60 +34,44 @@
 /* -- Includes -- */
 #include "types.h"
 
-#ifndef TASK_H
-#define TASK_H
+#ifndef BACKGROUND_H
+#define BACKGROUND_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/**
- * Task function.
- *
- * @param id The ID of the the current task
- */
-typedef void (*TaskCallback)(u8 id);
-
-
-/**
- * A short-lived background function with state.
- */
-struct Task {
-    TaskCallback function; /**< Function to run */
-    bool inuse;
-    u8 prev;
-    u8 next;
-    u8 priority;
-    s16 priv[16]; /**< State variables */
+struct BgConfig {
+    u16 bgid : 2;
+    u16 character_base : 2;
+    u16 map_base : 5;
+    u16 size : 2;
+    u16 palette : 1;
+    u16 priority : 2;
+    u16 b_padding : 2; // bit field padding
+    u16 padding;
 };
 
-/**
- * All the tasks.
- */
-extern struct Task tasks[16];
-
-extern void tasks_init(void);
-
-/**
- * Start a new task.
- *
- * @param func Function pointer
- * @return Task ID
- * @address{BPRE,0807741C}
- */
-extern u8 task_add(TaskCallback func, u8 priority);
-
-/**
- * Execute all active tasks once.
- */
-extern void task_exec(void);
-
+extern void gpu_tile_bg_drop_all_sets(u8);
+extern void bg_vram_setup(u8 mode, const struct BgConfig* config, u8 layers);
+extern void gpu_sprites_upload(void);
+extern void copy_queue_process(void);
+extern void bgid_set_tilemap(u8 layer, u8* space);
+extern void bgid_mod_x_offset(u8 bgid, s32 delta, u8 dir);
+extern void bgid_mod_y_offset(u8 bgid, s32 delta, u8 dir);
+extern void* bgid_get_tilemap(u8 layer);
+extern void bgid_mark_for_sync(u8 bgid);
+extern void bg_display_sync();
+extern void bg_sync_display_and_show(u8 bgid);
+extern void gpu_copy_to_vram_by_bgid(u8 bgid, void*source, u16 size, u16 starttile, u8 mode);
+extern void overworld_free_bgmaps();
+extern void tilemaps_sync(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* TASK_H */
+#endif /* BACKGROUND_H */
 
 
 /* -- EOF -- */

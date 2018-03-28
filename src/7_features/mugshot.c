@@ -39,7 +39,7 @@
 #include "rom_functions.h"
 #include "agb_debug.h"
 #include "assets/gfx_tb_s_135.h"
-#include "oams.h"
+#include "graphics/oams.h"
 #include "pokemon.h"
 
 /* pokemon.h */
@@ -59,7 +59,7 @@ extern void *tileset_header;
 *  \details  nothing.
 */
 void load_mug(void)
-{
+{   
     // print tileset header
     dprintf("Tileset Header: 0x0%x\n", &tileset_header);
 

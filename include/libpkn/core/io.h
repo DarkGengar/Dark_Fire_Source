@@ -42,7 +42,13 @@
 extern "C" {
 #endif
 
+enum Interrupts {
+    INTERRUPT_VBLANK = (1 << 0),
+    INTERRUPT_HBLANK = (1 << 1),
+};
+    
 extern void lcd_io_set(u8 reg_id, u16 value);
+extern void interrupts_enable(enum Interrupts disable);
 
 #ifdef __cplusplus
 }

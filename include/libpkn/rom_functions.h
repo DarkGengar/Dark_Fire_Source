@@ -24,7 +24,6 @@
  * Created on 25. Februar 2017, 15:00
  */
 
-#include <stdbool.h>
 #include "types.h"
  
 #ifndef ROM_FUNCTIONS_H
@@ -44,6 +43,7 @@ extern u8 get_field_x2_from_trainerdata(u16 trainer_id);
 extern bool checkflag (u16 flag);
 extern u8 get_current_weather();
 extern void rain_sound_fadeout();
+extern void fadeout_song(u8 speed);
 
 extern void show_coins(u16 coins, u8 x, u8 y);
 extern u16 get_number_of_coins();
@@ -60,6 +60,9 @@ extern u32 __aeabi_uidivmod(u32 dividend, u32 divisor);
 extern u8 template_instanciate_forward_search(const struct Template*, u16 x, u16 y, u8 priority);
 extern void gpu_tile_obj_decompress_alloc_tag_and_upload(struct SpriteTiles* tile);
 extern void gpu_pal_decompress_alloc_tag_and_upload(struct SpritePalette* pal);
+
+/* callback.h */
+void dma0_cb_reset();
 
 
 #ifdef __cplusplus

@@ -4,7 +4,7 @@
 map_event_0_0:
 	
 	event_cnt:
-		.byte 2
+		.byte 5
 		.byte 3
 		.byte 0
 		.byte 4
@@ -34,8 +34,27 @@ map_event_0_0:
 			.byte 0
 			.byte 0
 
-        person_001:
+	    person_001:
 			.byte 1
+			.byte 57
+			.byte 0
+			.byte 0
+			.hword 0x15
+			.hword 0x12
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.hword 0
+			.word test_player2
+			.hword 0
+			.byte 0
+			.byte 0
+
+	    person_002:
+			.byte 2
 			.byte 57
 			.byte 0
 			.byte 0
@@ -48,7 +67,45 @@ map_event_0_0:
 			.byte 0
 			.byte 0
 			.hword 0
-			.word test_player2
+			.word test_player3
+			.hword 0
+			.byte 0
+			.byte 0
+
+	    person_003:
+			.byte 3
+			.byte 57
+			.byte 0
+			.byte 0
+			.hword 0x13
+			.hword 0x12
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.hword 0
+			.word test_player4
+			.hword 0
+			.byte 0
+			.byte 0
+
+	    person_004:
+			.byte 4
+			.byte 57
+			.byte 0
+			.byte 0
+			.hword 0x12
+			.hword 0x15
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.byte 0
+			.hword 0
+			.word 0
 			.hword 0
 			.byte 0
 			.byte 0

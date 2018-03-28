@@ -24,8 +24,8 @@
  *                                                                 *
  ******************************************************************/
 /**
- * @file     task.h
- * @date     25.03.2018
+ * @file     palette.h
+ * @date     24.03.2018
  * @author   DarkGengar <https://github.com/DarkGengar>
  * @brief    brief description
  *
@@ -35,60 +35,52 @@
 /* -- Includes -- */
 #include "types.h"
 
-#ifndef TASK_H
-#define TASK_H
+#ifndef PALETTE_H
+#define PALETTE_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-/**
- * Task function.
- *
- * @param id The ID of the the current task
- */
-typedef void (*TaskCallback)(u8 id);
-
-
-/**
- * A short-lived background function with state.
- */
-struct Task {
-    TaskCallback function; /**< Function to run */
-    bool inuse;
-    u8 prev;
-    u8 next;
-    u8 priority;
-    s16 priv[16]; /**< State variables */
+// this doesn't structured right at. Bit fields broken between bytes
+// and game loads it as though it's a byte. Please review
+struct FadeControl {
+    u16 bg_pal_bitfield;
+    u16 obj_pal_bitfield;
+    u8 delay_counter:6;
+    u16 y:5; // blend coefficient
+    u16 target_y:5; // target blend coefficient
+    u16 blend_color:15;
+    u16 active:1;
+    u16 multipurpose:6;
+    u16 y_dec:1; // whether blend coefficient is decreasing
+    u16 buffer_transfer_disabled:1;
+    u16 mode:2;
+    u16 should_reset_blend_registers:1;
+    u16 hardware_fade_finishing:1;
+    u16 software_fade_finishing_counter:5;
+    u16 software_fade_finishing:1;
+    u16 obj_palette_toggle:1;
+    u8 delta_y:4; // rate of change of blend coefficient
 };
 
-/**
- * All the tasks.
- */
-extern struct Task tasks[16];
 
-extern void tasks_init(void);
-
-/**
- * Start a new task.
- *
- * @param func Function pointer
- * @return Task ID
- * @address{BPRE,0807741C}
- */
-extern u8 task_add(TaskCallback func, u8 priority);
-
-/**
- * Execute all active tasks once.
- */
-extern void task_exec(void);
-
+extern struct FadeControl pal_fade_control;
+    
+extern bool fade_screen(u32 bitmask, s8 speed, u8 to, u8 from, u16 color);
+extern void pal_fade_control_and_dead_struct_reset(void);
+extern void gpu_pal_allocator_reset(void);
+extern void gpu_pal_upload(void);
+extern void gpu_pal_apply(const void* palette, u16 offset, u16 size);
+extern void gpu_pal_apply_compressed(void* palette, u16 offset, u16 size);
+extern void palette_bg_faded_fill_black(void);
+extern void process_palfade(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* TASK_H */
+#endif /* PALETTE_H */
 
 
 /* -- EOF -- */

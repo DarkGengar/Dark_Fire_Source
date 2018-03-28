@@ -182,6 +182,8 @@ extern const struct Frame *anim_image_empty;
 extern void obj_delete_and_free_tiles(struct Object* obj);
 extern void obj_and_aux_reset_all(void);
 extern void gpu_tile_obj_tags_reset(void);
+extern void objc_exec(void);
+extern void obj_sync_superstate(void);
 
 /**
 * List of pal tags for objects used, indexed by pal slot

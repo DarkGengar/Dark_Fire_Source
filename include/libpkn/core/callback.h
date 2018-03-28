@@ -47,6 +47,13 @@ typedef void (*SuperCallback)(void);
 extern void vblank_handler_set(SuperCallback func);
 
 
+/**
+ * Set a secondary per-frame callback.
+ *
+ */
+extern void set_callback2(SuperCallback func);
+
+
 #ifdef __cplusplus
 }
 #endif

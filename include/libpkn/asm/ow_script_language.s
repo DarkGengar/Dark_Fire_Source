@@ -62,13 +62,23 @@
 .word \pointer_to_routine
 .endm
 
+.macro special special_id
+.byte 0x25
+.hword \special_id
+.endm
+
 .macro waitstate
 .byte 0x27
 .endm
 
-.macro setflag flag
+.macro setflag flag_id
 .byte 0x29
-.word \flag
+.word \flag_id
+.endm
+
+.macro clearflag flag_id
+.byte 0x2A
+.word \flag_id
 .endm
 
 .macro fadein fading_speed

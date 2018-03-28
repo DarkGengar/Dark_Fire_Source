@@ -33,8 +33,8 @@
 *  \details  This is a AGB type include file.
 */
 
-#ifndef GBA_H
-#define GBA_H
+#ifndef TYPES_H
+#define TYPES_H
 
 #ifdef __cplusplus
 extern "C"
@@ -47,6 +47,8 @@ extern "C"
 
 #define SCREEN_WIDTH 	240
 #define SCREEN_HEIGHT 	160
+    
+typedef enum { false = 0, true } bool;
 
 // Unsigned
 typedef unsigned char  u8,  byte;
@@ -84,4 +86,4 @@ typedef u16 COLOR;
 #endif
 
 
-#endif // GBA_H
+#endif // TYPES_H

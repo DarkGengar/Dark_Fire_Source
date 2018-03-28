@@ -4,10 +4,13 @@ pal_buffer = 0x020371F8;
 pal_prebuffer = 0x02037ACC;
 big_callbacks = 0x03004fE0;
 saveblock_2_adress = 0x03004F5C;
-attack_data_table = 0x08250B28;
 cpuset_copysize = 0x04000100;
 
+/* palette.h */
+pal_fade_control = 0x02037AB8;
+
 scr_cmd_table = 0x0815f914;
+attack_data_table = 0x08250B28;
 
 /* oams.h */
 gpu_pal_tags = 0x03000DE8;
@@ -16,6 +19,9 @@ gpu_pal_tags = 0x03000DE8;
 var_0x8000 = 0x020370B8;
 var_0x8001 = 0x020370BA;
 lastresult = 0x020370D0;
+
+/* task.h */
+tasks = 0x03004FE0;
 
 /* static rom functions */
 titlescreen_function_0 = 0x08078C00|1;
@@ -27,7 +33,7 @@ return_to_ow = 0x080A1128|1;
 setflag = 0x0806E5E4|1;
 get_pokemons_attribute = 0x0803FAE8|1;
 set_pokemons_attribute = 0x0804027c|1;
-recalculate_stats = 0x0803E37c|1;
+recalculate_stats = 0x0803E37C|1;
 init_script = 0x08069AD4|1;
 catchable = 0x0802d428|1;
 uncatchable = 0x0802d3f8|1;
@@ -60,7 +66,7 @@ memcpy = 0x081E9D60|1;
 memset = 0x081E9DC0|1;
 malloc_and_clear = 0x08002B30|1;
 
-/* oam.h */
+/* oams.h */
 template_instanciate_forward_search = 0x08006F0C|1;
 gpu_tile_obj_decompress_alloc_tag_and_upload = 0x0800EFB8|1;
 gpu_pal_decompress_alloc_tag_and_upload = 0x0800EFFC|1;
@@ -71,6 +77,8 @@ rotscale_empty = 0x08231BCC;
 obj_delete_and_free_tiles = 0x08007200|1;
 obj_and_aux_reset_all = 0x08006A90|1;
 gpu_tile_obj_tags_reset = 0x08008744|1;
+objc_exec = 0x08006ADC|1;
+obj_sync_superstate = 0x08006B28|1;
 
 /* background.h */
 gpu_tile_bg_drop_all_sets = 0x08001628|1;
@@ -85,9 +93,13 @@ bgid_mark_for_sync = 0x080F6A38|1;
 bg_sync_display_and_show = 0x080019CC|1;
 bg_display_sync = 0x080013E0|1;
 gpu_copy_to_vram_by_bgid = 0x080012A8|1;
+overworld_free_bgmaps = 0x08056410|1;
+tilemaps_sync = 0x080F6A4C|1;
 
 /* callback.h */
 vblank_handler_set = 0x08000704|1;
+dma0_cb_reset = 0x08087DC8|1;
+set_callback2 = 0x08000554|1;
 
 /* palette.h */
 pal_fade_control_and_dead_struct_reset = 0x0807048C|1;
@@ -97,15 +109,19 @@ gpu_pal_upload = 0x080703D8|1;
 gpu_pal_apply = 0x08070350|1;
 gpu_pal_apply_compressed = 0x0807030C|1;
 palette_bg_faded_fill_black = 0x0807DA9C|1;
+process_palfade = 0x08070434|1;
 
 /* io.h */
 lcd_io_set = 0x08000A48|1;
+interrupts_enable = 0x08000B78|1;
 
 /* string.h */
 rboxes_free = 0x08003E4C|1;
 
 /* task.h */
-tasks_init = 77320|1;
+tasks_init = 0x08077320|1;
+task_add = 0x08077380|1;
+task_exec = 0x080774DC|1;
 
 /* bios.h */
 lz77_uncomp_wram = 0x081E7A58|1;
@@ -118,3 +134,9 @@ register_ram_reset = 0x081E7A68|1;
 arctan = 0x081E7A40|1;
 div = 0x081E7A50|1;
 sqrt = 0x081E7A84|1;
+
+/* ow_ui.h */
+help_system_disable__sp198 = 0x0812B4C8|1;
+
+/* block.h */
+sav1_secure_increment = 0x08054EB0|1;

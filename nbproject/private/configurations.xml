@@ -146,17 +146,25 @@
             <in>bios.h</in>
             <in>callback.h</in>
             <in>io.h</in>
+            <in>memory.h</in>
             <in>string.h</in>
             <in>task.h</in>
           </df>
+          <df name="graphics">
+            <in>background.h</in>
+            <in>oams.h</in>
+            <in>palette.h</in>
+          </df>
+          <df name="overworld">
+            <in>ow_ui.h</in>
+          </df>
+          <df name="save">
+            <in>block.h</in>
+          </df>
           <in>agb_debug.h</in>
-          <in>background.h</in>
           <in>color.h</in>
-          <in>memory.h</in>
           <in>mugshot.h</in>
           <in>oam_anims.h</in>
-          <in>oams.h</in>
-          <in>palette.h</in>
           <in>pokemon.h</in>
           <in>rom_functions.h</in>
           <in>trainer.h</in>
@@ -171,8 +179,6 @@
             <df name="0_mapbank_header">
             </df>
             <df name="1_mapfooter_table">
-            </df>
-            <df name="2_wild_poke_header">
             </df>
             <df name="3_banks">
               <df name="0_bank_0">
@@ -944,6 +950,8 @@
             </df>
             <in>test_player.s</in>
             <in>test_player2.s</in>
+            <in>test_player3.s</in>
+            <in>test_player4.s</in>
           </df>
         </df>
         <df name="6_overworld">

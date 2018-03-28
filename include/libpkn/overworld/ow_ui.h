@@ -24,8 +24,8 @@
  *                                                                 *
  ******************************************************************/
 /**
- * @file     palette.h
- * @date     24.03.2018
+ * @file     ow_ui.h
+ * @date     28.03.2018
  * @author   DarkGengar <https://github.com/DarkGengar>
  * @brief    brief description
  *
@@ -35,26 +35,23 @@
 /* -- Includes -- */
 #include "types.h"
 
-#ifndef PALETTE_H
-#define PALETTE_H
+#ifndef OW_UI_H
+#define OW_UI_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-extern bool fade_screen(u32 bitmask, s8 speed, u8 to, u8 from, u16 color);
-extern void pal_fade_control_and_dead_struct_reset(void);
-extern void gpu_pal_allocator_reset(void);
-extern void gpu_pal_upload(void);
-extern void gpu_pal_apply(const void* palette, u16 offset, u16 size);
-extern void gpu_pal_apply_compressed(void* palette, u16 offset, u16 size);
-extern void palette_bg_faded_fill_black(void);
+/**
+ * Disables the game's help menu LR button toggled
+ */
+extern void help_system_disable__sp198(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* PALETTE_H */
+#endif /* OW_UI_H */
 
 
 /* -- EOF -- */

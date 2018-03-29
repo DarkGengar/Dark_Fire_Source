@@ -40,7 +40,7 @@ extern u16 get_random_change_seed();
 extern u32 _umod(u32 dividen, u32 divisor);
 extern void play_song(u16 song_id);
 extern u8 get_field_x2_from_trainerdata(u16 trainer_id);
-extern bool checkflag (u16 flag);
+extern boolean checkflag (u16 flag);
 extern u8 get_current_weather();
 extern void rain_sound_fadeout();
 extern void fadeout_song(u8 speed);

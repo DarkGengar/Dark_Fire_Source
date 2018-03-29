@@ -67,7 +67,7 @@ struct FadeControl {
 
 extern struct FadeControl pal_fade_control;
     
-extern bool fade_screen(u32 bitmask, s8 speed, u8 to, u8 from, u16 color);
+extern boolean fade_screen(u32 bitmask, s8 speed, u8 to, u8 from, u16 color);
 extern void pal_fade_control_and_dead_struct_reset(void);
 extern void gpu_pal_allocator_reset(void);
 extern void gpu_pal_upload(void);

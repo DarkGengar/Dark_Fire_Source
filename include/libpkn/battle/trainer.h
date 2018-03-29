@@ -5,7 +5,7 @@
 
 typedef struct 
 {
-	u8 gender 		: 7;
+	u8 gender 	: 7;
 	u8 encounter	: 1;
 	
 }gender_encounter;

@@ -62,9 +62,12 @@ extern const unsigned short bootscreenPal[256];
 extern u16 *lastresult;
 extern void scr_cmd_table;
 
-void setup();
-void load_gfx();
-void cb_handler();
+void cpm_scene_load();
+void cpm_scene_reset();
+void cpm_scene_loop();
+void cpm_scene_setup();
+void cpm_scene_load_gfx();
+void cpm_scene_cb_handler();
 
 const struct BgConfig test_config[1] = {
     { .priority = 0, .palette = 0, .map_base = 31, .bgid = 0}
@@ -84,57 +87,73 @@ void vblank(void)
 *  
 *  \details  nothing.
 */
-bool capsule_machine(void)
-{
-    // table of pokemon
-    u16 poke_gen1_table[] = {50, 151, 5};
-    // pokemon
-    u16 poke;
-    // random value for table
-    u16 rand_value = get_random_change_seed() % 3;
+void cpm_scene_init() {
+    //setup();
+    //load_gfx();
     
-    // generate random pokemon from table
-    poke = poke_gen1_table[rand_value];
-    // get offset of lastresult
-    u16* value = var_access(LASTRESULT);
-    // set lastresult to pokemon
-    *value = poke;
-    
-    //set_weather(0);
-    //update_weather();
-    
-    if(pal_fade_control.active)
-	return FALSE;
-    
-    setup();
-    load_gfx();
-    
-    palette_bg_faded_fill_black();
-    fade_screen(0xFFFFFFFF, 1, 16, 0, 0x0000);
-    
-    set_callback2(cb_handler);
+    //palette_bg_faded_fill_black();
+    //fade_screen(0xFFFFFFFF, 1, 16, 0, 0x0000);
+    rain_sound_fadeout();
+    fadeout_song(1);
+    rboxes_free();
+    set_callback2(cpm_scene_load);
     dprintf("END OF SCENE LOAD\n");
-    return TRUE;
 }
 
-void setup() 
-{
+void cpm_scene_load() {
+    super.multi_purpose_state_tracker = 0;
+    
+    cpm_scene_reset();
+    task_add(cpm_scene_loop, 0);
+    set_callback2(cpm_scene_cb_handler);
+}
+
+void cpm_scene_reset() {
     tasks_init();
-    vblank_handler_set(NULL);
     obj_and_aux_reset_all();
     pal_fade_control_and_dead_struct_reset();
     gpu_pal_allocator_reset();
     gpu_tile_obj_tags_reset();
     dma0_cb_reset();
+}
+
+void cpm_scene_loop() {
+    switch(super.multi_purpose_state_tracker) {
+	case 0:
+	    dprintf("CASE 0, state %d\n", super.multi_purpose_state_tracker);
+	    vblank_handler_set(NULL);
+	    palette_bg_faded_fill_black();
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 1:
+	    dprintf("CASE 1, state %d\n", super.multi_purpose_state_tracker);
+	    //fade_screen(0xFFFFFFFF, 1, 16, 0, 0x0000);
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 2:
+	    dprintf("CASE 2, state %d\n", super.multi_purpose_state_tracker);
+	    cpm_scene_setup();
+	    cpm_scene_load_gfx();
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 3:
+	    dprintf("CASE 3, state %d\n", super.multi_purpose_state_tracker);
+	    if (!pal_fade_control.active)
+		super.multi_purpose_state_tracker++;
+	    break;
+	default:
+	    break;
+    }
+}
+
+void cpm_scene_setup() 
+{
     //memset((void *)(ADDR_VRAM), 0x0, 0x10000);
     gpu_tile_bg_drop_all_sets(1);
-    rboxes_free();
-    rain_sound_fadeout();
-    fadeout_song(1);
     //help_system_disable__sp198();
     bg_vram_setup(0, test_config, 1);
     
-    bg_sync_display_and_show(0);
+    gpu_sync_bg_show(0);
     bg_display_sync();
     bgid_mod_x_offset(0, 0, 0);
     bgid_mod_y_offset(0, 0, 0);
@@ -148,7 +167,7 @@ void setup()
     bgid_set_tilemap(0, bg0map);
 }
 
-void load_gfx() 
+void cpm_scene_load_gfx() 
 {
     lz77_uncomp_vram(bootscreenTiles, (void*) 0x06000000);
     lz77_uncomp_wram(bootscreenMap, bgid_get_tilemap(0));
@@ -157,7 +176,24 @@ void load_gfx()
     gpu_pal_apply(bootscreenPal, 0, 32);
 }
 
-void cb_handler()
+void capsule_machine(void)
+{
+    // table of pokemon
+    u16 poke_gen1_table[] = {50, 151, 5};
+    // pokemon
+    u16 poke;
+    // random value for table
+    u16 rand_value = get_random_change_seed() % 3;
+    
+    // generate random pokemon from table
+    poke = poke_gen1_table[rand_value];
+    // get offset of lastresult
+    u16* value = var_access(LASTRESULT);
+    // set lastresult to pokemon
+    *value = poke; 
+}
+
+void cpm_scene_cb_handler()
 {
     if (pal_fade_control.active)
         process_palfade();

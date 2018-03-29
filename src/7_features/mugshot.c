@@ -40,7 +40,7 @@
 #include "agb_debug.h"
 #include "assets/gfx_tb_s_135.h"
 #include "graphics/oams.h"
-#include "pokemon.h"
+#include "pokemon/pokemon.h"
 
 /* pokemon.h */
 
@@ -62,6 +62,7 @@ void load_mug(void)
 {   
     // print tileset header
     dprintf("Tileset Header: 0x0%x\n", &tileset_header);
+    dprintf("BOOLEAN TRUE: %d\nBOOLEAN FALSE: %d\n", !0, !1);
 
     // Oam Data
     const struct OamData test_oam = {

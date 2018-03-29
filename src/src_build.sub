@@ -17,8 +17,8 @@ ARMIPS				:=	@armips
 OBJCOPY 			:= 	@arm-none-eabi-objcopy
 
 #=====Tool Flags=====================================
-CFLAGS				:=	-std=gnu11 -mthumb -mthumb-interwork -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Wall -Wextra -Wconversion -O2 -Iinclude/libpkn
-ASFLAGS				:=	-mthumb -Iinclude/libpkn/asm/
+CFLAGS				:=	-std=gnu11 -mthumb -mthumb-interwork -mcpu=arm7tdmi -fno-inline -mlong-calls -march=armv4t -Wall -Wextra -Wconversion -O2 -Iinclude/libpkn -Iinclude/libdf
+ASFLAGS				:=	-mthumb -Iinclude/libpkn/asm/ -Iinclude/libdf/asm/
 
 #=====Directories====================================
 SOURCE_DIR			:=	src

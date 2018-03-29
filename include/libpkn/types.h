@@ -41,14 +41,12 @@ extern "C"
 {
 #endif
 
-#define NULL 0
-#define TRUE 1
-#define FALSE 0
+#define NULL 0	
 
 #define SCREEN_WIDTH 	240
 #define SCREEN_HEIGHT 	160
     
-typedef enum { false = 0, true } bool;
+typedef enum { FALSE, TRUE } boolean;
 
 // Unsigned
 typedef unsigned char  u8,  byte;

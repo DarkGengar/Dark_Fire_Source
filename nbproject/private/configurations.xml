@@ -101,7 +101,7 @@
       <df name="game_build">
       </df>
       <df name="include">
-        <df name="libpkn">
+        <df name="libdf">
           <df name="asm">
             <df name="pymap">
               <in>abilities.s</in>
@@ -134,6 +134,11 @@
               <in>types.s</in>
               <in>vars.s</in>
             </df>
+          </df>
+          <in>mugshot.h</in>
+        </df>
+        <df name="libpkn">
+          <df name="asm">
             <in>MPlayDef.s</in>
             <in>VoiceDef.s</in>
             <in>level_editor_script_language.s</in>
@@ -141,6 +146,9 @@
           </df>
           <df name="assets">
             <in>gfx_tb_s_135.h</in>
+          </df>
+          <df name="battle">
+            <in>trainer.h</in>
           </df>
           <df name="core">
             <in>bios.h</in>
@@ -158,16 +166,16 @@
           <df name="overworld">
             <in>ow_ui.h</in>
           </df>
+          <df name="pokemon">
+            <in>pokemon.h</in>
+          </df>
           <df name="save">
             <in>block.h</in>
           </df>
           <in>agb_debug.h</in>
           <in>color.h</in>
-          <in>mugshot.h</in>
           <in>oam_anims.h</in>
-          <in>pokemon.h</in>
           <in>rom_functions.h</in>
-          <in>trainer.h</in>
           <in>types.h</in>
         </df>
       </df>

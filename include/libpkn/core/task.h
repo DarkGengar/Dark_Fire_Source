@@ -55,7 +55,7 @@ typedef void (*TaskCallback)(u8 id);
  */
 struct Task {
     TaskCallback function; /**< Function to run */
-    bool inuse;
+    boolean inuse;
     u8 prev;
     u8 next;
     u8 priority;

@@ -20,6 +20,9 @@ var_0x8000 = 0x020370B8;
 var_0x8001 = 0x020370BA;
 lastresult = 0x020370D0;
 
+/* callback.h */
+super = 0x03003040;
+
 /* task.h */
 tasks = 0x03004FE0;
 
@@ -90,7 +93,8 @@ bgid_mod_x_offset = 0x08001BA0|1;
 bgid_mod_y_offset = 0x08001D18|1;
 bgid_get_tilemap = 0x08002018|1;
 bgid_mark_for_sync = 0x080F6A38|1;
-bg_sync_display_and_show = 0x080019CC|1;
+gpu_sync_bg_show = 0x080019CC|1;
+gpu_sync_bg_hide = 0x080019E0|1;
 bg_display_sync = 0x080013E0|1;
 gpu_copy_to_vram_by_bgid = 0x080012A8|1;
 overworld_free_bgmaps = 0x08056410|1;

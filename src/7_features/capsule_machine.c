@@ -102,7 +102,6 @@ void cpm_scene_init() {
 
 void cpm_scene_load() {
     super.multi_purpose_state_tracker = 0;
-    cpm_scene_reset();
     task_add(cpm_scene_loop, 0);
     set_callback2(cpm_scene_cb_handler);
 }
@@ -120,28 +119,36 @@ void cpm_scene_loop() {
     switch(super.multi_purpose_state_tracker) {
 	case 0:
 	    dprintf("CASE 0, state %d\n", super.multi_purpose_state_tracker);
-	    vblank_handler_set(NULL);
+	    //vblank_handler_set(NULL);
 	    palette_bg_faded_fill_black();
 	    fade_screen(-1, 0, 16, 0, 0);
+	    cpm_scene_reset();
+	    vblank_handler_set(NULL);
 	    super.multi_purpose_state_tracker++;
+	    dprintf("NEXT STATE %d\n", super.multi_purpose_state_tracker);
 	    break;
 	case 1:
 	    dprintf("CASE 1, state %d\n", super.multi_purpose_state_tracker);
+	    if (!pal_fade_control.active)
+		super.multi_purpose_state_tracker++;
+	    break;
+	case 2:
+	    dprintf("CASE 2, state %d\n", super.multi_purpose_state_tracker);
 	    cpm_scene_setup();
 	    super.multi_purpose_state_tracker++;
 	    break;
-	case 2:
-	    cpm_scene_load_gfx();
-	    super.multi_purpose_state_tracker++;
-	    break;
 	case 3:
-	    dprintf("CASE 3, state %d\n", super.multi_purpose_state_tracker);
-	    //palette_bg_faded_fill_black();
-	    //fade_screen(-1, 0, 16, 0, 0);
+	    cpm_scene_load_gfx();
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 4:
 	    dprintf("CASE 4, state %d\n", super.multi_purpose_state_tracker);
+	    //palette_bg_faded_fill_black();
+	    //fade_screen(-1, 0, 16, 0, 0);
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 5:
+	    dprintf("CASE 5, state %d\n", super.multi_purpose_state_tracker);
 	    if (!pal_fade_control.active)
 		super.multi_purpose_state_tracker++;
 	    break;
@@ -152,7 +159,6 @@ void cpm_scene_loop() {
 
 void cpm_scene_setup() 
 {
-    vblank_handler_set(NULL);
     //memset((void *)(ADDR_VRAM), 0x0, 0x10000);
     gpu_tile_bg_drop_all_sets(1);
     //help_system_disable__sp198();
@@ -200,13 +206,10 @@ void capsule_machine(void)
 
 void cpm_scene_cb_handler()
 {
-    if (pal_fade_control.active)
-        process_palfade();
-    else {
-	task_exec();
-        objc_exec();
-        obj_sync_superstate();
-    }
+    task_exec();
+    objc_exec();
+    obj_sync_superstate();
+    process_palfade();
 }
 
 // EOF

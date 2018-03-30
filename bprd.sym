@@ -54,6 +54,7 @@ set_weather = 0x0807B064|1;
 update_weather = 0x0807B108|1;
 show_coins = 0x080D08D4|1;
 get_number_of_coins = 0x080D06FC|1;
+init_fadescreen = 0x0807A77C|1;
 
 /* variables.h */
 var_set = 0x0806E4E8|1;

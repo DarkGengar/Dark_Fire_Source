@@ -127,16 +127,20 @@ void cpm_scene_loop() {
 	    break;
 	case 1:
 	    dprintf("CASE 1, state %d\n", super.multi_purpose_state_tracker);
-	    //fade_screen(0xFFFFFFFF, 1, 16, 0, 0x0000);
+	    fade_screen(0xFFFFFFFF, 1, 16, 0, 0x0000);
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 2:
+	    if (!pal_fade_control.active)
+		super.multi_purpose_state_tracker++;
+	    break;
+	case 3:
 	    dprintf("CASE 2, state %d\n", super.multi_purpose_state_tracker);
 	    cpm_scene_setup();
 	    cpm_scene_load_gfx();
 	    super.multi_purpose_state_tracker++;
 	    break;
-	case 3:
+	case 4:
 	    dprintf("CASE 3, state %d\n", super.multi_purpose_state_tracker);
 	    if (!pal_fade_control.active)
 		super.multi_purpose_state_tracker++;

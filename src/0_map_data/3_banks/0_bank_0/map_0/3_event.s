@@ -20,7 +20,7 @@ map_event_0_0:
 			.byte 57
 			.byte 0
 			.byte 0
-			.hword 0x14
+			.hword 0x13
 			.hword 0x12
 			.byte 0
 			.byte 0
@@ -39,7 +39,7 @@ map_event_0_0:
 			.byte 57
 			.byte 0
 			.byte 0
-			.hword 0x15
+			.hword 0x14
 			.hword 0x12
 			.byte 0
 			.byte 0
@@ -58,7 +58,7 @@ map_event_0_0:
 			.byte 57
 			.byte 0
 			.byte 0
-			.hword 0x16
+			.hword 0x15
 			.hword 0x12
 			.byte 0
 			.byte 0
@@ -77,7 +77,7 @@ map_event_0_0:
 			.byte 57
 			.byte 0
 			.byte 0
-			.hword 0x13
+			.hword 0x16
 			.hword 0x12
 			.byte 0
 			.byte 0

@@ -62,6 +62,7 @@ extern const unsigned short bootscreenPal[256];
 extern u16 *lastresult;
 extern void scr_cmd_table;
 
+void cpm_scene_init();
 void cpm_scene_load();
 void cpm_scene_reset();
 void cpm_scene_loop();
@@ -87,23 +88,32 @@ void vblank(void)
 *  
 *  \details  nothing.
 */
-void cpm_scene_init() {
-    //setup();
-    //load_gfx();
-    
-    //palette_bg_faded_fill_black();
-    //fade_screen(0xFFFFFFFF, 1, 16, 0, 0x0000);
+void cpm_scene_start() {
+    dprintf("HELLO\n");
+    super.multi_purpose_state_tracker = 0;
     rain_sound_fadeout();
     fadeout_song(1);
-    rboxes_free();
-    set_callback2(cpm_scene_load);
+    //rboxes_free();
+    set_callback2(cpm_scene_init);
+    dprintf("START FADE\n");
+    fade_screen(0xFFFFFFFF, 0, 0, 16, 0);
     dprintf("END OF SCENE LOAD\n");
 }
 
+void cpm_scene_init() {
+    dprintf("CPM_SCENE_INIT\n");
+    if(!pal_fade_control.active){
+	dprintf("FADE NOT ACTIVE\n");
+	set_callback2(cpm_scene_load);
+    }
+    else {
+	dprintf("FADE ACTIVE\n");
+	process_palfade();
+    }
+}
+
 void cpm_scene_load() {
-    super.multi_purpose_state_tracker = 0;
-    palette_bg_faded_fill_black();
-    fade_screen(-1, 0, 16, 0, 0);
+    dprintf("ENTERED CPM_SCENE_LOAD\n");
     cpm_scene_reset();
     task_add(cpm_scene_loop, 0);
     set_callback2(cpm_scene_cb_handler);
@@ -119,32 +129,25 @@ void cpm_scene_reset() {
 }
 
 void cpm_scene_loop() {
+    dprintf("ENTERED CPM_SCENE_LOOP\n");
     switch(super.multi_purpose_state_tracker) {
 	case 0:
-	    dprintf("CASE 0, state %d\n", super.multi_purpose_state_tracker);
-	    if (!pal_fade_control.active)
-		super.multi_purpose_state_tracker++;
-	    break;
-	case 1:
 	    dprintf("CASE 1, state %d\n", super.multi_purpose_state_tracker);
-	    //vblank_handler_set(NULL);
 	    vblank_handler_set(NULL);
 	    super.multi_purpose_state_tracker++;
 	    dprintf("NEXT STATE %d\n", super.multi_purpose_state_tracker);
 	    break;
-	case 2:
+	case 1:
 	    dprintf("CASE 2, state %d\n", super.multi_purpose_state_tracker);
 	    cpm_scene_setup();
 	    super.multi_purpose_state_tracker++;
 	    break;
-	case 3:
+	case 2:
 	    cpm_scene_load_gfx();
 	    super.multi_purpose_state_tracker++;
 	    break;
-	case 4:
+	case 3:
 	    dprintf("CASE 4, state %d\n", super.multi_purpose_state_tracker);
-	    //palette_bg_faded_fill_black();
-	    //fade_screen(-1, 0, 16, 0, 0);
 	    super.multi_purpose_state_tracker++;
 	    break;
 	default:
@@ -204,7 +207,6 @@ void cpm_scene_cb_handler()
     task_exec();
     objc_exec();
     obj_sync_superstate();
-    process_palfade();
 }
 
 // EOF

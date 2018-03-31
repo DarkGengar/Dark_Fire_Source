@@ -974,6 +974,7 @@
             </df>
           </df>
           <in>capsule_machine.c</in>
+          <in>demo_scene.c</in>
           <in>mugshot.c</in>
         </df>
         <df name="8_asset">

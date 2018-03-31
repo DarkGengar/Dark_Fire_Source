@@ -44,7 +44,7 @@ extern boolean checkflag (u16 flag);
 extern u8 get_current_weather();
 extern void rain_sound_fadeout();
 extern void fadeout_song(u8 speed);
-extern void init_fadescreen(u8 type, u8 unkown);
+extern void init_fadescreen(u8 type, u8 speed);
 
 extern void show_coins(u16 coins, u8 x, u8 y);
 extern u16 get_number_of_coins();

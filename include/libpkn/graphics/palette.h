@@ -42,6 +42,8 @@
 extern "C" {
 #endif
 
+
+    
 // this doesn't structured right at. Bit fields broken between bytes
 // and game loads it as though it's a byte. Please review
 struct FadeControl {

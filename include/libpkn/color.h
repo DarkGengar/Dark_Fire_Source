@@ -4,19 +4,13 @@
 #define COLOR_H
 
 
-typedef struct rgb{
-	u16 red : 5;
-	u16 green : 5;
-	u16 blue : 5;
-	u16 unused : 1;
-} rgb;
+#define rgb5(r, g, b) (COLOR)(r | (g << 5) | (b << 10))
 
+#define CLR_BLACK   rgb5(0, 0, 0)
+#define CLR_WHITE   rgb5(255, 255, 255)
+#define CLR_RED	    rgb5(255, 0, 0)
+#define CLR_GREEN   rgb5(0, 255, 0)
+#define CLR_BLUE    rgb5(0, 0, 255)
 
-typedef union color{
-	
-	u16 value;
-	rgb rgb;
-	
-}color;
 
 #endif //COLOR_H

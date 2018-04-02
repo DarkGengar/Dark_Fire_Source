@@ -10,6 +10,8 @@
           </df>
           <df name="bootscreen">
           </df>
+          <df name="gba">
+          </df>
           <df name="intro">
           </df>
           <df name="ows">
@@ -274,6 +276,8 @@
                   <df name="badges">
                   </df>
                   <df name="bootscreen">
+                  </df>
+                  <df name="gba">
                   </df>
                   <df name="intro">
                   </df>
@@ -1280,6 +1284,10 @@
                 <df name="bootscreen">
                   <in>bootscreen.c</in>
                   <in>bootscreen.h</in>
+                </df>
+                <df name="gba">
+                  <in>gba.c</in>
+                  <in>gba.h</in>
                 </df>
                 <df name="intro">
                   <in>gfx_intro_hero.c</in>

@@ -66,6 +66,17 @@ struct FadeControl {
     u8 delta_y:4; // rate of change of blend coefficient
 };
 
+struct ColorComponents {
+    u16 r : 5;
+    u16 g : 5;
+    u16 b : 5;
+    u16 unused : 1;
+};
+
+union Color {
+    struct ColorComponents components;
+    u16 packed;
+};
 
 extern struct FadeControl pal_fade_control;
     

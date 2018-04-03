@@ -1,4 +1,4 @@
-/******************************************************************
+/*******************************************************************
  *                                                                 *
  * Copyright (C) 2015-2017 by DarkGengar                           *
  * This file is part of Pokémon Dark Fire                          *
@@ -49,8 +49,12 @@
 #include "graphics/oams.h"
 #include "graphics/background.h"
 
+#include "overworld/loading.h"
+#include "overworld/ow_ui.h"
+
 // assets
 #include "gfx/gba/gba.h"
+#include "gfx/pokekey/pokekey.h"
 
 
 /* -- Structures -- */
@@ -129,10 +133,17 @@ void sm_pkey_scene_loop(u8 tsk_id) {
 	    break;
 	case 5:
 	    // Key input handling
-	    if (super.buttons_new & KEY_B)
+	    if (super.buttons_new & KEY_B) {
+		init_fadeout_screen(0);
+		super.multi_purpose_state_tracker = 10;
+	    }
 	    break;
 	case 10:
-	    
+	    if(!pal_fade_control.active) {
+		task_del(tsk_id);
+		set_callback2(c2_overworld_switch_start_menu);
+		set_callback1(c1_overworld);
+	    }
 	default:
 	    break;
     }
@@ -163,11 +174,11 @@ void sm_pkey_scene_vblank(void) {
 }
 
 void sm_pkey_scene_load_gfx(void) {
-    lz77_uncomp_vram(gbaTiles, (void*) 0x06000000);
-    lz77_uncomp_wram(gbaMap, bgid_get_tilemap(0));
+    lz77_uncomp_vram(pokekeyTiles, (void*) 0x06000000);
+    lz77_uncomp_wram(pokekeyMap, bgid_get_tilemap(0));
     gpu_copy_to_vram_by_bgid(0, bgid_get_tilemap(0), 0x800, 0, 2);
     
-    gpu_pal_apply(gbaPal, 0, 32);
+    gpu_pal_apply(pokekeyPal, 0, 32);
 }
 
 void sm_pkey_scene_cb_handler(void) {

@@ -18,6 +18,8 @@
             <df name="hero">
             </df>
           </df>
+          <df name="pokekey">
+          </df>
           <df name="tb_backsprites">
           </df>
           <df name="tb_s">
@@ -169,6 +171,7 @@
             <in>palette.h</in>
           </df>
           <df name="overworld">
+            <in>loading.h</in>
             <in>ow_ui.h</in>
           </df>
           <df name="pokemon">
@@ -292,6 +295,8 @@
                     <df name="hero">
                     </df>
                   </df>
+                  <df name="pokekey">
+                  </df>
                   <df name="tb_backsprites">
                   </df>
                   <df name="tb_s">
@@ -386,6 +391,9 @@
       </df>
       <df name="resource_collection">
         <df name="dark_fire">
+          <df name="dropbox_in_progress">
+            <in>pokemonnamen_table.asm</in>
+          </df>
           <df name="gfx">
             <df name="bbgs">
             </df>
@@ -1320,6 +1328,10 @@
                     <in>gfx_ow_hero_walk.c</in>
                     <in>gfx_ow_hero_walk.h</in>
                   </df>
+                </df>
+                <df name="pokekey">
+                  <in>pokekey.c</in>
+                  <in>pokekey.h</in>
                 </df>
                 <df name="tb_backsprites">
                   <in>gfx_backsprite_hero.c</in>

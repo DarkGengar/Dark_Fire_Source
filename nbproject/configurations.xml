@@ -28,6 +28,7 @@
             <in>palette.h</in>
           </df>
           <df name="overworld">
+            <in>loading.h</in>
             <in>ow_ui.h</in>
           </df>
           <df name="save">
@@ -618,6 +619,8 @@
             flavor2="0">
       </item>
       <item path="include/libpkn/graphics/palette.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/overworld/loading.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/libpkn/overworld/ow_ui.h" ex="false" tool="3" flavor2="0">
       </item>

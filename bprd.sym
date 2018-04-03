@@ -105,6 +105,7 @@ tilemaps_sync = 0x080F6A4C|1;
 /* callback.h */
 vblank_handler_set = 0x08000704|1;
 dma0_cb_reset = 0x08087DC8|1;
+set_callback1 = 0x08056600|1;
 set_callback2 = 0x08000554|1;
 c2_exit_to_overworld_2_switch = 0x080567FC|1;
 
@@ -145,6 +146,11 @@ sqrt = 0x081E7A84|1;
 
 /* ow_ui.h */
 help_system_disable__sp198 = 0x0812B4C8|1;
+c2_overworld_switch_start_menu = 0x080568C8|1;
+
+/* loading.h */
+c1_overworld = 0x08056554|1;
+c2_return_overworld_music_scripts_cont = 0x080568E4|1;
 
 /* block.h */
 sav1_secure_increment = 0x08054EB0|1;

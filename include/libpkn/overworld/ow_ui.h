@@ -47,6 +47,8 @@ extern "C" {
  */
 extern void help_system_disable__sp198(void);
 
+extern void c2_overworld_switch_start_menu(void);
+
 #ifdef __cplusplus
 }
 #endif

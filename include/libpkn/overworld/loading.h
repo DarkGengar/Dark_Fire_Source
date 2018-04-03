@@ -24,8 +24,8 @@
  *                                                                 *
  ******************************************************************/
 /**
- * @file     callback.h
- * @date     24.03.2018
+ * @file     loading.h
+ * @date     03.04.2018
  * @author   DarkGengar <https://github.com/DarkGengar>
  * @brief    brief description
  *
@@ -34,99 +34,36 @@
 
 /* -- Includes -- */
 #include "types.h"
-#include "graphics/oams.h"
 
-#ifndef CALLBACK_H
-#define CALLBACK_H
+#ifndef LOADING_H
+#define LOADING_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-typedef void (*SuperCallback)(void);
+    
+/**
+ * Main overworld callback (callback 1). Requires c2_overworld as callback 2.
+ */
+extern void c1_overworld(void);    
 
 /**
- * Bits for the keypad;
+ * Secondary overworld callback (callback 2), return to overworld and continue scripts+music.
  */
-enum Keypad {
-    KEY_A = (1 << 0),
-    KEY_B = (1 << 1),
-    KEY_SELECT = (1 << 2),
-    KEY_START = (1 << 3),
-    KEY_RIGHT = (1 << 4),
-    KEY_LEFT = (1 << 5),
-    KEY_UP = (1 << 6),
-    KEY_DOWN = (1 << 7),
-    KEY_L = (1 << 8),
-    KEY_R = (1 << 9),
-
-    /** Directional pad mask */
-    KEY_DPAD = (KEY_UP | KEY_DOWN | KEY_LEFT | KEY_RIGHT),
-};
+extern void c2_exit_to_overworld_2_switch(void);
 
 /**
- * Check the if the all the given keys are pressed
+ * Secondary overworld callback (callback 2), return to overworld and continue scripts+music.
  */
-#define KEYS_ALL_PRESSED(x, keys) (((x) & (keys)) == (keys))
+extern void c2_return_overworld_music_scripts_cont(void);
 
-/**
- * Maximum buttons
- */
-#define KEY_MAX 10
-
-struct Superstate {
-    SuperCallback callback1;
-    SuperCallback callback2;
-    SuperCallback callback2_backup;
-    SuperCallback vblank_handler;
-    SuperCallback hblank_handler;
-    SuperCallback field_14;
-    SuperCallback serial_callback;
-
-    u32 bits_to_wait_for;
-    u16* vblank_counter;
-    u32 field_24;
-
-    u16 buttons_held;
-    u16 buttons_new;
-    u16 buttons_held_remapped;
-    u16 buttons_new_remapped;
-    u16 buttons_new_and_repeated;
-    u16 buttons_countdown;
-
-    u32 unused_apparently;
-    struct OamData sprites[128];
-    u8 multi_purpose_state_tracker;
-    u8 gpu_sprites_upload_skip;
-};
-
-
-/**
- * Set a primary per-frame callback.
- *
- */
-extern void set_callback1(SuperCallback func);
-
-/**
- * Set a secondary per-frame callback.
- *
- */
-extern void set_callback2(SuperCallback func);
-
-extern void vblank_handler_set(SuperCallback func);
-
-
-/**
- * Global game state.
- *
- */
-extern struct Superstate super;
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* CALLBACK_H */
+#endif /* LOADING_H */
 
 
 /* -- EOF -- */

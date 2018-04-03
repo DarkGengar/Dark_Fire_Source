@@ -55,6 +55,7 @@ update_weather = 0x0807B108|1;
 show_coins = 0x080D08D4|1;
 get_number_of_coins = 0x080D06FC|1;
 init_fadescreen = 0x0807A77C|1;
+close_start_menu = 0x0806EE7C|1;
 
 /* variables.h */
 var_set = 0x0806E4E8|1;
@@ -105,6 +106,7 @@ tilemaps_sync = 0x080F6A4C|1;
 vblank_handler_set = 0x08000704|1;
 dma0_cb_reset = 0x08087DC8|1;
 set_callback2 = 0x08000554|1;
+c2_exit_to_overworld_2_switch = 0x080567FC|1;
 
 /* palette.h */
 pal_fade_control_and_dead_struct_reset = 0x0807048C|1;
@@ -127,6 +129,7 @@ rboxes_free = 0x08003E4C|1;
 tasks_init = 0x08077320|1;
 task_add = 0x08077380|1;
 task_exec = 0x080774DC|1;
+task_del = 0x0807746C|1;
 
 /* bios.h */
 lz77_uncomp_wram = 0x081E7A58|1;

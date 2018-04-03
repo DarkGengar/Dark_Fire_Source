@@ -24,8 +24,8 @@
  *                                                                 *
  ******************************************************************/
 /**
- * @file     demo_scene.c
- * @date     31.03.2018
+ * @file     pokekey.c
+ * @date     02.04.2018
  * @author   DarkGengar <https://github.com/DarkGengar>
  * @brief    brief description
  *
@@ -33,7 +33,6 @@
  */
 
 /* -- Includes -- */
-
 // libpkn
 #include "types.h"
 #include "agb_debug.h"
@@ -53,111 +52,48 @@
 // assets
 #include "gfx/gba/gba.h"
 
-/* -- Defines -- */
-
-/**
- * @brief Palette position of buttons
- */
-#define PAL_POS_BTN 5
 
 /* -- Structures -- */
-const struct BgConfig demo_scene_bg_config[1] = {
+const struct BgConfig sm_pkey_scene_bg_config[1] = {
     { .priority = 0, .palette = 0, .map_base = 31, .bgid = 0 }
 };
 
-/* -- Colors -- */
-union Color clr_new_btn = { .packed = 0, .components.r = 31 };
-
-union Color clr_held_btn = { .packed = 0, .components.g = 31 };
-
-union Color clr_rep_btn = {
-    .packed = 0,
-    .components.r = 25,
-    .components.g = 25
-};
-
-union Color clr_btn = { 
-     .packed = 0, 
-     .components.r = 27, 
-     .components.g = 27, 
-     .components.b = 29
-};
-
-/* -- Proto types -- */
-
-/**
- * @brief Entry point of Scene
- * @details Connection between Overworld and scene handling
- */
-void demo_scene_start(void);
-
-/**
- * @brief Callback for fadescreen check
- * @details Check fade and finish fade
- */
-void demo_scene_init(void);
-
-/**
- * @brief Callback to start new scene
- * @details Reset scene, add Task and start Task
- */
-void demo_scene_load(void);
-
-/**
- * @brief Reset scene settings
- */
-void demo_scene_reset(void);
-
-/**
- * @brief Task of Scene
- * @details Manage the scene
- */
-void demo_scene_loop();
-
-/**
- * @brief Vram setup for scene
- */
-void demo_scene_setup(void);
-
-/**
- * @brief Callback to manage vblank
- */
-void demo_scene_vblank(void);
-
-/**
- * @brief Load graphics
- */
-void demo_scene_load_gfx(void);
-
-/**
- * @brief Callback to process objs, tasks and fadescreen
- */
-void demo_scene_cb_handler(void);
+/* -- Prototypes -- */
+boolean sm_pkey_scene_start(void);
+void sm_pkey_scene_load(void);
+void sm_pkey_scene_reset(void);
+void sm_pkey_scene_loop(u8 tsk_id);
+void sm_pkey_scene_setup(void);
+void sm_pkey_scene_load_gfx(void);
+void sm_pkey_scene_vblank(void);
+void sm_pkey_scene_cb_handler(void);
 
 /* -- Methods -- */
 
-void demo_scene_start(void) {
+/**
+ * @brief    brief description
+ * @param    param description
+ * @return   return description 
+ * @details  More Details
+ */
+boolean sm_pkey_scene_start(void) {
+    if(pal_fade_control.active)
+	return FALSE;
     fadeout_song(1);
     rain_sound_fadeout();
-    init_fadeout_screen(0);
-    set_callback2(demo_scene_init);
+    overworld_free_bgmaps();
+    set_callback2(sm_pkey_scene_load);
+    return TRUE;
 }
 
-void demo_scene_init(void) {
-    if(!pal_fade_control.active)
-	set_callback2(demo_scene_load);
-    else
-	process_palfade();
-}
-
-void demo_scene_load(void) {
+void sm_pkey_scene_load(void) {
     super.multi_purpose_state_tracker = 0;
-    demo_scene_reset();
-    task_add((TaskCallback)demo_scene_loop, 0);
-    set_callback2(demo_scene_cb_handler);
+    sm_pkey_scene_reset();
+    task_add((TaskCallback)sm_pkey_scene_loop, 0);
+    set_callback2(sm_pkey_scene_cb_handler);
 }
 
-void demo_scene_reset(void) {
+void sm_pkey_scene_reset(void) {
     tasks_init();
     obj_and_aux_reset_all();
     pal_fade_control_and_dead_struct_reset();
@@ -166,19 +102,21 @@ void demo_scene_reset(void) {
     dma0_cb_reset();
 }
 
-void demo_scene_loop() {
-    u32 btn = 0;
+void sm_pkey_scene_loop(u8 tsk_id) {
+    dprintf("Task ID: %d", tsk_id);
     switch(super.multi_purpose_state_tracker) {
 	case 0:
 	    vblank_handler_set(NULL);
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 1:
-	    demo_scene_setup();
+	    sm_pkey_scene_setup();
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 2:
-	    demo_scene_load_gfx();
+	    // Load resources
+	    sm_pkey_scene_load_gfx();
+	    play_song(289);
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 3:
@@ -191,49 +129,40 @@ void demo_scene_loop() {
 	    break;
 	case 5:
 	    // Key input handling
-	    for(u32 i = 0; i < KEY_MAX; i++){
-		btn = (u32)(1<<i);
-		if(super.buttons_new & btn)
-		    gpu_pal_apply(&clr_new_btn, (u16)(PAL_POS_BTN+i), 2);
-		else if(super.buttons_held & btn)
-		    gpu_pal_apply(&clr_held_btn, (u16)(PAL_POS_BTN+i), 2);
-		else
-		    gpu_pal_apply(&clr_btn, (u16)(PAL_POS_BTN+i), 2);
-	    }
+	    if (super.buttons_new & KEY_B)
 	    break;
+	case 10:
+	    
 	default:
 	    break;
     }
 }
 
-void demo_scene_setup() 
-{
+void sm_pkey_scene_setup(void) {
     //memset((void *)(ADDR_VRAM), 0x0, 0x10000);
     gpu_tile_bg_drop_all_sets(1);
     //help_system_disable__sp198();
-    bg_vram_setup(0, demo_scene_bg_config, 1);
+    bg_vram_setup(0, sm_pkey_scene_bg_config, 1);
     
     gpu_sync_bg_show(0);
     bg_display_sync();
     bgid_mod_x_offset(0, 0, 0);
     bgid_mod_y_offset(0, 0, 0);
     
-    vblank_handler_set(demo_scene_vblank);
+    vblank_handler_set(sm_pkey_scene_vblank);
     interrupts_enable(INTERRUPT_VBLANK);
     
     void *bg0map = malloc(0x800);
     bgid_set_tilemap(0, bg0map);
 }
 
-void demo_scene_vblank(void)
-{
+void sm_pkey_scene_vblank(void) {
     gpu_sprites_upload();
     copy_queue_process();
     gpu_pal_upload();
 }
 
-void demo_scene_load_gfx() 
-{
+void sm_pkey_scene_load_gfx(void) {
     lz77_uncomp_vram(gbaTiles, (void*) 0x06000000);
     lz77_uncomp_wram(gbaMap, bgid_get_tilemap(0));
     gpu_copy_to_vram_by_bgid(0, bgid_get_tilemap(0), 0x800, 0, 2);
@@ -241,7 +170,7 @@ void demo_scene_load_gfx()
     gpu_pal_apply(gbaPal, 0, 32);
 }
 
-void demo_scene_cb_handler(void) {
+void sm_pkey_scene_cb_handler(void) {
     if (pal_fade_control.active)
 	process_palfade();
     else{
@@ -249,10 +178,6 @@ void demo_scene_cb_handler(void) {
 	objc_exec();
 	obj_sync_superstate();
     }
-}
-
-void debug_scene_state(u8 state) {
-    dprintf("STATE %d\n", state);
 }
 
 /* -- EOF -- */

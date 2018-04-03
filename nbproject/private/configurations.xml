@@ -82,6 +82,9 @@
           </df>
         </df>
         <df name="strings">
+          <df name="features">
+            <in>start_menu.str</in>
+          </df>
           <df name="intro">
           </df>
           <df name="story">
@@ -240,6 +243,10 @@
               <df name="agb_debug">
               </df>
             </df>
+            <df name="start_menu">
+              <df name="pokekey">
+              </df>
+            </df>
           </df>
           <df name="8_asset">
             <df name="maps">
@@ -305,6 +312,8 @@
                   </df>
                 </df>
                 <df name="strings">
+                  <df name="features">
+                  </df>
                   <df name="intro">
                   </df>
                   <df name="story">
@@ -356,6 +365,9 @@
           <in>asset.asm</in>
           <in>gfx_mus.asm</in>
         </df>
+        <df name="help_menu">
+          <in>remove_help_menu.asm</in>
+        </df>
         <df name="map_data">
           <in>map_data.asm</in>
         </df>
@@ -370,6 +382,7 @@
           <in>ts_cry.asm</in>
         </df>
         <in>patches.asm</in>
+        <in>start_menu.asm</in>
       </df>
       <df name="resource_collection">
         <df name="dark_fire">
@@ -977,6 +990,13 @@
               <in>agb_debug.c</in>
             </df>
           </df>
+          <df name="start_menu">
+            <df name="p_phone">
+            </df>
+            <df name="pokekey">
+              <in>pokekey.c</in>
+            </df>
+          </df>
           <in>capsule_machine.c</in>
           <in>demo_scene.c</in>
           <in>mugshot.c</in>
@@ -1357,6 +1377,9 @@
                 </df>
               </df>
               <df name="strings">
+                <df name="features">
+                  <in>start_menu.s</in>
+                </df>
                 <df name="intro">
                   <in>string_intro.s</in>
                 </df>

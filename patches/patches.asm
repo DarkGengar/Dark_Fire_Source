@@ -3,3 +3,5 @@
 .include "patches/ts_cry/ts_cry.asm"
 .include "patches/overworld/ow_pal_table.asm"
 .include "patches/overworld/ow_table.asm"
+.include "patches/help_menu/remove_help_menu.asm"
+.include "patches/start_menu.asm"

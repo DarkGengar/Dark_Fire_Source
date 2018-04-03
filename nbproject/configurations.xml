@@ -2,6 +2,13 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
+      <df name="asset">
+        <df name="strings">
+          <df name="features">
+            <in>start_menu.str</in>
+          </df>
+        </df>
+      </df>
       <df name="include">
         <df name="libpkn">
           <df name="asm">
@@ -73,6 +80,7 @@
           <in>ts_cry.asm</in>
         </df>
         <in>patches.asm</in>
+        <in>start_menu.asm</in>
       </df>
       <df name="resource_collection">
         <df name="dark_fire">
@@ -248,6 +256,11 @@
           <df name="sots_codes">
             <df name="agb_debug">
               <in>agb_debug.c</in>
+            </df>
+          </df>
+          <df name="start_menu">
+            <df name="pokekey">
+              <in>pokekey.c</in>
             </df>
           </df>
           <in>demo_scene.c</in>
@@ -572,6 +585,11 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
+      <item path="asset/strings/features/start_menu.str"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="include/libpkn/asm/MPlayDef.s" ex="false" tool="4" flavor2="0">
       </item>
       <item path="include/libpkn/asm/VoiceDef.s" ex="false" tool="4" flavor2="0">
@@ -651,6 +669,8 @@
             ex="false"
             tool="4"
             flavor2="0">
+      </item>
+      <item path="patches/start_menu.asm" ex="false" tool="4" flavor2="0">
       </item>
       <item path="patches/ts_cry/ts_cry.asm" ex="false" tool="4" flavor2="0">
       </item>
@@ -1048,6 +1068,11 @@
       <item path="src/7_features/mugshot.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/7_features/sots_codes/agb_debug/agb_debug.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/7_features/start_menu/pokekey/pokekey.c"
             ex="false"
             tool="0"
             flavor2="0">

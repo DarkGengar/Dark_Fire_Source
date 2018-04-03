@@ -42,6 +42,11 @@
 extern "C" {
 #endif
 
+    
+#define fadeout_screen(speed, color) fade_screen(0xFFFFFFFF, speed, 0, 16, color)
+#define fadein_screen(speed, color) fade_screen(0xFFFFFFFF, speed, 16, 0, color)
+#define init_fadeout_screen(speed) init_fadescreen(1, speed)
+#define init_fadein_screen(speed) init_fadescreen(0, speed)
 
     
 // this doesn't structured right at. Bit fields broken between bytes

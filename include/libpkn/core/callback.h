@@ -45,7 +45,6 @@ extern "C" {
 
 typedef void (*SuperCallback)(void);
 
-
 /**
  * Bits for the keypad;
  */
@@ -69,6 +68,11 @@ enum Keypad {
  * Check the if the all the given keys are pressed
  */
 #define KEYS_ALL_PRESSED(x, keys) (((x) & (keys)) == (keys))
+
+/**
+ * Maximum buttons
+ */
+#define KEY_MAX 10
 
 struct Superstate {
     SuperCallback callback1;
@@ -104,6 +108,9 @@ struct Superstate {
 extern void set_callback2(SuperCallback func);
 
 extern void vblank_handler_set(SuperCallback func);
+
+
+extern void c2_exit_to_overworld_2_switch(void);
 
 /**
  * Global game state.

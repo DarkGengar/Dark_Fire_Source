@@ -83,6 +83,10 @@ extern u8 task_add(TaskCallback func, u8 priority);
  */
 extern void task_exec(void);
 
+/**
+ * Delete a task.
+ */
+extern void task_del(u8 id);
 
 #ifdef __cplusplus
 }

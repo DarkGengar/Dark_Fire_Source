@@ -55,6 +55,9 @@ INTRO_HERO_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/intro/gfx_intro_hero.c
 INTRO_PROF_PNG			:=	$(GFX_DIR)/intro/gfx_intro_prof.png
 INTRO_PROF_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/intro/gfx_intro_prof.c
 
+POKEKEY_PNG			:=	$(GFX_DIR)/pokekey/pokekey.png
+POKEKEY_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/pokekey/pokekey.c
+
 BOOTSCREEN_PNG			:=	$(GFX_DIR)/bootscreen/bootscreen.png
 BOOTSCREEN_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/bootscreen/bootscreen.c
 
@@ -70,7 +73,7 @@ ALL_INTRO_SPRITES		:=	$(INTRO_HERO_C) $(INTRO_PROF_C)
 TB_S_RIVAL_PNG          :=  $(GFX_DIR)/tb_s/gfx_tb_s_135.png
 TB_S_RIVAL_C            :=  $(OUTPUT_DIR)/$(GFX_DIR)/tb_s/gfx_tb_s_135.c
 
-ALL_GFX					:=	$(ALL_TILESETS) $(ALL_TS_BGS) $(ALL_BTL_BACK_SPRITES) $(BADGES_C) $(ALL_INTRO_SPRITES) $(BOOTSCREEN_C) $(ALL_OWS) $(TB_S_RIVAL_C) $(GBA_C)
+ALL_GFX					:=	$(ALL_TILESETS) $(ALL_TS_BGS) $(ALL_BTL_BACK_SPRITES) $(BADGES_C) $(ALL_INTRO_SPRITES) $(POKEKEY_C) $(BOOTSCREEN_C) $(ALL_OWS) $(TB_S_RIVAL_C) $(GBA_C)
 	
 #======Make Targets======================
 .PHONY: clean
@@ -132,6 +135,10 @@ $(INTRO_PROF_C): $(INTRO_PROF_PNG)
 	$(MKDIR) $(dir $@)
 	$(GRIT) $< -ff -gu32 -gzl -gB 8 -gt -gTFFFF00 -m! -p -pu16 -pz! -ps 96 -pe 127 -ftc -o $@
 	
+$(POKEKEY_C): $(POKEKEY_PNG)
+	$(MKDIR) $(dir $@)
+	$(GRIT) $< -ff -gu32 -gzl -gt -gTFFFF00 -gB 4 -m -mu16 -mzl -mRtpf -p -pu16 -pz! -ftc -o $@
+
 $(BOOTSCREEN_C): $(BOOTSCREEN_PNG)
 	$(MKDIR) $(dir $@)
 	$(GRIT) $< -ff -gu32 -gzl -gt -gTFFFF00 -gB 4 -m -mu16 -mzl -mRtpf -p -pu16 -pz! -ftc -o $@

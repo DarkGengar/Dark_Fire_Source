@@ -58,6 +58,9 @@ INTRO_PROF_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/intro/gfx_intro_prof.c
 POKEKEY_PNG			:=	$(GFX_DIR)/pokekey/pokekey.png
 POKEKEY_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/pokekey/pokekey.c
 
+QUESTION_MARK_PNG		:=	$(GFX_DIR)/pokekey/question_mark.png
+QUESTION_MARK_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/pokekey/question_mark.c
+
 BOOTSCREEN_PNG			:=	$(GFX_DIR)/bootscreen/bootscreen.png
 BOOTSCREEN_C			:=	$(OUTPUT_DIR)/$(GFX_DIR)/bootscreen/bootscreen.c
 
@@ -73,7 +76,7 @@ ALL_INTRO_SPRITES		:=	$(INTRO_HERO_C) $(INTRO_PROF_C)
 TB_S_RIVAL_PNG          :=  $(GFX_DIR)/tb_s/gfx_tb_s_135.png
 TB_S_RIVAL_C            :=  $(OUTPUT_DIR)/$(GFX_DIR)/tb_s/gfx_tb_s_135.c
 
-ALL_GFX					:=	$(ALL_TILESETS) $(ALL_TS_BGS) $(ALL_BTL_BACK_SPRITES) $(BADGES_C) $(ALL_INTRO_SPRITES) $(POKEKEY_C) $(BOOTSCREEN_C) $(ALL_OWS) $(TB_S_RIVAL_C) $(GBA_C)
+ALL_GFX					:=	$(ALL_TILESETS) $(ALL_TS_BGS) $(ALL_BTL_BACK_SPRITES) $(BADGES_C) $(ALL_INTRO_SPRITES) $(POKEKEY_C) $(QUESTION_MARK_C) $(BOOTSCREEN_C) $(ALL_OWS) $(TB_S_RIVAL_C) $(GBA_C)
 	
 #======Make Targets======================
 .PHONY: clean
@@ -125,7 +128,7 @@ $(BTL_BACK_HERO_C): $(BTL_BACK_HERO_PNG)
 	
 $(BADGES_C): $(BADGES_PNG)
 	$(MKDIR) $(dir $@)
-	$(GRIT) $< -ff -gu32 -gzl -gB 4 -gt -gTFFFF00 -m! -p -pu16 pzl -ftc -o $@
+	$(GRIT) $< -ff -gu32 -gzl -gB 4 -gt -gTFFFF00 -m! -p -pu16 -pzl -ftc -o $@
 	
 $(INTRO_HERO_C): $(INTRO_HERO_PNG)
 	$(MKDIR) $(dir $@)
@@ -138,6 +141,10 @@ $(INTRO_PROF_C): $(INTRO_PROF_PNG)
 $(POKEKEY_C): $(POKEKEY_PNG)
 	$(MKDIR) $(dir $@)
 	$(GRIT) $< -ff -gu32 -gzl -gt -gTFFFF00 -gB 4 -m -mu16 -mzl -mRtpf -p -pu16 -pz! -ftc -o $@
+
+$(QUESTION_MARK_C): $(QUESTION_MARK_PNG)
+	$(MKDIR) $(dir $@)
+	$(GRIT) $< -ff -gu32 -gzl -gB 4 -gt -gTFFFF00 -m! -p -pu16 -pzl -ftc -o $@
 
 $(BOOTSCREEN_C): $(BOOTSCREEN_PNG)
 	$(MKDIR) $(dir $@)

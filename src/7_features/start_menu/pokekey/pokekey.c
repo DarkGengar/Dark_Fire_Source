@@ -55,11 +55,35 @@
 // assets
 #include "gfx/gba/gba.h"
 #include "gfx/pokekey/pokekey.h"
+#include "gfx/pokekey/question_mark.h"
 
+
+#define TAG_TEST    0x0
 
 /* -- Structures -- */
 const struct BgConfig sm_pkey_scene_bg_config[1] = {
     { .priority = 0, .palette = 0, .map_base = 31, .bgid = 0 }
+};
+
+// Oam Data
+const struct OamData question_mark_oam = {
+    .shape = 0,
+    .size = 2
+};
+
+// Sprite
+struct SpriteTiles question_mark_spr = {&question_markTiles, 512, (u16)TAG_TEST};
+struct SpritePalette question_mark_pal = {&question_markPal, (u16)TAG_TEST};
+    
+// Oam Template
+const struct Template question_mark_template = {
+    .tiles_tag = TAG_TEST,
+    .pal_tag = TAG_TEST,
+    .oam = &question_mark_oam,
+    .animation = &anim_image_empty,
+    .graphics = &question_mark_spr,
+    .rotscale = &rotscale_empty,
+    .callback = oac_nullsub
 };
 
 /* -- Prototypes -- */
@@ -179,6 +203,18 @@ void sm_pkey_scene_load_gfx(void) {
     gpu_copy_to_vram_by_bgid(0, bgid_get_tilemap(0), 0x800, 0, 2);
     
     gpu_pal_apply(pokekeyPal, 0, 32);
+    
+    // ´load pal and tiles in VRAM
+    gpu_tile_obj_decompress_alloc_tag_and_upload(&question_mark_spr);
+    gpu_pal_decompress_alloc_tag_and_upload(&question_mark_pal);
+    // get id of created obj
+    u8 id = template_instanciate_forward_search(&question_mark_template, 10, 10, 0);
+
+    // set position of obj
+    objects[id].pos1.x = 56;
+    objects[id].pos1.y = 81;
+    
+    palette_bg_faded_fill_black();
 }
 
 void sm_pkey_scene_cb_handler(void) {

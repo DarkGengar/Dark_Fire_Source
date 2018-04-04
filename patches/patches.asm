@@ -5,3 +5,4 @@
 .include "patches/overworld/ow_table.asm"
 .include "patches/help_menu/remove_help_menu.asm"
 .include "patches/start_menu.asm"
+.include "patches/save/save.asm"

@@ -242,6 +242,8 @@
             </df>
           </df>
           <df name="7_features">
+            <df name="save">
+            </df>
             <df name="sots_codes">
               <df name="agb_debug">
               </df>
@@ -379,6 +381,10 @@
         <df name="overworld">
           <in>ow_pal_table.asm</in>
           <in>ow_table.asm</in>
+        </df>
+        <df name="save">
+          <in>save.asm</in>
+          <in>save_table.asm</in>
         </df>
         <df name="spielbeginn">
           <in>spielbeginn.asm</in>
@@ -769,6 +775,7 @@
           </df>
           <df name="storyboard">
           </df>
+          <in>credits.txt</in>
         </df>
         <df name="origin_resource">
           <df name="feature_ideen">
@@ -993,6 +1000,11 @@
           </df>
         </df>
         <df name="7_features">
+          <df name="save">
+            <in>flag_ext_hack.s</in>
+            <in>jpan_saveblock_hack.s</in>
+            <in>var_ext_hack.s</in>
+          </df>
           <df name="sots_codes">
             <df name="agb_debug">
               <in>agb_debug.c</in>
@@ -1007,6 +1019,7 @@
           </df>
           <in>capsule_machine.c</in>
           <in>demo_scene.c</in>
+          <in>ldr_register_bytes.s</in>
           <in>mugshot.c</in>
         </df>
         <df name="8_asset">
@@ -1332,6 +1345,8 @@
                 <df name="pokekey">
                   <in>pokekey.c</in>
                   <in>pokekey.h</in>
+                  <in>question_mark.c</in>
+                  <in>question_mark.h</in>
                 </df>
                 <df name="tb_backsprites">
                   <in>gfx_backsprite_hero.c</in>

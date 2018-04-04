@@ -74,6 +74,10 @@
           <in>ow_pal_table.asm</in>
           <in>ow_table.asm</in>
         </df>
+        <df name="save">
+          <in>save.asm</in>
+          <in>save_table.asm</in>
+        </df>
         <df name="spielbeginn">
           <in>spielbeginn.asm</in>
         </df>
@@ -115,6 +119,7 @@
               <in>kapselautomat.c</in>
             </df>
           </df>
+          <in>credits.txt</in>
         </df>
         <df name="origin_resource">
           <df name="feature_ideen">
@@ -254,6 +259,11 @@
           </df>
         </df>
         <df name="7_features">
+          <df name="save">
+            <in>flag_ext_hack.s</in>
+            <in>jpan_saveblock_hack.s</in>
+            <in>var_ext_hack.s</in>
+          </df>
           <df name="sots_codes">
             <df name="agb_debug">
               <in>agb_debug.c</in>
@@ -265,6 +275,7 @@
             </df>
           </df>
           <in>demo_scene.c</in>
+          <in>ldr_register_bytes.s</in>
           <in>mugshot.c</in>
         </df>
         <df name="8_asset">
@@ -668,6 +679,10 @@
       </item>
       <item path="patches/patches.asm" ex="false" tool="4" flavor2="0">
       </item>
+      <item path="patches/save/save.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/save/save_table.asm" ex="false" tool="4" flavor2="0">
+      </item>
       <item path="patches/spielbeginn/spielbeginn.asm"
             ex="false"
             tool="4"
@@ -676,6 +691,11 @@
       <item path="patches/start_menu.asm" ex="false" tool="4" flavor2="0">
       </item>
       <item path="patches/ts_cry/ts_cry.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="resource_collection/dark_fire/credits.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="resource_collection/dark_fire/gfx/tilesets/complete_sets/pals/asm/tileset_0/tileset_0_pal_0.s"
             ex="false"
@@ -1068,7 +1088,24 @@
       </item>
       <item path="src/7_features/demo_scene.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="src/7_features/ldr_register_bytes.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
       <item path="src/7_features/mugshot.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/7_features/save/flag_ext_hack.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/7_features/save/jpan_saveblock_hack.s"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/7_features/save/var_ext_hack.s" ex="false" tool="4" flavor2="0">
       </item>
       <item path="src/7_features/sots_codes/agb_debug/agb_debug.c"
             ex="false"

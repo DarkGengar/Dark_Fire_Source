@@ -2,8 +2,8 @@ enemys_party = 0x0202402C;
 players_party = 0x02024284;
 pal_buffer = 0x020371F8;
 pal_prebuffer = 0x02037ACC;
-big_callbacks = 0x03004fE0;
-saveblock_2_adress = 0x03004F5C;
+saveblock1 = 0x03004F58;
+saveblock2 = 0x03004F5C;
 cpuset_copysize = 0x04000100;
 
 /* palette.h */

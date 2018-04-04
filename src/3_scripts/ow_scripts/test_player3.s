@@ -3,7 +3,12 @@
 .global test_player3
 
 test_player3:
-    special 0x108
+    checkflag 0x200
+    if TRUE msg
+    end
+
+msg:
+    msgbox string_test_player MSG_NORMAL
     end
 
 

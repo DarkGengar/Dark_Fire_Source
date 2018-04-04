@@ -22,7 +22,7 @@
 .byte 0x3
 .endm
 
-.macro if1 condition goto_pointer
+.macro if condition goto_pointer
 .byte 0x6
 .byte \condition
 .word \goto_pointer
@@ -78,6 +78,11 @@
 
 .macro clearflag flag_id
 .byte 0x2A
+.word \flag_id
+.endm
+
+.macro checkflag flag_id
+.byte 0x2B
 .word \flag_id
 .endm
 

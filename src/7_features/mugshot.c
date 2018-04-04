@@ -48,6 +48,7 @@
 #define LASTRESULT  0x800D
 
 extern void *tileset_header;
+extern void *ldr_register_bytes;
 
 /* -- Methods -- */
 
@@ -62,7 +63,7 @@ void load_mug(void)
 {   
     // print tileset header
     dprintf("Tileset Header: 0x0%x\n", &tileset_header);
-    dprintf("BOOLEAN TRUE: %d\nBOOLEAN FALSE: %d\n", !0, !1);
+    dprintf("LDR_REGISTER_BYTES: 0x0%x\n", &ldr_register_bytes);
 
     // Oam Data
     const struct OamData test_oam = {

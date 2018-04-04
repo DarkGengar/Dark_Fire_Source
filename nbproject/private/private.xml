@@ -7,13 +7,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/include/libpkn/graphics/oams.h</file>
             <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/asset/gfx/gfx.sub</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/patches/patches.asm</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/include/libpkn/overworld/loading.h</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/asset/strings/features/start_menu.str</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/src/8_asset/output/asset/strings/features/start_menu.s</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/tools/py_gba_tools/src/string2assembly.py</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/bprd.sym</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/src/3_scripts/ow_scripts/test_player3.s</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/include/libpkn/asm/ow_script_language.s</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/src/3_scripts/ow_scripts/test_player2.s</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/include/libpkn/rom_functions.h</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/src/7_features/mugshot.c</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/include/libpkn/graphics/palette.h</file>
             <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/src/7_features/start_menu/pokekey/pokekey.c</file>
         </group>
     </open-files>

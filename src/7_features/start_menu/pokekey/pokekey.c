@@ -131,7 +131,6 @@ void sm_pkey_scene_reset(void) {
 }
 
 void sm_pkey_scene_loop(u8 tsk_id) {
-    dprintf("Task ID: %d", tsk_id);
     switch(super.multi_purpose_state_tracker) {
 	case 0:
 	    vblank_handler_set(NULL);
@@ -208,11 +207,27 @@ void sm_pkey_scene_load_gfx(void) {
     gpu_tile_obj_decompress_alloc_tag_and_upload(&question_mark_spr);
     gpu_pal_decompress_alloc_tag_and_upload(&question_mark_pal);
     // get id of created obj
-    u8 id = template_instanciate_forward_search(&question_mark_template, 10, 10, 0);
-
-    // set position of obj
-    objects[id].pos1.x = 56;
-    objects[id].pos1.y = 81;
+    
+    u8 oam_id[9];
+    
+    oam_id[0] = template_instanciate_forward_search(&question_mark_template, 120, 20, 0);
+    oam_id[1] = template_instanciate_forward_search(&question_mark_template, 168, 36, 0);
+    oam_id[2] = template_instanciate_forward_search(&question_mark_template, 184, 80, 0);
+    oam_id[3] = template_instanciate_forward_search(&question_mark_template, 168, 125, 0);
+    oam_id[4] = template_instanciate_forward_search(&question_mark_template, 120, 140, 0);
+    oam_id[5] = template_instanciate_forward_search(&question_mark_template, 72, 125, 0);
+    oam_id[6] = template_instanciate_forward_search(&question_mark_template, 56, 80, 0);
+    oam_id[7] = template_instanciate_forward_search(&question_mark_template, 72, 36, 0);
+    oam_id[8] = template_instanciate_forward_search(&question_mark_template, 120, 80, 0);
+    
+    //object_clone(&objects[id], 168, 36, 0);    
+    //object_clone(&objects[id], 184, 80, 0);
+    //object_clone(&objects[id], 168, 125, 0);
+    //object_clone(&objects[id], 120, 140, 0);
+    //object_clone(&objects[id], 72, 125, 0);
+    //object_clone(&objects[id], 56, 80, 0);
+    //object_clone(&objects[id], 72, 36, 0);
+    //object_clone(&objects[id], 120, 80, 0);
     
     palette_bg_faded_fill_black();
 }

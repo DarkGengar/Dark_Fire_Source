@@ -34,7 +34,6 @@ typedef struct Pokemon {
     u16 speed;
     u16 sattack;
     u16 sdefense;
-
 };
 
 extern void pokemon_full_clean_slot(struct Pokemon* dst);

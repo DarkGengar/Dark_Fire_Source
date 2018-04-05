@@ -186,6 +186,11 @@ extern void objc_exec(void);
 extern void obj_sync_superstate(void);
 
 /**
+ * Duplicate the object and place it at the given coordinates. Used for reflective surfaces.
+ */
+extern u8 object_clone(struct Object* src, s16 x, s16 y, u8 priority);
+
+/**
 * List of pal tags for objects used, indexed by pal slot
 * @address{BPRD,03000DE8}
 */

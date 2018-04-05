@@ -84,6 +84,7 @@ obj_and_aux_reset_all = 0x08006A90|1;
 gpu_tile_obj_tags_reset = 0x08008744|1;
 objc_exec = 0x08006ADC|1;
 obj_sync_superstate = 0x08006B28|1;
+object_clone = 0x0805FB6C|1;
 
 /* background.h */
 gpu_tile_bg_drop_all_sets = 0x08001628|1;

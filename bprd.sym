@@ -1,6 +1,7 @@
 enemys_party = 0x0202402C;
 players_party = 0x02024284;
-pal_buffer = 0x020371F8;
+palette_bg_unfaded = 0x020371F8;
+palette_faded_buffer = 0x020375F8;
 pal_prebuffer = 0x02037ACC;
 saveblock1 = 0x03004F58;
 saveblock2 = 0x03004F5C;
@@ -155,3 +156,6 @@ c2_return_overworld_music_scripts_cont = 0x080568E4|1;
 
 /* block.h */
 sav1_secure_increment = 0x08054EB0|1;
+
+/* audio.h */
+audio_play = 0x08072230|1;

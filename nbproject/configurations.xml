@@ -18,6 +18,7 @@
             <in>ow_script_language.s</in>
           </df>
           <df name="core">
+            <in>audio.h</in>
             <in>callback.h</in>
             <in>io.h</in>
             <in>string.h</in>
@@ -84,6 +85,7 @@
         <df name="ts_cry">
           <in>ts_cry.asm</in>
         </df>
+        <in>oak_intro_hack.asm</in>
         <in>patches.asm</in>
         <in>start_menu.asm</in>
       </df>
@@ -277,6 +279,7 @@
           <in>demo_scene.c</in>
           <in>ldr_register_bytes.s</in>
           <in>mugshot.c</in>
+          <in>oak_intro.c</in>
         </df>
         <df name="8_asset">
           <df name="music">
@@ -616,6 +619,8 @@
             tool="4"
             flavor2="0">
       </item>
+      <item path="include/libpkn/core/audio.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/libpkn/core/callback.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/libpkn/core/io.h" ex="false" tool="3" flavor2="0">
@@ -672,6 +677,8 @@
       <item path="patches/asset/mus/mus.asm" ex="false" tool="4" flavor2="0">
       </item>
       <item path="patches/map_data/map_data.asm" ex="false" tool="4" flavor2="0">
+      </item>
+      <item path="patches/oak_intro_hack.asm" ex="false" tool="4" flavor2="0">
       </item>
       <item path="patches/overworld/ow_pal_table.asm" ex="false" tool="4" flavor2="0">
       </item>
@@ -1094,6 +1101,8 @@
             flavor2="0">
       </item>
       <item path="src/7_features/mugshot.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/7_features/oak_intro.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="src/7_features/save/flag_ext_hack.s"
             ex="false"

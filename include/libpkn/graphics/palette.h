@@ -84,6 +84,7 @@ union Color {
 };
 
 extern struct FadeControl pal_fade_control;
+extern u16 palette_bg_unfaded[256];
     
 extern boolean fade_screen(u32 bitmask, s8 speed, u8 to, u8 from, u16 color);
 extern void pal_fade_control_and_dead_struct_reset(void);

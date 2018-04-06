@@ -158,6 +158,7 @@
             <in>trainer.h</in>
           </df>
           <df name="core">
+            <in>audio.h</in>
             <in>bios.h</in>
             <in>callback.h</in>
             <in>io.h</in>
@@ -392,6 +393,7 @@
         <df name="ts_cry">
           <in>ts_cry.asm</in>
         </df>
+        <in>oak_intro_hack.asm</in>
         <in>patches.asm</in>
         <in>start_menu.asm</in>
       </df>
@@ -1021,6 +1023,7 @@
           <in>demo_scene.c</in>
           <in>ldr_register_bytes.s</in>
           <in>mugshot.c</in>
+          <in>oak_intro.c</in>
         </df>
         <df name="8_asset">
           <df name="maps">

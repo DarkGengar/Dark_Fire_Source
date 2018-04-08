@@ -36,15 +36,32 @@
 #include "types.h"
 #include "agb_debug.h"
 #include "rom_functions.h"
+#include "color.h"
 
 #include "core/task.h"
 #include "core/callback.h"
 #include "core/audio.h"
 #include "core/m4a.h"
+#include "core/string.h"
+
+#include "graphics/background.h"
+#include "graphics/oams.h"
+#include "graphics/palette.h"
 
 #include "save/block.h"
 
 #include "overworld/loading.h"
+
+u32 *tilemap = (void *) 0x203B108;
+extern pchar string_intro_begruessung[138];
+pchar str_test_oak[] = { 0xC2, 0xBF, 0xC6, 0xC6, 0xC9, 0xFF };
+
+/* -- Prototypes -- */
+void scn_oak_intro_loop(u8 tsk_id);
+void scn_oak_intro_after_name(void);
+void scn_oak_intro_reset(void);
+void scn_oak_intro_setup(void);
+void show_message(pchar *message);
 
 /* -- Methods -- */
 
@@ -54,39 +71,82 @@
  * @return   return description 
  * @details  More Details
  */
-void oak_intro_scene_loop(void) {
+void scn_oak_intro_loop(u8 tsk_id) {
     switch(super.multi_purpose_state_tracker){
 	case 0:
-	    //play_song(0x124);
-	    super.multi_purpose_state_tracker++;
-	    break;
-	case 1:
-	    dprintf("Hello World from Intro\n");
-	    set_callback1(c1_overworld);
-	    set_callback2(0x08056665);
-	    break;
-    }
-}
-
-void oak_intro_scene_cb_handler(void) {
-    
-}
-
-void oak_intro_test(u8 tsk_id) {
-    switch(super.multi_purpose_state_tracker){
-	case 0:
-	    play_song_1(0x124);
+	    //play_song_1(0x124);
+	    dprintf("Char: 0x%x\n", string_intro_begruessung[0]);
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 1:
 	    dprintf("Task-ID: 0x%d\n", tsk_id);
 	    dprintf("Task: 0x0%x\n", tasks[tsk_id]);
+	    fadein_screen(0, CLR_BLACK);
+	    super.multi_purpose_state_tracker++;
 	    //tasks[tsk_id].function = (TaskCallback)0x08130C41;
 	    //set_callback2(0x08056665);
-	    pokemon_query_string(0, saveblock2->name, 0, 0, 0, 0x08130cb5);
+	    //pokemon_query_string(0, saveblock2->name, 0, 0, 0, scn_oak_intro_after_name);
+	    break;
+	case 2:
+	    if(!pal_fade_control.active)
+		super.multi_purpose_state_tracker++;
+	    break;
+	case 3:
+	    show_message(string_intro_begruessung);
+	    //textbox_close();
+	    super.multi_purpose_state_tracker++;
+	    break;
+	default:
 	    break;
     }
-    //audio_play(SONG_ROUTE_THEME_2);
 }
 
+void scn_oak_intro_after_name(void) {
+    switch(super.multi_purpose_state_tracker) {
+	case 0:
+	    vblank_handler_set(NULL);
+	    scn_oak_intro_reset();
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 1:
+	    scn_oak_intro_setup();
+	    super.multi_purpose_state_tracker++;
+	    break;
+	default:
+	    break;
+	    
+    }
+}
+
+void scn_oak_intro_reset(void) {
+    pal_fade_control_and_dead_struct_reset();
+    dma0_cb_reset();
+    obj_and_aux_reset_all();
+    gpu_pal_allocator_reset();
+    nullify_something_called_on_townmap();
+}
+
+void scn_oak_intro_setup(void) {
+    gpu_tile_bg_drop_all_sets(0);
+    bg_vram_setup(1, (struct BgConfig *)0x08463F24, 3);
+    
+    bgid_set_tilemap(1, *tilemap + 0x1C20);
+    bgid_set_tilemap(2, *tilemap + 0x1820);
+    
+    bgid_mod_x_offset(1, 0, 0);
+    bgid_mod_y_offset(1, 0, 0);
+    bgid_mod_x_offset(2, 0, 0);
+    bgid_mod_y_offset(2, 0, 0);
+}
+
+void show_message(pchar *message) {
+    //pchar *dest = (pchar*) 0x02021D18;
+    u8 speed = 1; /* 0: instant, 8: slow (default) */
+
+    load_message_box(0, 0);
+    fdecoder(string_buffer, message);
+    box_related_one(0, 4, string_buffer, speed, 0, 2, 1, 3);
+
+    rboxid_update(0, 3);
+}
 /* -- EOF -- */

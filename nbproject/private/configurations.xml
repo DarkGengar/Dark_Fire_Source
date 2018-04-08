@@ -161,6 +161,7 @@
             <in>audio.h</in>
             <in>bios.h</in>
             <in>callback.h</in>
+            <in>compression.h</in>
             <in>io.h</in>
             <in>m4a.h</in>
             <in>memory.h</in>
@@ -1025,7 +1026,6 @@
           <in>ldr_register_bytes.s</in>
           <in>mugshot.c</in>
           <in>oak_intro.c</in>
-          <in>oak_intro_hook.s</in>
         </df>
         <df name="8_asset">
           <df name="maps">

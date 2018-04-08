@@ -76,6 +76,7 @@ typedef volatile s32 vs32;
 typedef volatile s64 vs64;
 
 typedef u16 COLOR;
+typedef u8 pchar;
 
 #define INLINE static inline
 

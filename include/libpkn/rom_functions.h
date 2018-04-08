@@ -46,9 +46,10 @@ extern void rain_sound_fadeout();
 extern void fadeout_song(u8 speed);
 extern void init_fadescreen(u8 type, u8 speed);
 extern void close_start_menu(void);
-
+extern void nullify_something_called_on_townmap(void);
 extern void show_coins(u16 coins, u8 x, u8 y);
 extern u16 get_number_of_coins();
+extern void load_message_box(u8 b1, u8 b2);
 
 /* variables.h */
 // get offset of variable

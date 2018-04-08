@@ -40,6 +40,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+    
+#define STRING_BUFFER_SIZE 1000
 
 struct Textbox {
     u8 bg_id;
@@ -53,6 +55,11 @@ struct Textbox {
 };
     
 extern struct Textbox rboxes[32];    
+
+/**
+ * Generic buffer also used for strings
+ */
+extern pchar string_buffer[STRING_BUFFER_SIZE];
     
 extern void rboxes_free(void);
 
@@ -65,6 +72,24 @@ extern u8 rboxid_free(u8 id);
  * Clear a textbox.
  */
 extern void rboxid_clear_pixels(u8 id, u8 offset);
+
+/**
+ * Update a textbox.
+ *
+ * @param mode 3 == Update tileset & tilemap, 2 == update tileset, 1 == update tilemap
+ */
+extern void rboxid_update(u8 id, u8 mode);
+
+
+extern void textbox_close(void);
+
+
+extern void box_related_one(u8, u8, pchar *str, u8, u8, u8, u8, u8);
+
+/**
+ * string substitution based on assigned buffer ids
+ */
+extern pchar* fdecoder(pchar* dst, pchar* src);
 
 #ifdef __cplusplus
 }

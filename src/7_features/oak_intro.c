@@ -40,6 +40,9 @@
 #include "core/task.h"
 #include "core/callback.h"
 #include "core/audio.h"
+#include "core/m4a.h"
+
+#include "save/block.h"
 
 #include "overworld/loading.h"
 
@@ -69,9 +72,21 @@ void oak_intro_scene_cb_handler(void) {
     
 }
 
-void oak_intro_test(void) {
-    dprintf("Hello\n");
-    audio_play(SONG_ROUTE_THEME_2);
+void oak_intro_test(u8 tsk_id) {
+    switch(super.multi_purpose_state_tracker){
+	case 0:
+	    play_song_1(0x124);
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 1:
+	    dprintf("Task-ID: 0x%d\n", tsk_id);
+	    dprintf("Task: 0x0%x\n", tasks[tsk_id]);
+	    //tasks[tsk_id].function = (TaskCallback)0x08130C41;
+	    //set_callback2(0x08056665);
+	    pokemon_query_string(0, saveblock2->name, 0, 0, 0, 0x08130cb5);
+	    break;
+    }
+    //audio_play(SONG_ROUTE_THEME_2);
 }
 
 /* -- EOF -- */

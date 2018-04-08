@@ -42,6 +42,74 @@
 extern "C" {
 #endif
 
+enum Gender {
+    GENDER_MALE,
+    GENDER_FEMALE,
+};
+
+enum OptionsButtonMode {
+    OPTIONS_BUTTON_MODE_NORMAL,
+    OPTIONS_BUTTON_MODE_LR,
+    OPTIONS_BUTTON_MODE_L_EQUALS_A
+};
+
+enum OptionsTextSpeed {
+    OPTIONS_TEXT_SPEED_SLOW,
+    OPTIONS_TEXT_SPEED_MID,
+    OPTIONS_TEXT_SPEED_FAST
+};
+
+enum OptionsSound {
+    OPTIONS_SOUND_MONO,
+    OPTIONS_SOUND_STEREO
+};
+
+enum OptionsBattleStyle {
+    OPTIONS_BATTLE_STYLE_SHIFT,
+    OPTIONS_BATTLE_STYLE_SET
+};
+
+enum OptionsBattleScene {
+    OPTIONS_BATTLE_SCENE_ON,
+    OPTIONS_BATTLE_SCENE_OFF,
+};
+    
+/**
+ * Trainer and miscellaneous save data.
+ */
+struct SaveBlock2 {
+    u8 name[8];
+    enum Gender gender;
+    u8 field_9;
+    u16 trainerid;
+    u16 secretid;
+    u16 playtime_hours;
+    u8 playtime_minutes;
+    u8 playtime_seconds;
+    u8 playtime_frames;
+    enum OptionsButtonMode options_button_style;
+    enum OptionsTextSpeed options_text_speed : 3;
+    u8 options_window_frame : 5;
+    enum OptionsSound options_sound : 1;
+    enum OptionsBattleStyle options_battle_style : 1;
+    enum OptionsBattleScene options_battle_scene_off : 1;
+    u8 field_15[6];
+    u32 unown_pid;
+    u32 spinda_pid;
+    u32 field_24;
+    u8 pokemon_flags_3[52];
+    u8 pokemon_flags_4[52];
+    u8 field_90[1044];
+    u8 fourCharacters[4];
+    u8 field_4A8[1008];
+    u8 mapdata[1672];
+    u32 bag_item_quantity_xor_value;
+    u8 field_F24[127];
+    u8 last_byte_in_sav2;
+};
+
+extern struct SaveBlock2* saveblock2;
+    
 extern void sav1_secure_increment(u8 id);
 
 

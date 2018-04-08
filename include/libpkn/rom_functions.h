@@ -63,6 +63,17 @@ extern u8 template_instanciate_forward_search(const struct Template*, u16 x, u16
 extern void gpu_tile_obj_decompress_alloc_tag_and_upload(struct SpriteTiles* tile);
 extern void gpu_pal_decompress_alloc_tag_and_upload(struct SpritePalette* pal);
 
+/**
+ * Queries a string (as for pokemon nickname)
+ * @param mode TODO (3 seems to be nickname)
+ * @param target_buf result of the query
+ * @param species species to show
+ * @param gender gender of the species to show
+ * @param closure closure function after the query (usually includes a reload)
+ */
+extern void pokemon_query_string(u8 type, u8 *target_buf, u16 species, u8 gender,
+        u32 pid, u32 *callback);
+
 /* callback.h */
 void dma0_cb_reset();
 

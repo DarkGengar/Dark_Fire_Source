@@ -41,8 +41,30 @@
 extern "C" {
 #endif
 
+struct Textbox {
+    u8 bg_id;
+    u8 x;
+    u8 y;
+    u8 width;
+    u8 height;
+    u8 pal_id;
+    u16 charbase;
+    u8* pixels;
+};
+    
+extern struct Textbox rboxes[32];    
+    
 extern void rboxes_free(void);
 
+/**
+ * Free a textbox.
+ */
+extern u8 rboxid_free(u8 id);
+
+/**
+ * Clear a textbox.
+ */
+extern void rboxid_clear_pixels(u8 id, u8 offset);
 
 #ifdef __cplusplus
 }

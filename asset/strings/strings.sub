@@ -28,7 +28,7 @@ SFILES		:=	$(STRINGFILES:%.str=$(OUTPUTDIR)/%.s)
 #=====Make Rules=======================
 $(OUTPUTDIR)/%.s: %.str
 	$(MKDIR) $(dir $@)
-	$(STRING2ASSEMBLY) $< $(PK_CHARMAP) $@
+	$(STRING2ASSEMBLY) $< $(PK_CHARMAP) $@ -c
 	
 #=====Make Targets=====================
 .PHONY: clean

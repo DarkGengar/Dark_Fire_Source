@@ -65,6 +65,7 @@ close_start_menu = 0x0806EE7C|1;
 pokemon_query_string = 0x0809DA38|1;
 nullify_something_called_on_townmap = 0x080F6A9C|1;
 load_message_box = 0x080F7178|1;
+check_a_pressed = 0x08002DE4|1;
 
 /* variables.h */
 var_set = 0x0806E4E8|1;

@@ -54,7 +54,9 @@
 
 u32 *tilemap = (void *) 0x203B108;
 extern pchar string_intro_begruessung[138];
-pchar str_test_oak[] = { 0xC2, 0xBF, 0xC6, 0xC6, 0xC9, 0xFF };
+pchar str_test_oak[] = { 0xC2, 0xBF, 0xC6, 0xC6, 0xC9, 0xFB, 0xFF };
+
+extern u8 check_a_pressed(u8 b);
 
 /* -- Prototypes -- */
 void scn_oak_intro_loop(u8 tsk_id);
@@ -92,13 +94,33 @@ void scn_oak_intro_loop(u8 tsk_id) {
 		super.multi_purpose_state_tracker++;
 	    break;
 	case 3:
-	    show_message(string_intro_begruessung);
-	    //textbox_close();
+	    
+	    tasks[tsk_id].function = (TaskCallback)cn_oak_intro_start_tutorial;
+	    break;
+	case 4:
+	    if(!check_a_pressed(0))
+		super.multi_purpose_state_tracker++;
+	    break;
+	case 5:
+	    show_message(str_test_oak);
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 6:
+	    if(!check_a_pressed(0))
+		super.multi_purpose_state_tracker++;
+	    break;
+	case 7:
+	    textbox_close();
 	    super.multi_purpose_state_tracker++;
 	    break;
 	default:
 	    break;
     }
+}
+
+void scn_oak_intro_start_tutorial(u8 tsk_id) {
+    show_message(string_intro_begruessung);
+    tasks[tsk_id].function = scn_oak_intro_string_handler;
 }
 
 void scn_oak_intro_after_name(void) {

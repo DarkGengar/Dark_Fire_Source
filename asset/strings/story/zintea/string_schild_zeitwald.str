@@ -1,1 +1,7 @@
-string_schild_zeitwald=Zeitwald\nIm inneren liegt ein Geheimnis\lverborgen.
+$str string_schild_zeitwald = {
+    "
+	Zeitwald\n
+	Im inneren liegt ein Geheimnis\l
+	verborgen.
+    "
+}

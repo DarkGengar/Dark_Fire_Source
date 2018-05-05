@@ -1,1 +1,6 @@
-string_schild_zintea=Zintea\nDie Stadt der Zeit
+$str string_schild_zintea = {
+    "
+	Zintea\n
+	Die Stadt der Zeit
+    "
+}

@@ -22,6 +22,16 @@
 .byte 0x3
 .endm
 
+.macro call pointer
+.byte 0x4
+.word \pointer
+.endm
+
+.macro goto pointer
+.byte 0x5
+.word \pointer
+.endm
+
 .macro if condition goto_pointer
 .byte 0x6
 .byte \condition

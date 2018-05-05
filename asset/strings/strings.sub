@@ -19,16 +19,16 @@ PYTHON				:=	@python
 AMMAPFIXFORAGB		:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/amMapFixForAgb.py
 AMTILESETFIXFORAGB	:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/amTilesetFixForAgb.py
 BINARY2ASSEMBLY		:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/binary2assembly.py
-STRING2ASSEMBLY		:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/string2assembly.py
+STRASM			:=	$(PYTHON) $(PYGBATOOLCHAINDIR)/strasm.py
 
 #=====Source===========================
 STRINGFILES	:=	$(call rwildcard,$(STRINGDIR),*.str)
-SFILES		:=	$(STRINGFILES:%.str=$(OUTPUTDIR)/%.s)
+SFILES		:=	$(STRINGFILES:%.str=$(OUTPUTDIR)/%.c)
 
 #=====Make Rules=======================
-$(OUTPUTDIR)/%.s: %.str
+$(OUTPUTDIR)/%.c: %.str
 	$(MKDIR) $(dir $@)
-	$(STRING2ASSEMBLY) $< $(PK_CHARMAP) $@ -c
+	$(STRASM) $< $(PK_CHARMAP) $@
 	
 #=====Make Targets=====================
 .PHONY: clean

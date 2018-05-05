@@ -1410,18 +1410,25 @@
               </df>
               <df name="strings">
                 <df name="features">
-                  <in>start_menu.s</in>
+                  <in>start_menu.c</in>
+                  <in>start_menu.h</in>
                 </df>
                 <df name="intro">
-                  <in>string_intro.s</in>
+                  <in>string_intro.c</in>
+                  <in>string_intro.h</in>
                 </df>
                 <df name="story">
                   <df name="zintea">
-                    <in>string_schild_eremit.s</in>
-                    <in>string_schild_player.s</in>
-                    <in>string_schild_zeitwald.s</in>
-                    <in>string_schild_zintea.s</in>
-                    <in>string_test_player.s</in>
+                    <in>string_schild_eremit.c</in>
+                    <in>string_schild_eremit.h</in>
+                    <in>string_schild_player.c</in>
+                    <in>string_schild_player.h</in>
+                    <in>string_schild_zeitwald.c</in>
+                    <in>string_schild_zeitwald.h</in>
+                    <in>string_schild_zintea.c</in>
+                    <in>string_schild_zintea.h</in>
+                    <in>string_test_player.c</in>
+                    <in>string_test_player.h</in>
                   </df>
                 </df>
               </df>

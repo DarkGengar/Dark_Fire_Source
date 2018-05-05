@@ -52,9 +52,8 @@
 
 #include "overworld/loading.h"
 
-#define STRING_INTRO_BEGRUESSUNG_LEN 138
+#include "strings/intro/string_intro.h"
 
-extern pchar string_intro_begruessung[STRING_INTRO_BEGRUESSUNG_LEN];
 pchar str_test_oak[] = { 0xC2, 0xBF, 0xC6, 0xC6, 0xC9, 0xFB, 0xFF };
 u32 *tilemap = (void *) 0x203B108;
 

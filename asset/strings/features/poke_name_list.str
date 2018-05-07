@@ -1,0 +1,1649 @@
+$tbl str_poke_name_list = {
+	"
+		??????????
+
+		[+]
+
+		Bisasam
+
+		[+]
+
+		Bisaknosp
+
+		[+]
+
+		Bisaflor
+
+		[+]
+
+		Glumanda
+
+		[+]
+
+		Glutexo
+
+		[+]
+
+		Glurak
+
+		[+]
+
+		Schiggy
+
+		[+]
+
+		Schillok
+
+		[+]
+
+		Turtok
+
+		[+]
+
+		Raupy
+
+		[+]
+
+		Safcon
+
+		[+]
+
+		Smettbo
+
+		[+]
+
+		Hornliu
+
+		[+]
+
+		Kokuna
+
+		[+]
+
+		Bibor
+
+		[+]
+
+		Taubsi
+
+		[+]
+
+		Tauboga
+
+		[+]
+
+		Tauboss
+
+		[+]
+
+		Rattfratz
+
+		[+]
+
+		Rattikarl
+
+		[+]
+
+		Habitak
+
+		[+]
+
+		Ibitak
+
+		[+]
+
+		Rettan
+
+		[+]
+
+		Arbok
+
+		[+]
+
+		Pikachu
+
+		[+]
+
+		Raichu
+
+		[+]
+
+		Sandan
+
+		[+]
+
+		Sandamer
+
+		[+]
+
+		Nidoran\w
+
+		[+]
+
+		Nidorina
+
+		[+]
+
+		Nidoqueen
+
+		[+]
+
+		Nidoran\m
+
+		[+]
+
+		Nidorino
+
+		[+]
+
+		Nidoking
+
+		[+]
+
+		Piepi
+
+		[+]
+
+		Pixi
+
+		[+]
+
+		Vulpix
+
+		[+]
+
+		Vulnona
+
+		[+]
+
+		Pummeluff
+
+		[+]
+
+		Knuddeluff
+
+		[+]
+
+		Zubat
+
+		[+]
+
+		Golbat
+
+		[+]
+
+		Myrapla
+
+		[+]
+
+		Duflor
+
+		[+]
+
+		Giflor
+
+		[+]
+
+		Paras
+
+		[+]
+
+		Parasek
+
+		[+]
+
+		Bluzuk
+
+		[+]
+
+		Omot
+
+		[+]
+
+		Digda
+
+		[+]
+
+		Digdri
+
+		[+]
+
+		Mauzi
+
+		[+]
+
+		Snobilikat
+
+		[+]
+
+		Enton
+
+		[+]
+
+		Entoron
+
+		[+]
+
+		Menki
+
+		[+]
+
+		Rasaff
+
+		[+]
+
+		Fukano
+
+		[+]
+
+		Arkani
+
+		[+]
+
+		Quapsel
+
+		[+]
+
+		Quaputzi
+
+		[+]
+
+		Quappo
+
+		[+]
+
+		Abra
+
+		[+]
+
+		Kadabra
+
+		[+]
+
+		Simsala
+
+		[+]
+
+		Machollo
+
+		[+]
+
+		Maschock
+
+		[+]
+
+		Machomei
+
+		[+]
+
+		Knofensa
+
+		[+]
+
+		Ultrigaria
+
+		[+]
+
+		Sarzenia
+
+		[+]
+
+		Tentacha
+
+		[+]
+
+		Tentoxa
+
+		[+]
+
+		Kleinstein
+
+		[+]
+
+		Georok
+
+		[+]
+
+		Geowaz
+
+		[+]
+
+		Ponita
+
+		[+]
+
+		Gallopa
+
+		[+]
+
+		Flegmon
+
+		[+]
+
+		Lahmus
+
+		[+]
+
+		Magnetilo
+
+		[+]
+
+		Magneton
+
+		[+]
+
+		Porenta
+
+		[+]
+
+		Dodu
+
+		[+]
+
+		Dodri
+
+		[+]
+
+		Jurob
+
+		[+]
+
+		Jugong
+
+		[+]
+
+		Sleima
+
+		[+]
+
+		Sleimok
+
+		[+]
+
+		Muschas
+
+		[+]
+
+		Austos
+
+		[+]
+
+		Nebulak
+
+		[+]
+
+		Alpollo
+
+		[+]
+
+		Gengar
+
+		[+]
+
+		Onix
+
+		[+]
+
+		Traumato
+
+		[+]
+
+		Hypno
+
+		[+]
+
+		Krabby
+
+		[+]
+
+		Kingler
+
+		[+]
+
+		Voltobal
+
+		[+]
+
+		Lektrobal
+
+		[+]
+
+		Owei
+
+		[+]
+
+		Kokowei
+
+		[+]
+
+		Tragosso
+
+		[+]
+
+		Knogga
+
+		[+]
+
+		Kicklee
+
+		[+]
+
+		Nockchan
+
+		[+]
+
+		Schlurp
+
+		[+]
+
+		Smogon
+
+		[+]
+
+		Smogmog
+
+		[+]
+
+		Rihorn
+
+		[+]
+
+		Rizeros
+
+		[+]
+
+		Chaneira
+
+		[+]
+
+		Tangela
+
+		[+]
+
+		Kangama
+
+		[+]
+
+		Seeper
+
+		[+]
+
+		Seemon
+
+		[+]
+
+		Goldini
+
+		[+]
+
+		Golking
+
+		[+]
+
+		Sterndu
+
+		[+]
+
+		Starmie
+
+		[+]
+
+		Pantimos
+
+		[+]
+
+		Sichlor
+
+		[+]
+
+		Rossana
+
+		[+]
+
+		Elektek
+
+		[+]
+
+		Magmar
+
+		[+]
+
+		Pinsir
+
+		[+]
+
+		Tauros
+
+		[+]
+
+		Karpador
+
+		[+]
+
+		Garados
+
+		[+]
+
+		Lapras
+
+		[+]
+
+		Ditto
+
+		[+]
+
+		Evoli
+
+		[+]
+
+		Aquana
+
+		[+]
+
+		Blitza
+
+		[+]
+
+		Flamara
+
+		[+]
+
+		Porygon
+
+		[+]
+
+		Amonitas
+
+		[+]
+
+		Amoroso
+
+		[+]
+
+		Kabuto
+
+		[+]
+
+		Kabutops
+
+		[+]
+
+		Aerodactyl
+
+		[+]
+
+		Relaxo
+
+		[+]
+
+		Arktos
+
+		[+]
+
+		Zapdos
+
+		[+]
+
+		Lavados
+
+		[+]
+
+		Dratini
+
+		[+]
+
+		Dragonir
+
+		[+]
+
+		Dragoran
+
+		[+]
+
+		Mewtu
+
+		[+]
+
+		Mew
+
+		[+]
+
+		Endivie
+
+		[+]
+
+		Lorblatt
+
+		[+]
+
+		Meganie
+
+		[+]
+
+		Feurigel
+
+		[+]
+
+		Igelavar
+
+		[+]
+
+		Tornupto
+
+		[+]
+
+		Karnimani
+
+		[+]
+
+		Tyracroc
+
+		[+]
+
+		Impergator
+
+		[+]
+
+		Wiesor
+
+		[+]
+
+		Wiesenior
+
+		[+]
+
+		Hoothoot
+
+		[+]
+
+		Noctuh
+
+		[+]
+
+		Ledyba
+
+		[+]
+
+		Ledian
+
+		[+]
+
+		Webarak
+
+		[+]
+
+		Ariados
+
+		[+]
+
+		Iksbat
+
+		[+]
+
+		Lampi
+
+		[+]
+
+		Lanturn
+
+		[+]
+
+		Pichu
+
+		[+]
+
+		Pii
+
+		[+]
+
+		Fluffeluff
+
+		[+]
+
+		Togepi
+
+		[+]
+
+		Togetic
+
+		[+]
+
+		Natu
+
+		[+]
+
+		Xatu
+
+		[+]
+
+		Voltilamm
+
+		[+]
+
+		Waaty
+
+		[+]
+
+		Ampharos
+
+		[+]
+
+		Blubella
+
+		[+]
+
+		Marill
+
+		[+]
+
+		Azumarill
+
+		[+]
+
+		Mogelbaum
+
+		[+]
+
+		Quaxo
+
+		[+]
+
+		Hoppspross
+
+		[+]
+
+		Hubelupf
+
+		[+]
+
+		Papungha
+
+		[+]
+
+		Griffel
+
+		[+]
+
+		Sonnkern
+
+		[+]
+
+		Sonnflora
+
+		[+]
+
+		Yanma
+
+		[+]
+
+		Felino
+
+		[+]
+
+		Morlord
+
+		[+]
+
+		Psiana
+
+		[+]
+
+		Nachtara
+
+		[+]
+
+		Kramurx
+
+		[+]
+
+		Laschoking
+
+		[+]
+
+		Traunfugil
+
+		[+]
+
+		Icognito
+
+		[+]
+
+		Woingenau
+
+		[+]
+
+		Girafarig
+
+		[+]
+
+		Tannza
+
+		[+]
+
+		Forstellka
+
+		[+]
+
+		Dummisel
+
+		[+]
+
+		Skorgla
+
+		[+]
+
+		Stahlos
+
+		[+]
+
+		Snubbull
+
+		[+]
+
+		Granbull
+
+		[+]
+
+		Baldorfish
+
+		[+]
+
+		Scherox
+
+		[+]
+
+		Pottrott
+
+		[+]
+
+		Skaraborn
+
+		[+]
+
+		Sniebel
+
+		[+]
+
+		Teddiursa
+
+		[+]
+
+		Ursaring
+
+		[+]
+
+		Schneckmag
+
+		[+]
+
+		Magcargo
+
+		[+]
+
+		Quiekel
+
+		[+]
+
+		Keifel
+
+		[+]
+
+		Corasonn
+
+		[+]
+
+		Remoraid
+
+		[+]
+
+		Octillery
+
+		[+]
+
+		Botogel
+
+		[+]
+
+		Mantax
+
+		[+]
+
+		Panzaeron
+
+		[+]
+
+		Hunduster
+
+		[+]
+
+		Hundemon
+
+		[+]
+
+		Seedraking
+
+		[+]
+
+		Phanpy
+
+		[+]
+
+		Donphan
+
+		[+]
+
+		Porygon2
+
+		[+]
+
+		Damhirplex
+
+		[+]
+
+		Farbeagle
+
+		[+]
+
+		Rabauz
+
+		[+]
+
+		Kapoera
+
+		[+]
+
+		Kussilla
+
+		[+]
+
+		Elekid
+
+		[+]
+
+		Magby
+
+		[+]
+
+		Miltank
+
+		[+]
+
+		Heiteira
+
+		[+]
+
+		Raikou
+
+		[+]
+
+		Entei
+
+		[+]
+
+		Suicune
+
+		[+]
+
+		Larvitar
+
+		[+]
+
+		Pupitar
+
+		[+]
+
+		Despotar
+
+		[+]
+
+		Lugia
+
+		[+]
+
+		Ho-oh
+
+		[+]
+
+		Celebi
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		?
+
+		[+]
+
+		Geckarbor
+
+		[+]
+
+		Reptain
+
+		[+]
+
+		Gewaldro
+
+		[+]
+
+		Flemmli
+
+		[+]
+
+		Jungglut
+
+		[+]
+
+		Lohgock
+
+		[+]
+
+		Hydropi
+
+		[+]
+
+		Moorabbel
+
+		[+]
+
+		Sumpex
+
+		[+]
+
+		Fiffyen
+
+		[+]
+
+		Magnayen
+
+		[+]
+
+		Zigzachs
+
+		[+]
+
+		Geradaks
+
+		[+]
+
+		Waumpel
+
+		[+]
+
+		Schaloko
+
+		[+]
+
+		Papinella
+
+		[+]
+
+		Panekon
+
+		[+]
+
+		Pudox
+
+		[+]
+
+		Loturzel
+
+		[+]
+
+		Lombrero
+
+		[+]
+
+		Kappalores
+
+		[+]
+
+		Samurzel
+
+		[+]
+
+		Blanas
+
+		[+]
+
+		Tengulist
+
+		[+]
+
+		Nincada
+
+		[+]
+
+		Ninjask
+
+		[+]
+
+		Ninjatom
+
+		[+]
+
+		Schwalbini
+
+		[+]
+
+		Schwalboss
+
+		[+]
+
+		Knilz
+
+		[+]
+
+		Kapilz
+
+		[+]
+
+		Pandir
+
+		[+]
+
+		Wingull
+
+		[+]
+
+		Pelipper
+
+		[+]
+
+		Gehweiher
+
+		[+]
+
+		Maskeregen
+
+		[+]
+
+		Wailmer
+
+		[+]
+
+		Wailord
+
+		[+]
+
+		Eneco
+
+		[+]
+
+		Enekoro
+
+		[+]
+
+		Kecleon
+
+		[+]
+
+		Puppance
+
+		[+]
+
+		Lepumentas
+
+		[+]
+
+		Nasgnet
+
+		[+]
+
+		Qurtel
+
+		[+]
+
+		Zobiris
+
+		[+]
+
+		Schmerbe
+
+		[+]
+
+		Welsar
+
+		[+]
+
+		Liebiskus
+
+		[+]
+
+		Krebscorps
+
+		[+]
+
+		Krebutack
+
+		[+]
+
+		Barschwa
+
+		[+]
+
+		Milotic
+
+		[+]
+
+		Kanivanha
+
+		[+]
+
+		Tohaido
+
+		[+]
+
+		Knacklion
+
+		[+]
+
+		Vibrava
+
+		[+]
+
+		Libelldra
+
+		[+]
+
+		Makuhita
+
+		[+]
+
+		Hariyama
+
+		[+]
+
+		Frizelbliz
+
+		[+]
+
+		Voltenso
+
+		[+]
+
+		Camaub
+
+		[+]
+
+		Camerupt
+
+		[+]
+
+		Seemops
+
+		[+]
+
+		Seejong
+
+		[+]
+
+		Walraisa
+
+		[+]
+
+		Tuska
+
+		[+]
+
+		Noktuska
+
+		[+]
+
+		Schneppke
+
+		[+]
+
+		Firnontor
+
+		[+]
+
+		Lunastein
+
+		[+]
+
+		Sonnfel
+
+		[+]
+
+		Azurill
+
+		[+]
+
+		Spoink
+
+		[+]
+
+		Groink
+
+		[+]
+
+		Plusle
+
+		[+]
+
+		Minun
+
+		[+]
+
+		Flunkifer
+
+		[+]
+
+		Meditie
+
+		[+]
+
+		Meditalis
+
+		[+]
+
+		Wablu
+
+		[+]
+
+		Altaria
+
+		[+]
+
+		Isso
+
+		[+]
+
+		Zwirrlicht
+
+		[+]
+
+		Zwirrklop
+
+		[+]
+
+		Roselia
+
+		[+]
+
+		Bummelz
+
+		[+]
+
+		Muntier
+
+		[+]
+
+		Letarking
+
+		[+]
+
+		Schluppuck
+
+		[+]
+
+		Schlukwech
+
+		[+]
+
+		Tropius
+
+		[+]
+
+		Flurmel
+
+		[+]
+
+		Krakeelo
+
+		[+]
+
+		Krawumms
+
+		[+]
+
+		Perlu
+
+		[+]
+
+		Aalabyss
+
+		[+]
+
+		Saganabyss
+
+		[+]
+
+		Absol
+
+		[+]
+
+		Shuppet
+
+		[+]
+
+		Banette
+
+		[+]
+
+		Vipitis
+
+		[+]
+
+		Sengo
+
+		[+]
+
+		Relicanth
+
+		[+]
+
+		Stollunior
+
+		[+]
+
+		Stollrak
+
+		[+]
+
+		Stolloss
+
+		[+]
+
+		Formeo
+
+		[+]
+
+		Volbeat
+
+		[+]
+
+		Illumise
+
+		[+]
+
+		Liliep
+
+		[+]
+
+		Wielie
+
+		[+]
+
+		Anorith
+
+		[+]
+
+		Armaldo
+
+		[+]
+
+		Trasla
+
+		[+]
+
+		Kirlia
+
+		[+]
+
+		Guardevoir
+
+		[+]
+
+		Kindwurm
+
+		[+]
+
+		Draschel
+
+		[+]
+
+		Brutalanda
+
+		[+]
+
+		Tanhel
+
+		[+]
+
+		Metang
+
+		[+]
+
+		Metagross
+
+		[+]
+
+		Regirock
+
+		[+]
+
+		Regice
+
+		[+]
+
+		Registeel
+
+		[+]
+
+		Kyogre
+
+		[+]
+
+		Groudon
+
+		[+]
+
+		Rayquaza
+
+		[+]
+
+		Latias
+
+		[+]
+
+		Latios
+
+		[+]
+
+		Jirachi
+
+		[+]
+
+		Deoxys
+
+		[+]
+
+		Palimpalim
+	"
+}

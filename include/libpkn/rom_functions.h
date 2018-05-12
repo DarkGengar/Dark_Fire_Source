@@ -72,7 +72,7 @@ extern void gpu_pal_decompress_alloc_tag_and_upload(struct SpritePalette* pal);
  * @param gender gender of the species to show
  * @param closure closure function after the query (usually includes a reload)
  */
-extern void pokemon_query_string(u8 type, u8 *target_buf, u16 species, u8 gender,
+extern void scn_query_string(u8 type, u8 *target_buf, u16 species, u8 gender,
         u32 pid, u32 *callback);
 
 /* callback.h */

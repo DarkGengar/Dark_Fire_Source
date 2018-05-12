@@ -33,6 +33,7 @@
           <df name="overworld">
             <in>loading.h</in>
             <in>ow_ui.h</in>
+            <in>script.h</in>
           </df>
           <df name="save">
             <in>block.h</in>
@@ -645,6 +646,8 @@
       <item path="include/libpkn/overworld/loading.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/libpkn/overworld/ow_ui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/overworld/script.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/libpkn/save/block.h" ex="false" tool="3" flavor2="0">
       </item>

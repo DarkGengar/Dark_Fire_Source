@@ -54,17 +54,22 @@
 
 #include "strings/intro/string_intro.h"
 
+#define NAME_PLAYER 0
+#define NAME_RIVAL  4
+
 pchar str_test_oak[] = { 0xC2, 0xBF, 0xC6, 0xC6, 0xC9, 0xFB, 0xFF };
 u32 *tilemap = (void *) 0x203B108;
+u16 *variables = ((u16*)0x020370B8);
 
 extern u8 check_a_pressed(u8 b);
 
 /* -- Prototypes -- */
 void scn_oak_intro_loop(u8 tsk_id);
 void scn_oak_intro_start_tutorial(u8 tsk_id);
-void scn_oak_intro_string_handler(u8 tsk_id);
+void scn_oak_intro_prepare_player_name_screen(u8 tsk_id);
+void scn_oak_intro_show_player_name_screen(u8 tsk_id);
 void scn_oak_intro_finished(void);
-void scn_oak_intro_after_name(void);
+void scn_oak_intro_after_name(u8 tsk_id);
 void scn_oak_intro_reset(void);
 void scn_oak_intro_setup(void);
 void show_message(pchar *message);
@@ -78,20 +83,15 @@ void show_message(pchar *message);
  * @details  More Details
  */
 void scn_oak_intro_loop(u8 tsk_id) {
-    switch(super.multi_purpose_state_tracker){
+    switch(variables[0xC]){
 	case 0:
 	    fadein_screen(0, CLR_BLACK);
-	    super.multi_purpose_state_tracker++;
+	    tasks[tsk_id].function = (TaskCallback)scn_oak_intro_start_tutorial;
 	    //tasks[tsk_id].function = (TaskCallback)0x08130C41;
 	    //set_callback2(0x08056665);
 	    //pokemon_query_string(0, saveblock2->name, 0, 0, 0, scn_oak_intro_after_name);
 	    break;
 	case 1:
-	    if(!pal_fade_control.active)
-		super.multi_purpose_state_tracker++;
-	    break;
-	case 2:
-	    tasks[tsk_id].function = (TaskCallback)scn_oak_intro_start_tutorial;
 	    break;
 	default:
 	    break;
@@ -99,23 +99,28 @@ void scn_oak_intro_loop(u8 tsk_id) {
 }
 
 void scn_oak_intro_start_tutorial(u8 tsk_id) {
-    show_message(string_intro_begruessung);
-    tasks[tsk_id].function = scn_oak_intro_string_handler;
+    show_message(str_dev_greeting);
+    tasks[tsk_id].function = scn_oak_intro_prepare_player_name_screen;
 }
 
-void scn_oak_intro_string_handler(u8 tsk_id) {
+void scn_oak_intro_prepare_player_name_screen(u8 tsk_id) {
     if(check_a_pressed(0)) 
 	return;
     textbox_close();
-    play_song_1(0x124);
-    tasks[tsk_id].function = scn_oak_intro_finished;
+    fadeout_screen(1, CLR_BLACK);
+    tasks[tsk_id].function = scn_oak_intro_show_player_name_screen;
+}
+
+void scn_oak_intro_show_player_name_screen(u8 tsk_id) {
+    if(pal_fade_control.active)
+	scn_query_string(0, saveblock2->name, 0, 0, 0, scn_oak_intro_after_name);
+    ((void (*)(u8, u8)) 0x081311B9)(tsk_id, 1);
 }
 
 void scn_oak_intro_finished(void) {
-    
 }
 
-void scn_oak_intro_after_name(void) {
+void scn_oak_intro_after_name(u8 tsk_id) {
     switch(super.multi_purpose_state_tracker) {
 	case 0:
 	    vblank_handler_set(NULL);
@@ -123,8 +128,16 @@ void scn_oak_intro_after_name(void) {
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 1:
+	    for(int i = 0; i < 7; i++)
+		dprintf("Letter %d: 0x%X\n", i, saveblock2->name[i]);
 	    scn_oak_intro_setup();
 	    super.multi_purpose_state_tracker++;
+	    break;
+	case 2:
+	    
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 3:
 	    break;
 	default:
 	    break;

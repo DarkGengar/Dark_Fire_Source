@@ -1,0 +1,1 @@
+.include "patches/asset/strings/poke_name_list.asm"

@@ -176,6 +176,7 @@
           <df name="overworld">
             <in>loading.h</in>
             <in>ow_ui.h</in>
+            <in>script.h</in>
           </df>
           <df name="pokemon">
             <in>pokemon.h</in>
@@ -371,6 +372,10 @@
               <in>mid.asm</in>
             </df>
             <in>mus.asm</in>
+          </df>
+          <df name="strings">
+            <in>poke_name_list.asm</in>
+            <in>strings.asm</in>
           </df>
           <in>asset.asm</in>
           <in>gfx_mus.asm</in>
@@ -1410,6 +1415,8 @@
               </df>
               <df name="strings">
                 <df name="features">
+                  <in>poke_name_list.c</in>
+                  <in>poke_name_list.h</in>
                   <in>start_menu.c</in>
                   <in>start_menu.h</in>
                 </df>

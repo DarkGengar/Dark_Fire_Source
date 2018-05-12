@@ -17,9 +17,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/asset/strings/intro/string_intro.str</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/patches/oak_intro_hack.asm</file>
             <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/src/7_features/oak_intro.c</file>
-            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/patches/patches.asm</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/include/libpkn/rom_functions.h</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/include/libpkn/graphics/palette.h</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/bprd.sym</file>
+            <file>file:/C:/Users/HunterxPokemon/Documents/GitHub/Original_Dark_Fire_Source/src/7_features/capsule_machine.c</file>
         </group>
     </open-files>
 </project-private>

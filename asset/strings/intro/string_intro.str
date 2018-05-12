@@ -1,11 +1,10 @@
-$str string_intro_begruessung = {
+$str str_dev_greeting = {
     "
-	Hallo!\p
-	Herzlich willkommen in der Welt der der\n
-	POK\eMON!\p
-	Mein Name ist Eich!\p
-	Man nennt mich den POK\eMON-\n
-	PROFESSOR!\p
-	Und wie lautet dein Name?\p
+	Dark Fire Alpha v0.1\p
+	Ich, der Entwickler DarkGengar,\n
+	bedanke mich, dass du das Spiel\p
+	Pok\emon Dark Fire spielst und\n
+	w\unsche dir noch viel Spa\s bei\p
+	deinem Abenteuer.\p
     "
 }

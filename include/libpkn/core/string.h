@@ -63,6 +63,8 @@ extern pchar string_buffer[STRING_BUFFER_SIZE];
     
 extern void rboxes_free(void);
 
+extern void remoboxes_upload_tilesets();
+
 /**
  * Free a textbox.
  */

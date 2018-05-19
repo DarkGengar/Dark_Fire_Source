@@ -68,10 +68,13 @@ void scn_oak_intro_loop(u8 tsk_id);
 void scn_oak_intro_start_tutorial(u8 tsk_id);
 void scn_oak_intro_prepare_player_name_screen(u8 tsk_id);
 void scn_oak_intro_show_player_name_screen(u8 tsk_id);
+void scn_oak_intro_return_from_player_nmscn(u8 tsk_id);
+void scn_oak_intro_confirm_player_name(u8 tsk_id);
 void scn_oak_intro_finished(void);
 void scn_oak_intro_after_name(u8 tsk_id);
 void scn_oak_intro_reset(void);
 void scn_oak_intro_setup(void);
+void scn_oak_intro_cb_handler(void);
 void show_message(pchar *message);
 
 /* -- Methods -- */
@@ -92,6 +95,8 @@ void scn_oak_intro_loop(u8 tsk_id) {
 	    //pokemon_query_string(0, saveblock2->name, 0, 0, 0, scn_oak_intro_after_name);
 	    break;
 	case 1:
+	    fadein_screen(16, CLR_BLACK);
+	    tasks[tsk_id].function = (TaskCallback)scn_oak_intro_return_from_player_nmscn;
 	    break;
 	default:
 	    break;
@@ -112,9 +117,24 @@ void scn_oak_intro_prepare_player_name_screen(u8 tsk_id) {
 }
 
 void scn_oak_intro_show_player_name_screen(u8 tsk_id) {
-    if(pal_fade_control.active)
+    dprintf("Name Screen\n");
+    if(pal_fade_control.active) {
+	dprintf("Name Screen Fade is active\n");
+	variables[0xC] = 1;
 	scn_query_string(0, saveblock2->name, 0, 0, 0, scn_oak_intro_after_name);
+    }
     ((void (*)(u8, u8)) 0x081311B9)(tsk_id, 1);
+}
+
+void scn_oak_intro_return_from_player_nmscn(u8 tsk_id) {
+    dprintf("return from player nmscn");
+    show_message(str_intr_confirm_name);
+    tasks[tsk_id].function = scn_oak_intro_confirm_player_name;
+}
+
+void scn_oak_intro_confirm_player_name(u8 tsk_id) {
+    if(check_a_pressed(0)) 
+	return;
 }
 
 void scn_oak_intro_finished(void) {
@@ -134,10 +154,11 @@ void scn_oak_intro_after_name(u8 tsk_id) {
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 2:
-	    
+	    task_add((TaskCallback)scn_oak_intro_loop, 0);
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 3:
+	    set_callback2(scn_oak_intro_cb_handler);
 	    break;
 	default:
 	    break;
@@ -164,6 +185,14 @@ void scn_oak_intro_setup(void) {
     bgid_mod_y_offset(1, 0, 0);
     bgid_mod_x_offset(2, 0, 0);
     bgid_mod_y_offset(2, 0, 0);
+}
+
+void scn_oak_intro_cb_handler(void) {
+    task_exec();
+    remoboxes_upload_tilesets();
+    objc_exec();
+    obj_sync_superstate();
+    process_palfade();
 }
 
 void show_message(pchar *message) {

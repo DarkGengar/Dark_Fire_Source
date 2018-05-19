@@ -7,4 +7,11 @@ $str str_dev_greeting = {
 	w\unsche dir noch viel Spa\s bei\p
 	deinem Abenteuer.\p
     "
+};
+
+$str str_intr_confirm_name = {
+    "
+	Bist du dir sicher, dass dein Name\n
+	\v\h01 ist?\p
+    "
 }

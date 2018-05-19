@@ -57,7 +57,7 @@ prebuild:
 	$(MAKE) -f $(GFX_SUB) all
 	$(MAKE) -f $(MUSIC_SUB) all
 	$(MAKE) -f $(STRING_SUB) all
-	#$(MAKE) -f $(MAPS_SUB) all
+	$(MAKE) -f $(MAPS_SUB) all
 	$(MAKE) -C $(DOXY_SUB_DIR) -f $(DOXY_SUB) all
 
 

@@ -146,6 +146,10 @@ box_related_one = 0x080F6F64|1;
 fdecoder = 0x08008F4C|1;
 remoboxes_upload_tilesets = 0x08002D68|1;
 
+/* multichoice.h */
+multichoice_field = 0x080F7C6C|1;
+multichoice_get_response = 0x0810FAB4|1;
+
 /* task.h */
 tasks_init = 0x08077320|1;
 task_add = 0x08077380|1;

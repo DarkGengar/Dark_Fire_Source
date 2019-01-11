@@ -43,6 +43,7 @@
 #include "core/audio.h"
 #include "core/m4a.h"
 #include "core/string.h"
+#include "core/io.h"
 
 #include "graphics/background.h"
 #include "graphics/oams.h"
@@ -74,6 +75,7 @@ void scn_oak_intro_finished(void);
 void scn_oak_intro_after_name(u8 tsk_id);
 void scn_oak_intro_reset(void);
 void scn_oak_intro_setup(void);
+void scn_oak_intro_vblank_handler(void);
 void scn_oak_intro_cb_handler(void);
 void show_message(pchar *message);
 
@@ -95,7 +97,9 @@ void scn_oak_intro_loop(u8 tsk_id) {
 	    //pokemon_query_string(0, saveblock2->name, 0, 0, 0, scn_oak_intro_after_name);
 	    break;
 	case 1:
-	    fadein_screen(16, CLR_BLACK);
+	    //fadein_screen(16, CLR_BLACK);
+	    if(pal_fade_control.active)
+		return;
 	    tasks[tsk_id].function = (TaskCallback)scn_oak_intro_return_from_player_nmscn;
 	    break;
 	default:
@@ -143,21 +147,57 @@ void scn_oak_intro_finished(void) {
 void scn_oak_intro_after_name(u8 tsk_id) {
     switch(super.multi_purpose_state_tracker) {
 	case 0:
+	    /* Free graphics etc. */
 	    vblank_handler_set(NULL);
-	    scn_oak_intro_reset();
+	    pal_fade_control_and_dead_struct_reset();
+	    dma0_cb_reset();
+	    obj_and_aux_reset_all();
+	    gpu_pal_allocator_reset();
+	    nullify_something_called_on_townmap();
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 1:
-	    for(int i = 0; i < 7; i++)
-		dprintf("Letter %d: 0x%X\n", i, saveblock2->name[i]);
-	    scn_oak_intro_setup();
+	    /* Reset BGs */
+	    gpu_tile_bg_drop_all_sets(0);
+	    bg_vram_setup(1, (struct BgConfig *)0x08463F24, 3);
+	    bgid_set_tilemap(1, *tilemap + 0x1C20);
+	    bgid_set_tilemap(2, *tilemap + 0x1820);
+	    bgid_mod_x_offset(1, 0, 0);
+	    bgid_mod_y_offset(1, 0, 0);
+	    bgid_mod_x_offset(2, 0, 0);
+	    bgid_mod_y_offset(2, 0, 0);
 	    super.multi_purpose_state_tracker++;
 	    break;
+	    
 	case 2:
-	    task_add((TaskCallback)scn_oak_intro_loop, 0);
+	    /* Clear IO registers */
+	    lcd_io_set(0x40, 0);
+	    lcd_io_set(0x44, 0);
+	    lcd_io_set(0x48, 0);
+	    lcd_io_set(0x4A, 0);
+	    lcd_io_set(0x50, 0);
+	    lcd_io_set(0x52, 0);
+	    lcd_io_set(0x54, 0);
 	    super.multi_purpose_state_tracker++;
 	    break;
 	case 3:
+	    /* Reset message box layers */
+	    rboxes_free();
+	    ((void (*)(void)) 0x080F6F01)();
+	    ((void (*)(void)) 0x080F6F2D)();
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 4:
+	    task_add((TaskCallback)scn_oak_intro_loop, 0);
+	    fadein_screen(0, CLR_BLACK);
+	    super.multi_purpose_state_tracker++;
+	    break;
+	case 5:
+	    lcd_io_set(0, 0x1040);
+	    gpu_sync_bg_show(0);
+	    gpu_sync_bg_show(1);
+	    gpu_sync_bg_show(2);
+	    vblank_handler_set(scn_oak_intro_vblank_handler);
 	    set_callback2(scn_oak_intro_cb_handler);
 	    break;
 	default:
@@ -166,25 +206,13 @@ void scn_oak_intro_after_name(u8 tsk_id) {
     }
 }
 
-void scn_oak_intro_reset(void) {
-    pal_fade_control_and_dead_struct_reset();
-    dma0_cb_reset();
-    obj_and_aux_reset_all();
-    gpu_pal_allocator_reset();
-    nullify_something_called_on_townmap();
+void scn_oak_intro_setup(void) {
 }
 
-void scn_oak_intro_setup(void) {
-    gpu_tile_bg_drop_all_sets(0);
-    bg_vram_setup(1, (struct BgConfig *)0x08463F24, 3);
-    
-    bgid_set_tilemap(1, *tilemap + 0x1C20);
-    bgid_set_tilemap(2, *tilemap + 0x1820);
-    
-    bgid_mod_x_offset(1, 0, 0);
-    bgid_mod_y_offset(1, 0, 0);
-    bgid_mod_x_offset(2, 0, 0);
-    bgid_mod_y_offset(2, 0, 0);
+void scn_oak_intro_vblank_handler(void) {
+    gpu_sprites_upload();
+    copy_queue_process();
+    gpu_pal_upload();
 }
 
 void scn_oak_intro_cb_handler(void) {

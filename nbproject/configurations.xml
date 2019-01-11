@@ -23,6 +23,7 @@
             <in>compression.h</in>
             <in>io.h</in>
             <in>m4a.h</in>
+            <in>multichoice.h</in>
             <in>string.h</in>
             <in>task.h</in>
           </df>
@@ -631,6 +632,8 @@
       <item path="include/libpkn/core/io.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/libpkn/core/m4a.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/libpkn/core/multichoice.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/libpkn/core/string.h" ex="false" tool="3" flavor2="0">
       </item>

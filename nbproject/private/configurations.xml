@@ -165,6 +165,7 @@
             <in>io.h</in>
             <in>m4a.h</in>
             <in>memory.h</in>
+            <in>multichoice.h</in>
             <in>string.h</in>
             <in>task.h</in>
           </df>
@@ -318,6 +319,36 @@
                   <df name="ts">
                   </df>
                 </df>
+                <df name="maps">
+                  <df name="map">
+                    <df name="0">
+                      <df name="0">
+                      </df>
+                      <df name="1">
+                      </df>
+                      <df name="2">
+                      </df>
+                      <df name="3">
+                      </df>
+                    </df>
+                    <df name="1">
+                      <df name="0">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="tileset">
+                    <df name="0">
+                    </df>
+                    <df name="1">
+                    </df>
+                    <df name="2">
+                    </df>
+                    <df name="3">
+                    </df>
+                    <df name="4">
+                    </df>
+                  </df>
+                </df>
                 <df name="music">
                   <df name="vcg001">
                   </df>
@@ -420,12 +451,6 @@
             </df>
             <df name="mugshots">
             </df>
-            <df name="new_types">
-            </df>
-            <df name="ow_sprites">
-              <df name="item_icons">
-              </df>
-            </df>
             <df name="pokemon_sprites">
               <df name="1_to_6_gen_original_sprites">
                 <df name="1.Generation">
@@ -504,8 +529,6 @@
                 </df>
               </df>
             </df>
-            <df name="tb_s">
-            </df>
             <df name="tilesets">
               <df name="complete_sets">
                 <df name="pals">
@@ -517,25 +540,7 @@
                       <in>tileset_0_pal_6.s</in>
                     </df>
                   </df>
-                  <df name="gfx">
-                    <df name="tileset_0">
-                    </df>
-                  </df>
-                  <df name="header">
-                    <df name="tileset_0">
-                      <in>tileset_0_pal_0.h</in>
-                      <in>tileset_0_pal_1.h</in>
-                      <in>tileset_0_pal_3.h</in>
-                      <in>tileset_0_pal_6.h</in>
-                    </df>
-                  </df>
                 </df>
-              </df>
-              <df name="tiles">
-              </df>
-            </df>
-            <df name="trainer_battle_sprites">
-              <df name="front">
               </df>
             </df>
             <df name="ts_df">
@@ -556,7 +561,473 @@
               <df name="unverändert">
               </df>
             </df>
-            <df name="world_map">
+            <df name="ts_horizon">
+              <df name="favoriten_schriftzug">
+              </df>
+              <df name="mygame">
+                <df name="node_modules">
+                  <df name="ansi-align">
+                    <df name="node_modules">
+                      <df name="ansi-regex">
+                      </df>
+                      <df name="is-fullwidth-code-point">
+                      </df>
+                      <df name="string-width">
+                      </df>
+                      <df name="strip-ansi">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="ansi-regex">
+                  </df>
+                  <df name="ansi-styles">
+                  </df>
+                  <df name="any-promise">
+                    <df name="register">
+                    </df>
+                  </df>
+                  <df name="arr-diff">
+                  </df>
+                  <df name="arr-flatten">
+                  </df>
+                  <df name="array-unique">
+                  </df>
+                  <df name="asn1">
+                    <df name="lib">
+                      <df name="ber">
+                      </df>
+                    </df>
+                    <df name="tst">
+                      <df name="ber">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="assert-plus">
+                  </df>
+                  <df name="asynckit">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="aws-sign2">
+                  </df>
+                  <df name="aws4">
+                  </df>
+                  <df name="balanced-match">
+                  </df>
+                  <df name="base64-js">
+                    <df name="bench">
+                    </df>
+                    <df name="lib">
+                    </df>
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="boom">
+                    <df name="images">
+                    </df>
+                    <df name="lib">
+                    </df>
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="boxen">
+                    <df name="node_modules">
+                      <df name="ansi-regex">
+                      </df>
+                      <df name="ansi-styles">
+                      </df>
+                      <df name="camelcase">
+                      </df>
+                      <df name="chalk">
+                      </df>
+                      <df name="is-fullwidth-code-point">
+                      </df>
+                      <df name="string-width">
+                      </df>
+                      <df name="strip-ansi">
+                      </df>
+                      <df name="supports-color">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="brace-expansion">
+                  </df>
+                  <df name="buffer">
+                    <df name="bin">
+                    </df>
+                    <df name="test">
+                      <df name="node">
+                      </df>
+                      <df name="node-es6">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="buffer-crc32">
+                  </df>
+                  <df name="camelcase">
+                  </df>
+                  <df name="capture-stack-trace">
+                  </df>
+                  <df name="caseless">
+                  </df>
+                  <df name="charm">
+                    <df name="example">
+                    </df>
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="chownr">
+                  </df>
+                  <df name="cli-boxes">
+                  </df>
+                  <df name="clone">
+                  </df>
+                  <df name="clone-stats">
+                  </df>
+                  <df name="co">
+                  </df>
+                  <df name="code-point-at">
+                  </df>
+                  <df name="color-convert">
+                  </df>
+                  <df name="color-name">
+                  </df>
+                  <df name="combined-stream">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="commander">
+                  </df>
+                  <df name="concat-map">
+                    <df name="example">
+                    </df>
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="configstore">
+                    <df name="node_modules">
+                      <df name="object-assign">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="convert-source-map">
+                    <df name="example">
+                    </df>
+                    <df name="test">
+                      <df name="fixtures">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="core-util-is">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="crc">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="create-error-class">
+                  </df>
+                  <df name="cryptiles">
+                    <df name="lib">
+                    </df>
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="dashdash">
+                    <df name="etc">
+                    </df>
+                    <df name="lib">
+                    </df>
+                    <df name="node_modules">
+                      <df name="assert-plus">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="decamelize">
+                  </df>
+                  <df name="decompress-tar">
+                    <df name="node_modules">
+                      <df name="clone">
+                      </df>
+                      <df name="vinyl">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="decompress-tarbz2">
+                    <df name="node_modules">
+                      <df name="clone">
+                      </df>
+                      <df name="vinyl">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="decompress-targz">
+                    <df name="node_modules">
+                      <df name="clone">
+                      </df>
+                      <df name="vinyl">
+                        <df name="lib">
+                        </df>
+                      </df>
+                    </df>
+                  </df>
+                  <df name="deep-extend">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="delayed-stream">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="deprecate">
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="dot-prop">
+                  </df>
+                  <df name="download">
+                    <df name="node_modules">
+                      <df name="decompress-tarbz2">
+                      </df>
+                      <df name="decompress-unzip">
+                      </df>
+                      <df name="file-type">
+                      </df>
+                      <df name="is-natural-number">
+                      </df>
+                      <df name="object-assign">
+                      </df>
+                      <df name="strip-dirs">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="duplexer3">
+                  </df>
+                  <df name="ecc-jsbn">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="error-ex">
+                  </df>
+                  <df name="escape-string-regexp">
+                  </df>
+                  <df name="expand-brackets">
+                  </df>
+                  <df name="extend">
+                  </df>
+                  <df name="extend-shallow">
+                  </df>
+                  <df name="extglob">
+                    <df name="node_modules">
+                      <df name="is-extglob">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="extract-zip">
+                    <df name="node_modules">
+                      <df name="minimist">
+                      </df>
+                      <df name="mkdirp">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="extsprintf">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="file-exists">
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="file-type">
+                  </df>
+                  <df name="filename-regex">
+                  </df>
+                  <df name="filename-reserved-regex">
+                  </df>
+                  <df name="filled-array">
+                  </df>
+                  <df name="first-chunk-stream">
+                  </df>
+                  <df name="for-in">
+                  </df>
+                  <df name="for-own">
+                  </df>
+                  <df name="forever-agent">
+                  </df>
+                  <df name="fs.realpath">
+                  </df>
+                  <df name="get-stdin">
+                  </df>
+                  <df name="get-stream">
+                  </df>
+                  <df name="getpass">
+                    <df name="lib">
+                    </df>
+                    <df name="node_modules">
+                      <df name="assert-plus">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="glob-base">
+                    <df name="node_modules">
+                      <df name="glob-parent">
+                      </df>
+                      <df name="is-extglob">
+                      </df>
+                      <df name="is-glob">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="graceful-fs">
+                  </df>
+                  <df name="graceful-readlink">
+                  </df>
+                  <df name="har-schema">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="has-ansi">
+                  </df>
+                  <df name="has-flag">
+                  </df>
+                  <df name="has-symbol-support-x">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="has-to-string-tag-x">
+                    <df name="lib">
+                    </df>
+                  </df>
+                  <df name="hoek">
+                    <df name="images">
+                    </df>
+                    <df name="lib">
+                    </df>
+                    <df name="test">
+                      <df name="modules">
+                      </df>
+                    </df>
+                  </df>
+                  <df name="ieee754">
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="imurmurhash">
+                  </df>
+                  <df name="inherits">
+                  </df>
+                  <df name="ini">
+                  </df>
+                  <df name="invert-kv">
+                  </df>
+                  <df name="is-absolute">
+                  </df>
+                  <df name="is-arrayish">
+                  </df>
+                  <df name="is-buffer">
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="is-bzip2">
+                  </df>
+                  <df name="is-dotfile">
+                  </df>
+                  <df name="is-equal-shallow">
+                  </df>
+                  <df name="is-extendable">
+                  </df>
+                  <df name="is-extglob">
+                  </df>
+                  <df name="is-glob">
+                  </df>
+                  <df name="is-gzip">
+                  </df>
+                  <df name="is-natural-number">
+                  </df>
+                  <df name="is-npm">
+                  </df>
+                  <df name="is-obj">
+                  </df>
+                  <df name="is-object">
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="is-posix-bracket">
+                  </df>
+                  <df name="is-primitive">
+                  </df>
+                  <df name="is-redirect">
+                  </df>
+                  <df name="is-relative">
+                  </df>
+                  <df name="is-retry-allowed">
+                  </df>
+                  <df name="is-stream">
+                  </df>
+                  <df name="is-tar">
+                  </df>
+                  <df name="is-typedarray">
+                  </df>
+                  <df name="is-utf8">
+                  </df>
+                  <df name="is-valid-glob">
+                  </df>
+                  <df name="is-zip">
+                  </df>
+                  <df name="isarray">
+                  </df>
+                  <df name="isexe">
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="isobject">
+                  </df>
+                  <df name="isstream">
+                  </df>
+                  <df name="isurl">
+                  </df>
+                  <df name="jsbn">
+                  </df>
+                  <df name="json-schema">
+                    <df name="draft-00">
+                    </df>
+                    <df name="draft-01">
+                    </df>
+                    <df name="draft-02">
+                    </df>
+                    <df name="draft-03">
+                      <df name="examples">
+                      </df>
+                    </df>
+                    <df name="draft-04">
+                    </df>
+                    <df name="lib">
+                    </df>
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="json-stringify-safe">
+                    <df name="test">
+                    </df>
+                  </df>
+                  <df name="jsonfile">
+                  </df>
+                </df>
+                <df name="src">
+                  <df name="app">
+                  </df>
+                  <df name="assets">
+                  </df>
+                  <df name="styles">
+                  </df>
+                  <df name="views">
+                  </df>
+                </df>
+              </df>
+              <df name="single_elements">
+              </df>
             </df>
           </df>
           <df name="maps">
@@ -723,18 +1194,7 @@
             <df name="asm">
               <in>physisch_speziell.asm</in>
             </df>
-            <df name="custom_music">
-              <df name="unchanged">
-              </df>
-            </df>
-            <df name="Desktop">
-              <df name="Scriptauswahl">
-              </df>
-            </df>
             <df name="features_in_progress">
-              <df name="include">
-                <in>map.h</in>
-              </df>
               <df name="mugshot_routine_new">
                 <in>spawn_mugshot.c</in>
               </df>
@@ -742,20 +1202,6 @@
                 <in>schwierigkeitsgrad.asm</in>
               </df>
               <in>kapselautomat.c</in>
-            </df>
-            <df name="gfx">
-              <df name="boots">
-              </df>
-              <df name="intro_bgs">
-              </df>
-              <df name="mugs">
-              </df>
-              <df name="new_mugs">
-              </df>
-            </df>
-            <df name="music">
-            </df>
-            <df name="scripts">
             </df>
           </df>
           <df name="rhr_media">
@@ -789,15 +1235,7 @@
         <df name="origin_resource">
           <df name="feature_ideen">
             <df name="anim_engine_release">
-              <df name="build">
-              </df>
               <df name="src">
-                <df name="header">
-                  <in>callbacks.h</in>
-                  <in>oams.h</in>
-                  <in>romfuncs.h</in>
-                  <in>types.h</in>
-                </df>
                 <in>anim_engine.c</in>
                 <in>cmdx1A_callasm.asm</in>
               </df>
@@ -808,90 +1246,19 @@
               <in>second_played_routine.asm</in>
             </df>
           </df>
-          <df name="gfx">
-            <df name="backgrounds">
-              <df name="dppt">
-              </df>
-              <df name="hgss">
-              </df>
-            </df>
-            <df name="fonts">
-            </df>
-            <df name="mugshots">
-            </df>
-            <df name="ows">
-              <df name="dppt">
-              </df>
-              <df name="dq3">
-              </df>
-            </df>
-            <df name="pokemon_icons">
-              <df name="__MACOSX">
-                <df name="Mega Icons">
-                </df>
-                <df name="Pokemon">
-                </df>
-              </df>
-              <df name="Mega Icons">
-              </df>
-              <df name="Pokemon">
-              </df>
-            </df>
-            <df name="tilesets">
-            </df>
-            <df name="trainer">
-            </df>
-            <df name="typen">
-              <df name="Pokemon Typen">
-              </df>
-            </df>
-            <df name="typen_table">
-            </df>
-          </df>
-          <df name="mus">
-            <df name="bw2_mid">
-            </df>
-            <df name="bw_mid">
-            </df>
-            <df name="cries">
-              <df name="1_651_cries">
-              </df>
-              <df name="gen_6_cries">
-              </df>
-            </df>
-            <df name="hgss_mid">
-            </df>
-            <df name="pokemon_unused_themes">
-            </df>
-            <df name="pt_mid">
-            </df>
-          </df>
-          <df name="musik_ideen">
-            <df name="midi_project">
-              <df name="zinnia">
-              </df>
-            </df>
-          </df>
-          <df name="pokemon_em_eng_idb">
-          </df>
-          <df name="pokemon_fr_eng_idb">
-          </df>
-          <df name="pokemon_fr_ger_idb">
-          </df>
           <df name="research">
             <in>pokemonnamen_table.asm</in>
-          </df>
-          <df name="script_vorlagen">
           </df>
         </df>
       </df>
       <df name="screenshots">
+        <df name="single">
+        </df>
       </df>
       <df name="src">
         <df name="0_map_data">
           <df name="0_mapbank_header">
             <in>mapbank_header.s</in>
-            <in>mapbank_tabler.s</in>
           </df>
           <df name="1_mapfooter_table">
             <in>mapfooter_table.s</in>
@@ -987,8 +1354,6 @@
         </df>
         <df name="3_scripts">
           <df name="ow_scripts">
-            <df name="feature_scripts">
-            </df>
             <df name="story_scripts">
               <df name="zintea">
                 <in>schild_eremit.s</in>
@@ -1020,43 +1385,16 @@
             </df>
           </df>
           <df name="start_menu">
-            <df name="p_phone">
-            </df>
             <df name="pokekey">
               <in>pokekey.c</in>
             </df>
           </df>
-          <in>capsule_machine.c</in>
           <in>demo_scene.c</in>
           <in>ldr_register_bytes.s</in>
           <in>mugshot.c</in>
           <in>oak_intro.c</in>
         </df>
         <df name="8_asset">
-          <df name="maps">
-            <df name="wild_poke_habitat">
-              <df name="0">
-                <df name="0">
-                  <in>wild_poke_habitat_0_0.s</in>
-                </df>
-                <df name="1">
-                  <in>wild_poke_habitat_0_1.s</in>
-                </df>
-                <df name="2">
-                  <in>wild_poke_habitat_0_2.s</in>
-                </df>
-                <df name="3">
-                  <in>wild_poke_habitat_0_3.s</in>
-                </df>
-              </df>
-              <df name="1">
-                <df name="0">
-                  <in>wild_poke_habitat_1_0.s</in>
-                </df>
-              </df>
-              <in>wild_poke_header.s</in>
-            </df>
-          </df>
           <df name="music">
             <df name="dpp">
               <df name="bank">
@@ -1323,122 +1661,6 @@
                 <in>wave_187.s</in>
               </df>
               <in>_songtable.s</in>
-            </df>
-          </df>
-          <df name="output">
-            <df name="asset">
-              <df name="gfx">
-                <df name="badges">
-                  <in>badges.c</in>
-                  <in>badges.h</in>
-                </df>
-                <df name="bootscreen">
-                  <in>bootscreen.c</in>
-                  <in>bootscreen.h</in>
-                </df>
-                <df name="gba">
-                  <in>gba.c</in>
-                  <in>gba.h</in>
-                </df>
-                <df name="intro">
-                  <in>gfx_intro_hero.c</in>
-                  <in>gfx_intro_hero.h</in>
-                  <in>gfx_intro_prof.c</in>
-                  <in>gfx_intro_prof.h</in>
-                </df>
-                <df name="ows">
-                  <df name="hero">
-                    <in>gfx_ow_hero_walk.c</in>
-                    <in>gfx_ow_hero_walk.h</in>
-                  </df>
-                </df>
-                <df name="pokekey">
-                  <in>pokekey.c</in>
-                  <in>pokekey.h</in>
-                  <in>question_mark.c</in>
-                  <in>question_mark.h</in>
-                </df>
-                <df name="tb_backsprites">
-                  <in>gfx_backsprite_hero.c</in>
-                  <in>gfx_backsprite_hero.h</in>
-                </df>
-                <df name="tb_s">
-                  <in>gfx_tb_s_135.c</in>
-                  <in>gfx_tb_s_135.h</in>
-                </df>
-                <df name="tilesets">
-                  <df name="0">
-                    <in>tileset_0.c</in>
-                    <in>tileset_0.h</in>
-                  </df>
-                  <df name="1">
-                    <in>tileset_1.c</in>
-                    <in>tileset_1.h</in>
-                  </df>
-                  <df name="2">
-                    <in>tileset_2.c</in>
-                    <in>tileset_2.h</in>
-                  </df>
-                </df>
-                <df name="ts">
-                  <in>tsb0.c</in>
-                  <in>tsb0.h</in>
-                  <in>tsb1.c</in>
-                  <in>tsb1.h</in>
-                  <in>tsb2.c</in>
-                  <in>tsb2.h</in>
-                  <in>tsb3.c</in>
-                  <in>tsb3.h</in>
-                  <in>tsb_fl_anim.c</in>
-                  <in>tsb_fl_anim.h</in>
-                </df>
-              </df>
-              <df name="music">
-                <df name="vcg001">
-                  <in>SEQ_BA_POKE.s</in>
-                  <in>SEQ_BA_TRAIN.s</in>
-                  <in>SEQ_CITY_01.s</in>
-                  <in>SEQ_D_01.s</in>
-                  <in>SEQ_FANFA2.s</in>
-                  <in>SEQ_FANFA3.s</in>
-                  <in>SEQ_FANFA6.s</in>
-                  <in>SEQ_KOUKAN.s</in>
-                  <in>SEQ_OPENING.s</in>
-                  <in>SEQ_PL_BA_REGI.s</in>
-                  <in>SEQ_TITLE01.s</in>
-                  <in>SEQ_TSURETEKE.s</in>
-                  <in>SEQ_WINPOKE.s</in>
-                  <in>SEQ_WINTRAIN.s</in>
-                  <in>congratulations.s</in>
-                  <in>obtained_item.s</in>
-                </df>
-              </df>
-              <df name="strings">
-                <df name="features">
-                  <in>poke_name_list.c</in>
-                  <in>poke_name_list.h</in>
-                  <in>start_menu.c</in>
-                  <in>start_menu.h</in>
-                </df>
-                <df name="intro">
-                  <in>string_intro.c</in>
-                  <in>string_intro.h</in>
-                </df>
-                <df name="story">
-                  <df name="zintea">
-                    <in>string_schild_eremit.c</in>
-                    <in>string_schild_eremit.h</in>
-                    <in>string_schild_player.c</in>
-                    <in>string_schild_player.h</in>
-                    <in>string_schild_zeitwald.c</in>
-                    <in>string_schild_zeitwald.h</in>
-                    <in>string_schild_zintea.c</in>
-                    <in>string_schild_zintea.h</in>
-                    <in>string_test_player.c</in>
-                    <in>string_test_player.h</in>
-                  </df>
-                </df>
-              </df>
             </df>
           </df>
         </df>

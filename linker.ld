@@ -1,24 +1,23 @@
 OUTPUT_ARCH(arm)
-MEMORY {
-
-        rom     : ORIGIN = 0x08718C40, LENGTH = 32M
-        ewram   : ORIGIN = 0x02000000, LENGTH = 4M - 4k
+MEMORY 
+{
+    rom     : ORIGIN = 0x08718C40, LENGTH = 26M
+    ewram   : ORIGIN = 0x02000000, LENGTH = 4M - 4k
 }
 
 SECTIONS {
         .text : {
-
                 FILL (0xABCD)
                 __text_start = . ;
                 *(.init)
-				*(.text.startup)
                 *(.text)
                 *(.ctors)
                 *(.dtors)
-                *(.rodata)
                 *(.fini)
                 *(COMMON)
                 __text_end  = . ;
+                *(.rodata*)
+                *(.rdata)
                 *(.data)
                 __bss_start__ = . ;
                 *(.bss)

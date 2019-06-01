@@ -1,9 +1,9 @@
 .gba
 .thumb
-.open "base/BPRD_0.gba", "game_build/dark_fire.gba", 0x08000000
+.open "base/BPRD.gba", "bin/Dark_Fire.gba", 0x08000000
 
-.include "patches/patches.asm"
+.include "patches.asm"
 
 .org 0x08718C40
-.importobj "output/linked.o"
+.importobj "obj/linked.o"
 .close

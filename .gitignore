@@ -11,3 +11,4 @@ inis
 MakefileOld
 linker_old.ld
 lib/*
+*.xcf

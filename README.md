@@ -1,4 +1,4 @@
-# Original_Dark_Fire_Source
+# OUT OF DATE !!! Original_Dark_Fire_Source
 Pokémon Repository
 
 Das ist das Original Repository vom Projekt Pokemon Dark Fire basierend auf Pokémon Feuerrot Deutsch(BPRD).
